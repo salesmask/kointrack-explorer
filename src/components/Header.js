@@ -5,7 +5,9 @@ const Header = () => {
         <>
             <div className="yoy">
                 <p>sijdf</p>
-                <span>sdjf</span> <div>spofjsfd</div>
+                <span>sdjf</span>
+                <div>spofjsfd</div>
+                <p>asdasd</p>
             </div>
         </>
     );
