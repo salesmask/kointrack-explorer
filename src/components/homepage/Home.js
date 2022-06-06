@@ -1,8 +1,13 @@
 import React from 'react';
 import './Home.css';
+import Search from './search/Search';
 
 const Home = () => {
-    return <div className="tab__button">Metaverse</div>;
+    return (
+        <>
+            <Search />
+        </>
+    );
 };
 
 export default Home;
