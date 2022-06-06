@@ -5,7 +5,9 @@ import Search from './search/Search';
 const Home = () => {
     return (
         <>
-            <Search />
+            <div>
+                <Search />
+            </div>
         </>
     );
 };
