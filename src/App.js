@@ -1,11 +1,11 @@
-import Header from './components/Header';
+import HomeRoute from './routes/home/HomeRoute';
+import './styles/global.css';
 
 function App() {
     return (
-        <div className="App">
-            Kointrack website....yyo..
-            <Header />
-        </div>
+        <>
+            <HomeRoute />
+        </>
     );
 }
 
