@@ -22,7 +22,7 @@
 
     --clr-text: #1e202b;
     --clr-light-text: #a0a1a5;
-    --clr-gray: #787980;
+    --clr-gray-text: #787980;
     --clr-price-digit: #545767;
 
     --clr-up: #33b868;
@@ -139,11 +139,13 @@ h1 {
     font-size: var(--fs-heading-large);
     font-family: var(--ff-primary);
     font-weight: 700;
+    color: var(--clr-text);
 }
 h2 {
     font-size: var(--fs-heading-medium);
     font-family: var(--ff-primary);
     font-weight: 700;
+    color: var(--clr-text);
 }
 h3,
 h4,
@@ -152,6 +154,7 @@ h6 {
     font-size: var(--fs-heading-small);
     font-family: var(--ff-primary);
     font-weight: 600;
+    color: var(--clr-text);
 }
 /* Typography ends */
 
