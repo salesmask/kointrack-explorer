@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::after,
+*::before {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+     * Assigned variables for colors, for common font sizes for paragraph, link and heading and for font family.
+     * Independent colors, font sizes and font family other than assigned on variables can be given directly on the corresponding components based on design.
+   */
+
+:root {
+    font-size: 62.5%; /* Made font size default as 10px as using rem for font sizes(1rem = 10px) */
+
+    --clr-primary: #2b50ff;
+    --clr-black: #000000;
+    --clr-white: #ffffff;
+
+    --clr-text: #1e202b;
+    --clr-light-text: #a0a1a5;
+    --clr-gray: #787980;
+    --clr-price-digit: #545767;
+
+    --clr-up: #33b868;
+    --clr-down: #ff2929;
+
+    --clr-footer: #151a33;
+    --clr-bottom: #121731;
+
+    --clr-tab-background: #eaebf2;
+    --clr-table-row: #f7f7f7;
+    --clr-card-outline: #e4e4e4;
+    --clr-watchlist-star: #b1b1b1;
+
+    --fs-heading-small: 2.2rem;
+    --fs-heading-medium: 2.4rem;
+    --fs-heading-large: 3.2rem;
+    --fs-title-paragraph: 1.6rem;
+    --fs-paragraph: 1.4rem;
+    --fs-table-head: 1.4rem;
+    --fs-table-cell: 1.2rem;
+    --fs-tab-small: 1.2rem;
+    --fs-tab-normal: 1.4rem;
+    --fs-tab-large: 1.6rem;
+    --fs-link: 1.6rem;
+
+    --ff-primary: 'Poppins', sans-serif;
+}
+
+body {
+    max-width: 1500px;
+    margin: auto;
+    padding: 60px;
+    background-color: var(--clr-white);
+
+    /* 
+     * Assigned default font family as "'Poppins', sans-serif". 
+     * Font family may vary in particular components. 
+     */
+    font-family: var(--ff-primary);
+}
+
+/*   
+     * Resets default styles for basic HTML tags. 
+     * Assigned colors, font sizes, font family, padding, margin and size based on design.
+*/
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+    content: none;
+}
+acronym,
+abbr {
+    cursor: help;
+    letter-spacing: 1px;
+    border-bottom: 1px dashed;
+}
+blockquote,
+q {
+    quotes: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+thead {
+    height: 54px;
+}
+tr {
+    height: 48px;
+}
+a,
+a:link,
+a:visited,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+ol,
+ul {
+    list-style: none;
+}
+li {
+    list-style-type: none;
+}
+
+/* Typography */
+div,
+span,
+a,
+li {
+    font-size: var(--fs-paragraph);
+    font-family: var(--ff-primary);
+    font-weight: 200;
+}
+p {
+    font-size: var(--fs-paragraph);
+    font-family: var(--ff-primary);
+    font-weight: 200;
+}
+th {
+    font-size: var(--fs-table-head);
+    font-family: var(--ff-primary);
+    font-weight: 400;
+}
+td {
+    font-size: var(--fs-table-cell);
+    font-family: var(--ff-primary);
+    font-weight: 500;
+}
+h1 {
+    font-size: var(--fs-heading-large);
+    font-family: var(--ff-primary);
+    font-weight: 700;
+}
+h2 {
+    font-size: var(--fs-heading-medium);
+    font-family: var(--ff-primary);
+    font-weight: 700;
+}
+h3,
+h4,
+h5,
+h6 {
+    font-size: var(--fs-heading-small);
+    font-family: var(--ff-primary);
+    font-weight: 600;
+}
+/* Typography ends */
+
+button {
+    border-radius: 100px;
+    font-size: var(--fs-tab-normal);
+    font-family: var(--ff-primary);
+    font-weight: 500;
+    padding: 12px 20px;
+}
+
+/* 
+     * Sets image default width and height as 100% as images can put inside a container with corresponding width and height. 
+     * "object-fit" property may vary according to image's aspect ratio and component structure.
+*/
+img {
+    border: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 
+    * A utility class for tab buttons.
+    * Default colors and typography can be changed based on component needs.
+*/
+.tab__button {
+    width: max-content;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--clr-tab-background);
+    font-size: var(--fs-tab-normal);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--clr-text);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* 
+     * A utility class for centering components horizontally.
+*/
+.display__center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
