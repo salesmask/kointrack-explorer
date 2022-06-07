@@ -1,0 +1,40 @@
+.footer__contact{
+      
+      text-align: left;
+      padding-top: 22px;
+      
+      }
+     
+.footer_line_height{
+
+      line-height: 24px;
+      display: inline-block;
+}
+
+
+.mail_logo{
+
+      width:30px;
+      height: 30px;
+      padding: 0px;
+      
+      
+}
+.call_logo{
+
+      width:30px;
+      height: 30px;
+      padding:0px;
+}
+.place_logo{
+
+      width:30px;
+      height: 30px;
+      padding:0px;
+}   
+.yo_yooo{
+      display: flex;
+}
+
+
+
