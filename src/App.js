@@ -4,6 +4,7 @@ import './styles/global.css';
 function App() {
     return (
         <>
+            
             <HomeRoute />
         </>
     );
