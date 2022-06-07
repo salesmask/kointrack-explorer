@@ -1,0 +1,152 @@
+.header__container{
+
+        width: auto;
+        height: 670px;
+
+
+
+        background: #151A33;
+}
+
+.header__box{
+    display: flex;
+    color: #FFFFFF !important;
+    align-items: center;
+    padding-top: 26px;
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 4rem;
+
+}
+
+.select__coin{
+    background: none;
+    background-color: #151A33;
+    color: #FFFFFF;
+    font-family: var(--ff-primary);
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+
+
+
+}
+
+.header__logo{
+    margin-right: 120px;
+}
+
+.select__product {
+    background: none;
+    background-color: #151A33;
+    color: var(--clr-white);
+    font-family: var(--ff-primary);
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+
+
+}
+
+.nav-link{
+    color: #FFFFFF;
+        font-family: var(--ff-primary);
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+
+}
+
+.left__headerwrapper{
+    display: flex;
+    justify-content: center;
+    gap:2rem;
+    margin-left: auto;
+
+
+}
+
+.sign__up{
+
+    background: #E96E5D;
+        box-shadow: 0px 4px 4px rgba(24, 27, 45, 0.25);
+        border-radius: 100px;
+
+    height: 37px;
+    width: 80px;
+    text-align: center;
+
+}
+
+.log__in {
+
+    background: #08AD98;
+    box-shadow: 0px 4px 4px rgba(24, 27, 45, 0.25);
+    border-radius: 100px;
+
+    height: 37px;
+    width: 80px;
+    text-align: center;
+
+}
+
+.hr{
+    margin-top: 26px;
+    border: 0.5px solid #1C2342;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.slide__panel{
+    font-family:var(--ff-primary);
+
+
+
+}
+
+.slider__view{
+    background-image: url("../../assests/header/Header_BG_with_vector.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 560px;
+
+
+}
+
+
+.content__h1{
+    color: #FFFFFF;
+    font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        padding-top: 18rem;
+        width: 800px;
+        padding-left: 60px;
+        text-align: justify;
+
+
+
+}
+
+.content__p{
+    font-style: normal;
+        font-weight: 200;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 60px;
+            text-align: justify;
+
+width: 800px;
+        color: #FFFFFF;
+}
+
