@@ -86,15 +86,17 @@ q {
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
 }
 thead {
     height: 54px;
 }
 tr {
-    height: 48px;
+    height: 44px;
+    background-color: var(--clr-table-row);
 }
+
 a,
 a:link,
 a:visited,

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Search.css';
-import Search_Icon from '../../../assests/homepage/search/Search_Icon.svg';
+import SearchIcon from '../../../assests/homepage/search/Search_Icon.svg';
+import DownIcon from '../../../assests/homepage/search/Decrease_Arrow.svg';
 
 const Search = () => {
     return (
@@ -8,10 +9,19 @@ const Search = () => {
             <h1 className="home__search--heading">
                 Today's Cryptocurrency Prices by Market Cap
             </h1>
-            <p className="home__search--description">
-                The global crypto market cap is $1.28T, a<span>123</span>
+            <span className="home__search--description">
+                The global crypto market cap is $1.28T, a
+                <span className="change__wrapper">
+                    <img
+                        src={DownIcon}
+                        alt="icon"
+                        className="arrow_icon"
+                    />
+                    <span className="price__change">123</span>
+                </span>
                 decrease over the last day.
-            </p>
+            </span>
+            <div className="search__main--wrapper"></div>
             <div className="search__wrapper">
                 <input
                     type="text"
@@ -20,7 +30,7 @@ const Search = () => {
                 />
                 <button className="search__button display__center">
                     <img
-                        src={Search_Icon}
+                        src={SearchIcon}
                         alt="icon"
                     />
                 </button>
