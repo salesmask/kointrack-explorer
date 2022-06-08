@@ -22,7 +22,7 @@
 
     --clr-text: #1e202b;
     --clr-light-text: #a0a1a5;
-    --clr-gray: #787980;
+    --clr-gray-text: #787980;
     --clr-price-digit: #545767;
 
     --clr-up: #33b868;
@@ -55,6 +55,8 @@ body {
     /* max-width: 1500px; */
     margin: auto;
     /* padding: 60px; */
+    max-width: 1600px;
+    margin: auto;
     background-color: var(--clr-white);
 
     /*
@@ -87,15 +89,17 @@ q {
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+    border-collapse: separate;
+    border-spacing: 0px 10px;
 }
 thead {
     height: 54px;
 }
 tr {
-    height: 48px;
+    height: 44px;
+    background-color: var(--clr-table-row);
 }
+
 a,
 a:link,
 a:visited,
