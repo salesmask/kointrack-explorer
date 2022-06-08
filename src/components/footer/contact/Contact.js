@@ -24,12 +24,13 @@ const Contact = () => {
                      <img src={Call_Logo} className='call_logo'/> +91-1234567890
                   </a> 
                   </li>
+                  <div className='yo_yo'>
                 <li>
-                     <a href="">
+                    <a href="">
                      <img src={Place} className='place_logo'/> 465, Lorem Ipsum is simply 171 dummy text of the printing and type industry.
                   </a> 
                   </li>
-               
+                  </div>
             </div>   
           </ul>
       </div>
