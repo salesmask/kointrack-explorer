@@ -1,8 +1,7 @@
-.footer__company{
-      /* border: 3px solid gray; */
-      padding-top: 22px;
-      
+.footer__company {
+    /* border: 3px solid gray; */
+    padding-top: 22px;
 }
-.footer_line_height{
-      line-height: 200%;
+.footer_line_height {
+    line-height: 200%;
 }
