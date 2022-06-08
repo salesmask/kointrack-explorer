@@ -9,6 +9,7 @@
 .home__search--heading {
     font-style: normal;
     margin-bottom: 7px;
+    color: var(--clr-text);
 }
 .home__search--description {
     color: var(--clr-gray-text);
