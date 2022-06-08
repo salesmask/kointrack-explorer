@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 
-/* 
+/*
      * Assigned variables for colors, for common font sizes for paragraph, link and heading and for font family.
      * Independent colors, font sizes and font family other than assigned on variables can be given directly on the corresponding components based on design.
    */
@@ -52,19 +52,22 @@
 }
 
 body {
+    /* max-width: 1500px; */
+    margin: auto;
+    /* padding: 60px; */
     max-width: 1600px;
     margin: auto;
     background-color: var(--clr-white);
 
-    /* 
-     * Assigned default font family as "'Poppins', sans-serif". 
-     * Font family may vary in particular components. 
+    /*
+     * Assigned default font family as "'Poppins', sans-serif".
+     * Font family may vary in particular components.
      */
     font-family: var(--ff-primary);
 }
 
-/*   
-     * Resets default styles for basic HTML tags. 
+/*
+     * Resets default styles for basic HTML tags.
      * Assigned colors, font sizes, font family, padding, margin and size based on design.
 */
 blockquote::before,
@@ -165,8 +168,8 @@ button {
     padding: 12px 20px;
 }
 
-/* 
-     * Sets image default width and height as 100% as images can put inside a container with corresponding width and height. 
+/*
+     * Sets image default width and height as 100% as images can put inside a container with corresponding width and height.
      * "object-fit" property may vary according to image's aspect ratio and component structure.
 */
 img {
@@ -177,7 +180,7 @@ img {
     object-fit: contain;
 }
 
-/* 
+/*
     * A utility class for tab buttons.
     * Default colors and typography can be changed based on component needs.
 */
@@ -198,7 +201,7 @@ img {
     cursor: pointer;
 }
 
-/* 
+/*
      * A utility class for centering components horizontally.
 */
 .display__center {
