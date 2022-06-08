@@ -4,8 +4,31 @@
 }
 
 .footer_line_height {
-    line-height: 24px;
+    line-height: 24.26px;
     display: inline-block;
+}
+
+.mail_logo {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+.call_logo {
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+    vertical-align: middle;
+}
+.place_logo {
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+    vertical-align: middle;
+}
+
+.yo_yo {
+    display: flex;
 }
 
 .mail_logo {
