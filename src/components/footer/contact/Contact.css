@@ -1,46 +1,51 @@
-.footer__contact{
-      
-      text-align: left;
-      padding-top: 22px;
-      
-      }
-     
-.footer_line_height{
-
-      line-height: 24.26px;
-      display: inline-block;
+.footer__contact {
+    text-align: left;
+    padding-top: 22px;
 }
 
-
-.mail_logo{
-
-      width:28px;
-      height: 28px;
-     vertical-align: middle;
-     margin-right: 1rem;
-     
-      
-      
-}
-.call_logo{
-
-      width:28px;
-      height: 28px;
-      padding:0px;
-      vertical-align: middle;
-}
-.place_logo{
-
-      width:28px;
-      height: 28px;
-      padding:0px;
-      vertical-align: middle;
-      
-}   
-
-.yo_yo{
-      display: flex;
+.footer_line_height {
+    line-height: 24.26px;
+    display: inline-block;
 }
 
+.mail_logo {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-right: 1rem;
+}
+.call_logo {
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+    vertical-align: middle;
+}
+.place_logo {
+    width: 28px;
+    height: 28px;
+    padding: 0px;
+    vertical-align: middle;
+}
 
+.yo_yo {
+    display: flex;
+}
 
+.mail_logo {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+}
+.call_logo {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+}
+.place_logo {
+    width: 30px;
+    height: 30px;
+    padding: 0px;
+}
+.yo_yooo {
+    display: flex;
+}

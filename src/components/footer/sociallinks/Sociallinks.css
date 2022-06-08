@@ -1,20 +1,19 @@
-.social_links{
-      display: flex;
-      width: 150px;
-      height: 80px ;
-      justify-content:space-between ;
-      gap:1rem;
+.social_links {
+    display: flex;
+    width: 150px;
+    height: 80px;
+    justify-content: space-between;
+    gap: 1rem;
 }
-.Insta_logo{
- padding-left: 4px;
- 
+.Insta_logo {
+    padding-left: 4px;
 }
-.Twitter_logo{
-      padding-left: 4px;
-     }
-.Link_logo{
-      padding-left: 4px;
-     }
-.FB_logo{
-      padding-left: 4px;
-     }
+.Twitter_logo {
+    padding-left: 4px;
+}
+.Link_logo {
+    padding-left: 4px;
+}
+.FB_logo {
+    padding-left: 4px;
+}
