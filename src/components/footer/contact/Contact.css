@@ -1,10 +1,10 @@
 .footer__contact {
     text-align: left;
-    padding-top: 22px;
+    /* padding-top: 22px; */
 }
 
 .footer_line_height {
-    line-height: 24.26px;
+    line-height: 35px;
     display: inline-block;
 }
 
@@ -25,10 +25,10 @@
     height: 28px;
     padding: 0px;
     vertical-align: middle;
+    margin-right: 1rem;
 }
-
-.yo_yo {
-    display: flex;
+.place_address {
+    line-height: 23px;
 }
 
 .mail_logo {
@@ -46,6 +46,14 @@
     height: 30px;
     padding: 0px;
 }
-.yo_yooo {
+.contact_text {
     display: flex;
+}
+.contact_mail_logo_list {
+    display: block;
+    margin-bottom: 16px;
+}
+.contact_call_logo_list {
+    display: block;
+    margin-bottom: 16px;
 }

@@ -13,11 +13,11 @@ const Home = () => {
             <div>
                 <Header />
                 <br></br>
-                <Table />
             </div>
 
             <Search />
             <Highlights />
+            <Table />
             <Footer />
         </div>
     );
