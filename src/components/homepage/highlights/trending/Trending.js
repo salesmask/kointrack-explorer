@@ -1,14 +1,15 @@
 import React from 'react';
 import '../HighlightCards.css';
 import ReadMore from '../read-more/ReadMore';
-import TrendingIcon from '../../../../assests/homepage/highlights/trending/Tranding_Icon.png';
-import UpIcon from '../../../../assests/homepage/highlights/trending/Increase_Arrow.png';
-import DownIcon from '../../../../assests/homepage/highlights/trending/Decrease_Arrow.png';
+import TrendingIcon from '../../../../assets/homepage/highlights/trending/Tranding_Icon.png';
+import UpIcon from '../../../../assets/homepage/highlights/trending/Increase_Arrow.png';
+import DownIcon from '../../../../assets/homepage/highlights/trending/Decrease_Arrow.png';
 
 //Importing table icons
-import Satoshi from '../../../../assests/homepage/highlights/trending/Satoshi Token_Icon.svg';
-import Spice from '../../../../assests/homepage/highlights/trending/Spice Trade_Icon.svg';
-import Terra from '../../../../assests/homepage/highlights/trending/Terra Classic_Icon.svg';
+import Satoshi from '../../../../assets/homepage/highlights/trending/Satoshi Token_Icon.svg';
+import Spice from '../../../../assets/homepage/highlights/trending/Spice Trade_Icon.svg';
+import Terra from '../../../../assets/homepage/highlights/trending/Terra Classic_Icon.svg';
+import { Link } from 'react-router-dom';
 
 const Gainers = () => {
     return (
@@ -34,24 +35,26 @@ const Gainers = () => {
             <table className="highlights__table">
                 <tbody>
                     <tr>
-                        <td className="slno">01</td>
-                        <td className="image">
-                            <img
-                                src={Satoshi}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">Terra Classic</td>
-                        <td className="symbol">LUNC</td>
-                        <td className="percent__change display__center">
-                            <img
-                                src={UpIcon}
-                                alt="icon"
-                                className="percent__change--upicon"
-                            />
-                            <span>10.82%</span>
-                        </td>
+                        <Link to="/coindetails">
+                            <td className="slno">01</td>
+                            <td className="image">
+                                <img
+                                    src={Satoshi}
+                                    alt="icon"
+                                    className="image__icon"
+                                />
+                            </td>
+                            <td className="name">Terra Classic</td>
+                            <td className="symbol">LUNC</td>
+                            <td className="percent__change display__center">
+                                <img
+                                    src={UpIcon}
+                                    alt="icon"
+                                    className="percent__change--upicon"
+                                />
+                                <span>10.82%</span>
+                            </td>
+                        </Link>
                     </tr>
                     <tr>
                         <td className="slno">02</td>

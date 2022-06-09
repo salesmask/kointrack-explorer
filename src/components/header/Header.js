@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Header.css';
-import header_logo from '../../assests/header/Header_Logo.png';
-import header_search_icon from '../../assests/header/Header_Search_Icon.png';
+import header_logo from '../../assets/header/Header_Logo.png';
+import header_search_icon from '../../assets/header/Header_Search_Icon.png';
 
 const Header = () => {
     return (

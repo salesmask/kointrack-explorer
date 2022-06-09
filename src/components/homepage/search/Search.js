@@ -1,7 +1,7 @@
 import React from 'react';
 import './Search.css';
-import SearchIcon from '../../../assests/homepage/search/Search_Icon.svg';
-import DownIcon from '../../../assests/homepage/search/Decrease_Arrow.svg';
+import SearchIcon from '../../../assets/homepage/search/Search_Icon.svg';
+import DownIcon from '../../../assets/homepage/search/Decrease_Arrow.svg';
 
 const Search = () => {
     return (
