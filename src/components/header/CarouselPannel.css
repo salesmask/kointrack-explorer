@@ -1,0 +1,56 @@
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.slide__panel {
+    font-family: var(--ff-primary);
+}
+
+.slider__view {
+    background-image: url('../../assests/header/Header_BG_with_vector.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+}
+
+.dot {
+    display: flex;
+    gap: 4rem;
+    background: #fff;
+    border-radius: 2rem !important;
+}
+
+.dot.selected {
+    border-radius: 10px !important;
+}
+
+.content__h1 {
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    padding-top: 18rem;
+    width: 60%;
+    padding-left: 60px;
+    text-align: left;
+}
+
+.content__p {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 60px;
+    text-align: justify;
+
+    width: 50%;
+    color: #ffffff;
+}
