@@ -56,6 +56,7 @@ body {
     margin: auto;
     /* padding: 60px; */
     max-width: 1600px;
+    overflow-x: hidden;
     margin: auto;
     background-color: var(--clr-white);
 
@@ -111,6 +112,9 @@ a:hover {
 ol,
 ul {
     list-style: none;
+}
+ul {
+    padding: 0;
 }
 li {
     list-style-type: none;
