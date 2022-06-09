@@ -10,32 +10,37 @@ const Contact = () => {
             <ul>
                 <h3 className="footer_heading">Contact</h3>
                 <div className="footer_line_height">
-                    <li>
+                    <li className="contact_mail_logo_list">
                         <a href="">
                             <img
                                 src={Mail_Logo}
                                 className="mail_logo"
                             />
-                            info@kaudi.com
+                            <span>info@kaudi.com</span>
                         </a>
                     </li>
-                    <li>
+                    <li className="contact_call_logo_list">
                         <a href="">
                             <img
                                 src={Call_Logo}
                                 className="call_logo"
                             />{' '}
-                            +91-1234567890
+                            <span>+91-1234567890</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="">
+                    <li className="contact_place_logo_list">
+                        <a
+                            href=""
+                            className="contact_text"
+                        >
                             <img
                                 src={Place}
                                 className="place_logo"
                             />{' '}
-                            465, Lorem Ipsum is simply 171 dummy text of the
-                            printing and type industry.
+                            <div className="place_address">
+                                465, Lorem Ipsum is simply 171 dummy text of the
+                                printing and type industry.
+                            </div>
                         </a>
                     </li>
                 </div>
