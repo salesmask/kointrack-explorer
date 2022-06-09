@@ -1,14 +1,14 @@
 import React from 'react';
 import '../HighlightCards.css';
 import ReadMore from '../read-more/ReadMore';
-import RecentlyAddedIcon from '../../../../assests/homepage/highlights/recently-added/Recently_Added_Icon.svg';
-import UpIcon from '../../../../assests/homepage/highlights/recently-added/Increase_Arrow.png';
-import DownIcon from '../../../../assests/homepage/highlights/recently-added/Decrease_Arrow.png';
+import RecentlyAddedIcon from '../../../../assets/homepage/highlights/recently-added/Recently_Added_Icon.svg';
+import UpIcon from '../../../../assets/homepage/highlights/recently-added/Increase_Arrow.png';
+import DownIcon from '../../../../assets/homepage/highlights/recently-added/Decrease_Arrow.png';
 
 //Importing table icons
-import Calas from '../../../../assests/homepage/highlights/recently-added/Calaswap_Icon.svg';
-import Rare from '../../../../assests/homepage/highlights/recently-added/Rare Ball Shares_Icon.svg';
-import Star from '../../../../assests/homepage/highlights/recently-added/Star Chain_Icon.svg';
+import Calas from '../../../../assets/homepage/highlights/recently-added/Calaswap_Icon.svg';
+import Rare from '../../../../assets/homepage/highlights/recently-added/Rare Ball Shares_Icon.svg';
+import Star from '../../../../assets/homepage/highlights/recently-added/Star Chain_Icon.svg';
 
 const Gainers = () => {
     return (
