@@ -1,0 +1,11 @@
+.highlights__readmore-button {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    font-size: var(--fs-tab-small);
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.readmore__angle {
+    font-size: 2rem;
+}
