@@ -1,15 +1,33 @@
-.table__container--wrapper {
+.table__container--main {
     background-color: var(--clr-white);
     border: 1px solid var(--clr-card-outline);
     border-radius: 10px;
     margin: 60px 60px;
 }
 
+.table__container--wrapper {
+    background-color: var(--clr-white);
+
+    margin: 0px 8px 0px 8px;
+}
+
 .table__main {
     width: 100%;
 }
 .table__head {
-    box-shadow: 0px 0.7px 0px 0px var(--clr-card-outline);
+    /* box-shadow: 0px 0.7px 0px 0px var(--clr-card-outline); */
+    position: relative;
+}
+.table__head::after {
+    content: '';
+    width: 101.3%;
+    /* height: 10px; */
+    box-shadow: 0px 0.2px 0px 0.1px #1e202b;
+    /* background-color: #1E202B; */
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .table__head--row {
@@ -32,6 +50,10 @@
     font-size: 15px;
 }
 
+.table__head--font:last-child {
+    padding-left: 40px;
+}
+
 .table__font--name {
     font-weight: 500;
     font-size: 15px;
@@ -48,7 +70,9 @@
 }
 
 .font__size {
-    font-weight: 500;
+    font-weight: 400;
+    font-size: 12.5px;
+    color: #1e202b;
 }
 
 .font__fade {
@@ -58,7 +82,8 @@
 
 .watchlist__star {
     width: 18px;
-    margin-right: 11px;
+    margin-right: 9px;
+    margin-left: 11px;
 }
 
 .buy__button {
@@ -81,11 +106,12 @@
 
 .downarrow__image {
     width: 18px;
-    margin-right: 5px;
+    margin-right: 6px;
+    margin-left: 3px;
 }
 
 .spacing {
-    margin-right: 11px;
+    margin-right: 6px;
 }
 
 .spacing__btc {
@@ -93,11 +119,29 @@
 }
 
 .graph__image {
+    padding-top: 2px;
+    padding-bottom: 2px;
     width: 140px;
 
-    margin-right: 11px;
+    padding-left: 40px;
 }
 
 .more__icon {
-    width: 30px;
+    width: 25px;
+    margin-left: 6%;
+}
+
+.custom__range--bar {
+    background-color: #dfe2e6;
+    margin-top: 6px;
+    width: 80%;
+    height: 6px;
+    border-radius: 7px 7px 7px 7px;
+}
+
+.custom__range--bar .range {
+    background-image: linear-gradient(to right, #33b868, #33b868);
+    height: 100%;
+    width: 50%;
+    border-radius: 6px 0 0 6px;
 }

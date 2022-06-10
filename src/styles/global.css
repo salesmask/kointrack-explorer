@@ -203,6 +203,12 @@ img {
     align-items: center;
     white-space: nowrap;
     cursor: pointer;
+    transition: 150ms ease-in;
+}
+
+.tab__button:hover {
+    background-color: #dad7d7;
+    color: var(--clr-white);
 }
 
 /*

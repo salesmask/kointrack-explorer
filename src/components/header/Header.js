@@ -20,10 +20,7 @@ const Header = () => {
                     </div>
                     <div>
                         <select className="select__coin">
-                            <option
-                                selected
-                                value="coin"
-                            >
+                            <option defaultValue="coin">
                                 <a
                                     className="nav-link"
                                     href="#"
@@ -76,10 +73,7 @@ const Header = () => {
                     </div>
                     <div>
                         <select className="select__product">
-                            <option
-                                selected
-                                value="portfolio"
-                            >
+                            <option defaultValue="portfolio">
                                 <a
                                     className="nav-link"
                                     href="#"
