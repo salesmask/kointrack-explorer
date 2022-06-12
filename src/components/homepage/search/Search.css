@@ -1,51 +1,30 @@
-.home__search {
-    /* border: 1px solid; */
-    text-align: center;
-    /* padding needs to change later... */
-    padding: 2rem;
-    margin-bottom: 3rem;
-}
-
 .home__search--heading {
-    font-style: normal;
     margin-bottom: 7px;
     color: var(--clr-text);
 }
-.home__search--description {
-    color: var(--clr-gray-text);
-    font-size: 1.8rem;
-    font-weight: 500;
-    /* margin-bottom: 4rem; */
-}
-.home__search--description .change__wrapper {
-    /* border: 1px solid; */
-    margin: 0 1ch;
-}
-.home__search--description .arrow_icon {
-    width: 18px;
-    margin-bottom: -4px;
-}
+.home__search--description,
 .home__search--description .price__change {
-    color: var(--clr-down);
     font-size: 1.8rem;
     font-weight: 500;
 }
 
-/* search bar */
-.search__main--wrapper {
-    margin-top: 4rem;
+.home__search--description {
+    color: var(--clr-gray-text);
 }
+.home__search--description .arrow_icon {
+    width: 18px;
+}
+.home__search--description .price__change {
+    color: var(--clr-down);
+}
+
 .search__wrapper {
-    margin: auto;
     box-shadow: 0px 0px 20px rgba(21, 26, 51, 0.2);
-    width: 60vw;
+    width: 75rem;
     position: relative;
-    border-radius: 100px;
 }
 .search__input {
-    width: 100%;
-    border-radius: 100px;
-    padding: 1.8rem 2.6rem;
+    padding: 1.5rem 2.6rem;
     font-size: 1.6rem;
     color: var(--clr-text);
 }
@@ -60,5 +39,66 @@
     background-color: var(--clr-primary);
     height: 54px;
     width: 95px;
-    cursor: pointer;
+}
+
+/* Corresponding screen width according to bootstrap md screens */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .home__search--heading {
+        font-size: 2.4rem;
+    }
+    .home__search--description,
+    .home__search--description .price__change {
+        font-size: 1.4rem;
+    }
+    .search__wrapper {
+        width: 55rem;
+    }
+}
+
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .home__search--heading {
+        font-size: 2rem;
+    }
+    .home__search--description,
+    .home__search--description .price__change {
+        font-size: 1.2rem;
+    }
+    .search__wrapper {
+        width: 47rem;
+    }
+    .search__input {
+        padding: 1.2rem 2rem;
+        font-size: 1.2rem;
+    }
+    .search__button {
+        padding: 1rem 1.4rem;
+        height: 41px;
+        width: 68px;
+    }
+}
+
+/* Corresponding screen width according to bootstrap smaller than sm screens */
+
+@media screen and (max-width: 576px) {
+    .home__search--heading {
+        font-size: 1.4rem;
+    }
+    .home__search--description,
+    .home__search--description .price__change {
+        font-size: 1rem;
+    }
+    .search__wrapper {
+        width: 33rem;
+    }
+    .search__input {
+        padding: 1rem 1.6rem;
+        font-size: 1rem;
+    }
+    .search__button {
+        height: 35px;
+        width: 60px;
+    }
 }
