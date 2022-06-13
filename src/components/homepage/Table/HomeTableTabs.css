@@ -1,0 +1,56 @@
+.editables__container {
+    margin: 0 6rem;
+}
+.editables__tab {
+    padding: 8px 14px !important;
+    font-weight: 500 !important;
+    gap: 1rem;
+}
+.tab__container {
+    gap: 2rem;
+    margin: 0 6rem;
+}
+.react-tabs__tab {
+    margin-right: 2rem;
+    padding: 1rem 1.8rem !important;
+}
+.react-tabs__tab-list::-webkit-scrollbar {
+    display: none;
+}
+
+.editables__container::-webkit-scrollbar {
+    display: none;
+}
+.react-tabs__tab--selected {
+    color: #ffff !important;
+    background-color: #2b50ff !important;
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .editables__container {
+        margin: 0 4rem;
+    }
+    .tab__container {
+        gap: 1.5rem;
+        margin: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .editables__container {
+        margin: 0 2rem;
+    }
+    .tab__container {
+        gap: 1rem;
+        margin: 0 2rem;
+    }
+    .editables__tab {
+        padding: 8px 14px !important;
+        font-weight: 500 !important;
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+    .editables__tab--image {
+        width: 16px;
+    }
+}
