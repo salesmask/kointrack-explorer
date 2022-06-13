@@ -1,131 +1,63 @@
 import React, { useState, useRef, useEffect } from 'react';
-import './Header.css';
+
+// import './Header.css';
 import header_logo from '../../assests/header/Header_Logo.png';
 import header_search_icon from '../../assests/header/Header_Search_Icon.png';
 
 const Header = () => {
     return (
         <div>
-            <div className="header__container">
-                <div className="header__box">
-                    <div className="header__logo">
-                        <img
-                            src={header_logo}
-                            alt="Kointrack"
-                        />
-                        <a
-                            className="nav-link"
-                            href="#"
-                        ></a>
-                    </div>
-                    <div>
-                        <select className="select__coin">
-                            <option defaultValue="coin">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Coin
-                                </a>
-                            </option>
-                            <option value="">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                            <option value="coconut">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                            <option value="mango">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                        </select>
-                    </div>
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+                <div class="container">
+                    <a
+                        href="#"
+                        class="navbar-brand"
+                    >
+                        Frontend Bootcamp
+                    </a>
 
-                    <div>
-                        <a
-                            className="nav-link"
-                            href="#"
-                        >
-                            Exchange
-                        </a>
-                    </div>
-                    <div>
-                        <a
-                            className="nav-link"
-                            href="#"
-                        >
-                            Portfolio
-                        </a>
-                    </div>
-                    <div>
-                        <select className="select__product">
-                            <option defaultValue="portfolio">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Products
-                                </a>
-                            </option>
-                            <option value="">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                            <option value="coconut">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                            <option value="mango">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                        </select>
-                    </div>
-                    <div className="left__headerwrapper">
-                        <div>
-                            <img
-                                src={header_search_icon}
-                                alt="header-icon"
-                            ></img>
-                        </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navmenu"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                        <div className="sign__up display__center">
-                            <a href="#">Sign Up</a>
-                        </div>
-
-                        <div className="log__in display__center">
-                            <a href="#">Log In </a>
-                        </div>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navmenu"
+                    >
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a
+                                    href="#learn"
+                                    class="nav-link"
+                                >
+                                    What You'll Learn
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    href="#questions"
+                                    class="nav-link"
+                                >
+                                    Questions
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    href="#instructors"
+                                    class="nav-link"
+                                >
+                                    Instructors
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <hr className="hr"></hr>
-            </div>
+            </nav>
         </div>
     );
 };

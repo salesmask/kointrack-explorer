@@ -8,6 +8,10 @@
     background-size: cover;
 }
 
+.carousel .control-dots .dot {
+    width: 50px !important;
+}
+
 .slide__panel {
     font-family: var(--ff-primary);
 }
