@@ -45,7 +45,7 @@ const Gainers = () => {
                             to="/coindetails"
                             className="w-100"
                         >
-                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                            <td className="w-100 d-flex justify-content-between align-items-center border-bottom-0">
                                 <div className="d-flex justify-content-center align-items-center">
                                     <span className="highlights__currency--slno px-2">
                                         01
