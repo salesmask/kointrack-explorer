@@ -7,6 +7,7 @@ import './Home.css';
 import Search from './search/Search';
 import Footer from '../footer/Footer';
 import CarouselPannel from '../header/CarouselPannel';
+// import Banner from './banner/Banner';
 
 const Home = () => {
     return (
@@ -14,7 +15,7 @@ const Home = () => {
             <div>
                 <Header />
                 <CarouselPannel />
-                <br></br>
+                {/* <Banner /> */}
             </div>
 
             <Search />
