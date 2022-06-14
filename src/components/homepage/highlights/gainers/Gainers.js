@@ -1,26 +1,28 @@
 import React from 'react';
-import '../HighlightCards.css';
+import { Link } from 'react-router-dom';
+
+// import '../HighlightCards.css';
 import ReadMore from '../read-more/ReadMore';
-import GainerIcon from '../../../../assests/homepage/highlights/gainers/Gainers_Icon.svg';
-import UpIcon from '../../../../assests/homepage/highlights/gainers/Increase_Arrow.png';
-import DownIcon from '../../../../assests/homepage/highlights/gainers/Decrease_Arrow.png';
+import GainerIcon from '../../../../assets/homepage/highlights/gainers/Gainers_Icon.svg';
+import UpIcon from '../../../../assets/homepage/highlights/gainers/Increase_Arrow.svg';
+import DownIcon from '../../../../assets/homepage/highlights/gainers/Decrease_Arrow.svg';
 
 //Importing table icons
-import Road from '../../../../assests/homepage/highlights/gainers/ROAD_Icon.svg';
-import Sweet from '../../../../assests/homepage/highlights/gainers/Sweet SOL_Icon.svg';
-import TNC from '../../../../assests/homepage/highlights/gainers/TNC Coin_Icon.svg';
+import Road from '../../../../assets/homepage/highlights/gainers/ROAD_Icon.svg';
+import Sweet from '../../../../assets/homepage/highlights/gainers/Sweet SOL_Icon.svg';
+import TNC from '../../../../assets/homepage/highlights/gainers/TNC Coin_Icon.svg';
 
 const Gainers = () => {
     return (
         <section className="highlights__card--wrapper">
             {/* Heading section */}
 
-            <div className="highlights__heading">
-                <div className="highlights__title display__center">
+            <div className="highlights__heading container-fluid d-flex justify-content-between align-items-center py-3 px-4">
+                <div className="highlights__title d-flex justify-content-center align-items-center">
                     <img
                         src={GainerIcon}
                         alt="icon"
-                        className="highlights__title-icon"
+                        className="highlights__title-icon me-3"
                     />
                     <span>Biggest Gainers</span>
                 </div>
@@ -31,147 +33,313 @@ const Gainers = () => {
 
             {/* Table section */}
 
-            <table className="highlights__table">
-                <tbody>
-                    <tr>
-                        <td className="slno">01</td>
-                        <td className="image">
-                            <img
-                                src={Road}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">ROAD</td>
-                        <td className="symbol">ROAD</td>
-                        <td className="percent__change display__center">
-                            <img
-                                src={UpIcon}
-                                alt="icon"
-                                className="percent__change--upicon"
-                            />
-                            <span>10.82%</span>
-                        </td>
+            <table className="highlights__table table mx-auto mb-0">
+                <tbody className="d-block mt-3">
+                    {/* Row one */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className="w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        01
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Road}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        ROAD
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        ROAD
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <img
+                                        src={UpIcon}
+                                        alt="icon"
+                                        className="percent__change--upicon pe-2"
+                                    />
+                                    <span className="percent__change--value-up">
+                                        10.82%
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">02</td>
-                        <td className="image">
-                            <img
-                                src={Sweet}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">Sweet SOL</td>
-                        <td className="symbol">SSOL</td>
-                        <td className="percent__change display__center">
-                            <img
-                                src={UpIcon}
-                                alt="icon"
-                                className="percent__change--upicon"
-                            />
-                            <span>11.1%</span>
-                        </td>
+
+                    {/* Row two */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        02
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Sweet}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        Sweet SOL
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        SSOL
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <img
+                                        src={UpIcon}
+                                        alt="icon"
+                                        className="percent__change--upicon pe-2"
+                                    />
+                                    <span className="percent__change--value-up">
+                                        11.1%
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">03</td>
-                        <td className="image">
-                            <img
-                                src={Road}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">ROAD</td>
-                        <td className="symbol">ROAD</td>
-                        <td className="percent__change display__center">
-                            <img
-                                src={UpIcon}
-                                alt="icon"
-                                className="percent__change--upicon"
-                            />
-                            <span>10.82%</span>
-                        </td>
+
+                    {/* Row three */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        03
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Road}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        ROAD
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        ROAD
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <img
+                                        src={UpIcon}
+                                        alt="icon"
+                                        className="percent__change--upicon pe-2"
+                                    />
+                                    <span className="percent__change--value-up">
+                                        10.82%
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">04</td>
-                        <td className="image">
-                            <img
-                                src={Sweet}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">Sweet SOL</td>
-                        <td className="symbol">SSOL</td>
-                        <td className="percent__change display__center">
-                            <img
-                                src={UpIcon}
-                                alt="icon"
-                                className="percent__change--upicon"
-                            />
-                            <span>11.1%</span>
-                        </td>
+
+                    {/* Row four */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        04
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Sweet}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        Sweet SOL
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        SSOL
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <img
+                                        src={UpIcon}
+                                        alt="icon"
+                                        className="percent__change--upicon pe-2"
+                                    />
+                                    <span className="percent__change--value-up">
+                                        11.1%
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">05</td>
-                        <td className="image">
-                            <img
-                                src={TNC}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">TNC Coin</td>
-                        <td className="symbol">TNC</td>
-                        <td className="percent__change display__center">
-                            <img
-                                src={UpIcon}
-                                alt="icon"
-                                className="percent__change--upicon"
-                            />
-                            <span>8.45%</span>
-                        </td>
+
+                    {/* Row five */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        05
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={TNC}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        TNC Coin
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        TNC
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <img
+                                        src={UpIcon}
+                                        alt="icon"
+                                        className="percent__change--upicon pe-2"
+                                    />
+                                    <span className="percent__change--value-up">
+                                        8.45%
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">06</td>
-                        <td className="image">
-                            <img
-                                src={Road}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">ROAD</td>
-                        <td className="symbol">ROAD</td>
-                        <td className="percent__change display__center">
-                            <img
-                                src={UpIcon}
-                                alt="icon"
-                                className="percent__change--upicon"
-                            />
-                            <span>10.82%</span>
-                        </td>
+
+                    {/* Row six */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        06
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Road}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        ROAD
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        ROAD
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <img
+                                        src={UpIcon}
+                                        alt="icon"
+                                        className="percent__change--upicon pe-2"
+                                    />
+                                    <span className="percent__change--value-up">
+                                        10.82%
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">07</td>
-                        <td className="image">
-                            <img
-                                src={TNC}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">TNC Coin</td>
-                        <td className="symbol">TNC</td>
-                        <td className="percent__change display__center">
-                            <img
-                                src={UpIcon}
-                                alt="icon"
-                                className="percent__change--upicon"
-                            />
-                            <span>8.45%</span>
-                        </td>
+
+                    {/* Row seven */}
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        07
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={TNC}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        TNC Coin
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        TNC
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <img
+                                        src={UpIcon}
+                                        alt="icon"
+                                        className="percent__change--upicon pe-2"
+                                    />
+                                    <span className="percent__change--value-up">
+                                        8.45%
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
                 </tbody>
             </table>

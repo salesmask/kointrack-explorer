@@ -1,26 +1,26 @@
 import React from 'react';
-import '../HighlightCards.css';
+import { Link } from 'react-router-dom';
+
+// import '../HighlightCards.css';
 import ReadMore from '../read-more/ReadMore';
-import RecentlyAddedIcon from '../../../../assests/homepage/highlights/recently-added/Recently_Added_Icon.svg';
-import UpIcon from '../../../../assests/homepage/highlights/recently-added/Increase_Arrow.png';
-import DownIcon from '../../../../assests/homepage/highlights/recently-added/Decrease_Arrow.png';
+import RecentlyAddedIcon from '../../../../assets/homepage/highlights/recently-added/Recently_Added_Icon.svg';
 
 //Importing table icons
-import Calas from '../../../../assests/homepage/highlights/recently-added/Calaswap_Icon.svg';
-import Rare from '../../../../assests/homepage/highlights/recently-added/Rare Ball Shares_Icon.svg';
-import Star from '../../../../assests/homepage/highlights/recently-added/Star Chain_Icon.svg';
+import Calas from '../../../../assets/homepage/highlights/recently-added/Calaswap_Icon.svg';
+import Rare from '../../../../assets/homepage/highlights/recently-added/Rare Ball Shares_Icon.svg';
+import Star from '../../../../assets/homepage/highlights/recently-added/Star Chain_Icon.svg';
 
-const Gainers = () => {
+const RecentlyAdded = () => {
     return (
         <section className="highlights__card--wrapper">
             {/* Heading section */}
 
-            <div className="highlights__heading">
-                <div className="highlights__title display__center">
+            <div className="highlights__heading container-fluid d-flex justify-content-between align-items-center py-3 px-4">
+                <div className="highlights__title d-flex justify-content-center align-items-center">
                     <img
                         src={RecentlyAddedIcon}
                         alt="icon"
-                        className="highlights__title-icon"
+                        className="highlights__title-icon me-3"
                     />
                     <span>Recently Added</span>
                 </div>
@@ -31,119 +31,278 @@ const Gainers = () => {
 
             {/* Table section */}
 
-            <table className="highlights__table">
-                <tbody>
-                    <tr>
-                        <td className="slno">01</td>
-                        <td className="image">
-                            <img
-                                src={Calas}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">Calaswap</td>
-                        <td className="symbol">CLS</td>
-                        <td className="percent__change display__center">
-                            {/* <img src={UpIcon} alt="icon" className='percent__change--upicon'/> */}
-                            <span id="recently__added--price">$0.09051</span>
-                        </td>
+            <table className="highlights__table table mx-auto mb-0">
+                <tbody className="d-block mt-3">
+                    {/* Row one */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        01
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Calas}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        Calaswap
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        CLS
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="recently__added--price">
+                                        $0.09051
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">02</td>
-                        <td className="image">
-                            <img
-                                src={Rare}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">Rare Ball Shares</td>
-                        <td className="symbol">RBS</td>
-                        <td className="percent__change display__center">
-                            {/* <img src={UpIcon} alt="icon" className='percent__change--upicon'/> */}
-                            <span id="recently__added--price">$0.8906</span>
-                        </td>
+
+                    {/* Row two */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        02
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Rare}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        Rare Ball Shares
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        RBS
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="recently__added--price">
+                                        $0.8906
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">03</td>
-                        <td className="image">
-                            <img
-                                src={Star}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">Star Chain</td>
-                        <td className="symbol">START1</td>
-                        <td className="percent__change display__center">
-                            {/* <img src={UpIcon} alt="icon" className='percent__change--upicon'/> */}
-                            <span id="recently__added--price">$0.1359</span>
-                        </td>
+
+                    {/* Row three */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        03
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Star}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        Star Chain
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        START1
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="recently__added--price">
+                                        $0.1359
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">04</td>
-                        <td className="image">
-                            <img
-                                src={Calas}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">Calaswap</td>
-                        <td className="symbol">CLS</td>
-                        <td className="percent__change display__center">
-                            {/* <img src={UpIcon} alt="icon" className='percent__change--upicon'/> */}
-                            <span id="recently__added--price">$0.09051</span>
-                        </td>
+
+                    {/* Row four */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        04
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Calas}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        Calaswap
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        CLS
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="recently__added--price">
+                                        $0.09051
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">05</td>
-                        <td className="image">
-                            <img
-                                src={Rare}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">Rare Ball SharesRBS</td>
-                        <td className="symbol">RBS</td>
-                        <td className="percent__change display__center">
-                            {/* <img src={UpIcon} alt="icon" className='percent__change--upicon'/> */}
-                            <span id="recently__added--price">$0.8906</span>
-                        </td>
+
+                    {/* Row five */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        05
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Rare}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        Rare Ball SharesRBS
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        RBS
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="recently__added--price">
+                                        $0.8906
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">06</td>
-                        <td className="image">
-                            <img
-                                src={Star}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">Star Chain</td>
-                        <td className="symbol">STAR1</td>
-                        <td className="percent__change display__center">
-                            {/* <img src={UpIcon} alt="icon" className='percent__change--upicon'/> */}
-                            <span id="recently__added--price">$0.1359</span>
-                        </td>
+
+                    {/* Row six */}
+
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        06
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Star}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        Star Chain
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        STAR1
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="recently__added--price">
+                                        $0.1359
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
-                    <tr>
-                        <td className="slno">07</td>
-                        <td className="image">
-                            <img
-                                src={Calas}
-                                alt="icon"
-                                className="image__icon"
-                            />
-                        </td>
-                        <td className="name">Calaswap</td>
-                        <td className="symbol">CLS</td>
-                        <td className="percent__change display__center">
-                            {/* <img src={UpIcon} alt="icon" className='percent__change--upicon'/> */}
-                            <span id="recently__added--price">$0.09051</span>
-                        </td>
+
+                    {/* Row seven */}
+                    <tr
+                        className="w-100 d-flex justify-content-center align-items-center mb-3 border-bottom-0"
+                        role="button"
+                    >
+                        <Link
+                            to="/coindetails"
+                            className="w-100"
+                        >
+                            <td className=" w-100 d-flex justify-content-between align-items-center border-bottom-0">
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="highlights__currency--slno px-2">
+                                        07
+                                    </span>
+                                    <span className="pe-2">
+                                        <img
+                                            src={Calas}
+                                            alt="icon"
+                                            className="highlights__image-icon "
+                                        />
+                                    </span>
+                                    <span className="highlights__currency--name pe-2">
+                                        Calaswap
+                                    </span>
+                                    <span className="highlights__currency--symbol d-none d-sm-block  d-lg-none d-xl-block">
+                                        CLS
+                                    </span>
+                                </div>
+
+                                <div className="d-flex justify-content-center align-items-center">
+                                    <span className="recently__added--price">
+                                        $0.09051
+                                    </span>
+                                </div>
+                            </td>
+                        </Link>
                     </tr>
                 </tbody>
             </table>
@@ -151,4 +310,4 @@ const Gainers = () => {
     );
 };
 
-export default Gainers;
+export default RecentlyAdded;

@@ -1,12 +1,12 @@
 import React from 'react';
 import TableTab from './TableTab';
 import './Table.css';
-import Watchlist_Outline from '../../../assests/table/Watchlist_Outline.svg';
-import Bitcoin from '../../../assests/table/Bitcoin.svg';
-import Decrease_Arrow from '../../../assests/table/Decrease_Arrow.svg';
-import Increase_Arrow from '../../../assests/table/Increase_Arrow.svg';
-import Grapgh from '../../../assests/table/Grapgh.svg';
-import More_Icon from '../../../assests/table/More_Icon.svg';
+import Watchlist_Outline from '../../../assets/table/Watchlist_Outline.svg';
+import Bitcoin from '../../../assets/table/Bitcoin.svg';
+import Decrease_Arrow from '../../../assets/table/Decrease_Arrow.svg';
+import Increase_Arrow from '../../../assets/table/Increase_Arrow.svg';
+import Grapgh from '../../../assets/table/Grapgh.svg';
+import More_Icon from '../../../assets/table/More_Icon.svg';
 
 export default function Table() {
     return (

@@ -1,63 +1,109 @@
 import React, { useState, useRef, useEffect } from 'react';
-
-// import './Header.css';
-import header_logo from '../../assests/header/Header_Logo.png';
-import header_search_icon from '../../assests/header/Header_Search_Icon.png';
+import './Header.css';
+import header_logo from '../../assets/header/Header_Logo.svg';
+import header_search_icon from '../../assets/header/Header_Search_Icon.svg';
+import {
+    NavbarBrand,
+    Navbar,
+    Nav,
+    NavDropdown,
+    Container,
+    Button,
+    Form,
+} from 'react-bootstrap';
 
 const Header = () => {
     return (
         <div>
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
-                <div class="container">
-                    <a
-                        href="#"
-                        class="navbar-brand"
+            <Navbar
+                fluid
+                className="header__container  mx-auto"
+                expand="lg"
+            >
+                <Container className="header__box mx-auto">
+                    <Navbar.Brand
+                        className="navbar__band"
+                        href="#home"
                     >
-                        Frontend Bootcamp
-                    </a>
+                        <img
+                            src={header_logo}
+                            alt=""
+                        ></img>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto nav__content">
+                            <NavDropdown
+                                className="header__text"
+                                title="Coins"
+                                id="basic-nav-dropdown"
+                            >
+                                <NavDropdown.Item href="#action/3.1">
+                                    Exchanges
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">
+                                    Portfolio
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">
+                                    Something
+                                </NavDropdown.Item>
 
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navmenu"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                                <NavDropdown.Item href="#action/3.4">
+                                    Separated link
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link href="#home">Exchanges</Nav.Link>
+                            <Nav.Link href="#link">Portfolio</Nav.Link>
+                            <NavDropdown
+                                title="Products"
+                                id="basic-nav-dropdown"
+                            >
+                                <NavDropdown.Item href="#action/3.1">
+                                    Products
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">
+                                    Another action
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">
+                                    Something
+                                </NavDropdown.Item>
 
-                    <div
-                        class="collapse navbar-collapse"
-                        id="navmenu"
-                    >
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
+                                <NavDropdown.Item href="#action/3.4">
+                                    Separated link
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
+
+                        <Form className="navbar__form navbar-nav">
+                            <div class="search-box">
+                                <input
+                                    class="search-text"
+                                    type="text"
+                                    placeholder="Search Anything"
+                                ></input>
                                 <a
-                                    href="#learn"
-                                    class="nav-link"
+                                    href="#"
+                                    class="search-btn"
                                 >
-                                    What You'll Learn
+                                    <img
+                                        src={header_search_icon}
+                                        alt=""
+                                    ></img>
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    href="#questions"
-                                    class="nav-link"
-                                >
-                                    Questions
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a
-                                    href="#instructors"
-                                    class="nav-link"
-                                >
-                                    Instructors
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+                            </div>
+                            <div className="header__button">
+                                <button className="sign__up display__center ">
+                                    Sign Up
+                                </button>
+                                <button className="log__in display__center">
+                                    Log In
+                                </button>
+                            </div>
+                        </Form>
+                    </Navbar.Collapse>
+                </Container>
+                <NavDropdown.Divider />
+            </Navbar>
         </div>
     );
 };

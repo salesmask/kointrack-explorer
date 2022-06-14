@@ -50,13 +50,14 @@
 
     --ff-primary: 'Poppins', sans-serif;
 }
+html {
+    overflow-x: hidden;
+}
 
 body {
-    /* max-width: 1500px; */
     margin: auto;
-    /* padding: 60px; */
     max-width: 1600px;
-    margin: auto;
+    overflow-x: hidden;
     background-color: var(--clr-white);
 
     /*
@@ -89,14 +90,10 @@ q {
 }
 
 table {
-    border-collapse: separate;
-    border-spacing: 0px 10px;
-}
-thead {
-    height: 54px;
+    border-collapse: collapse;
 }
 tr {
-    height: 44px;
+    padding: 0.5rem 0;
     background-color: var(--clr-table-row);
 }
 
@@ -111,6 +108,9 @@ a:hover {
 ol,
 ul {
     list-style: none;
+}
+ul {
+    padding: 0;
 }
 li {
     list-style-type: none;
