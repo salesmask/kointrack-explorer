@@ -1,131 +1,109 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Header.css';
-import header_logo from '../../assets/header/Header_Logo.png';
-import header_search_icon from '../../assets/header/Header_Search_Icon.png';
+import header_logo from '../../assets/header/Header_Logo.svg';
+import header_search_icon from '../../assets/header/Header_Search_Icon.svg';
+import {
+    NavbarBrand,
+    Navbar,
+    Nav,
+    NavDropdown,
+    Container,
+    Button,
+    Form,
+} from 'react-bootstrap';
 
 const Header = () => {
     return (
         <div>
-            <div className="header__container">
-                <div className="header__box">
-                    <div className="header__logo">
+            <Navbar
+                fluid
+                className="header__container  mx-auto"
+                expand="lg"
+            >
+                <Container className="header__box mx-auto">
+                    <Navbar.Brand
+                        className="navbar__band"
+                        href="#home"
+                    >
                         <img
                             src={header_logo}
-                            alt="Kointrack"
-                        />
-                        <a
-                            className="nav-link"
-                            href="#"
-                        ></a>
-                    </div>
-                    <div>
-                        <select className="select__coin">
-                            <option defaultValue="coin">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Coin
-                                </a>
-                            </option>
-                            <option value="">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                            <option value="coconut">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                            <option value="mango">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                        </select>
-                    </div>
+                            alt=""
+                        ></img>
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="me-auto nav__content">
+                            <NavDropdown
+                                className="header__text"
+                                title="Coins"
+                                id="basic-nav-dropdown"
+                            >
+                                <NavDropdown.Item href="#action/3.1">
+                                    Exchanges
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">
+                                    Portfolio
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">
+                                    Something
+                                </NavDropdown.Item>
 
-                    <div>
-                        <a
-                            className="nav-link"
-                            href="#"
-                        >
-                            Exchange
-                        </a>
-                    </div>
-                    <div>
-                        <a
-                            className="nav-link"
-                            href="#"
-                        >
-                            Portfolio
-                        </a>
-                    </div>
-                    <div>
-                        <select className="select__product">
-                            <option defaultValue="portfolio">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
+                                <NavDropdown.Item href="#action/3.4">
+                                    Separated link
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                            <Nav.Link href="#home">Exchanges</Nav.Link>
+                            <Nav.Link href="#link">Portfolio</Nav.Link>
+                            <NavDropdown
+                                title="Products"
+                                id="basic-nav-dropdown"
+                            >
+                                <NavDropdown.Item href="#action/3.1">
                                     Products
-                                </a>
-                            </option>
-                            <option value="">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                            <option value="coconut">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                            <option value="mango">
-                                <a
-                                    className="nav-link"
-                                    href="#"
-                                >
-                                    Link
-                                </a>
-                            </option>
-                        </select>
-                    </div>
-                    <div className="left__headerwrapper">
-                        <div>
-                            <img
-                                src={header_search_icon}
-                                alt="header-icon"
-                            ></img>
-                        </div>
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">
+                                    Another action
+                                </NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">
+                                    Something
+                                </NavDropdown.Item>
 
-                        <div className="sign__up display__center">
-                            <a href="#">Sign Up</a>
-                        </div>
+                                <NavDropdown.Item href="#action/3.4">
+                                    Separated link
+                                </NavDropdown.Item>
+                            </NavDropdown>
+                        </Nav>
 
-                        <div className="log__in display__center">
-                            <a href="#">Log In </a>
-                        </div>
-                    </div>
-                </div>
-                <hr className="hr"></hr>
-            </div>
+                        <Form className="navbar__form navbar-nav">
+                            <div class="search-box">
+                                <input
+                                    class="search-text"
+                                    type="text"
+                                    placeholder="Search Anything"
+                                ></input>
+                                <a
+                                    href="#"
+                                    class="search-btn"
+                                >
+                                    <img
+                                        src={header_search_icon}
+                                        alt=""
+                                    ></img>
+                                </a>
+                            </div>
+                            <div className="header__button">
+                                <button className="sign__up display__center ">
+                                    Sign Up
+                                </button>
+                                <button className="log__in display__center">
+                                    Log In
+                                </button>
+                            </div>
+                        </Form>
+                    </Navbar.Collapse>
+                </Container>
+                <NavDropdown.Divider />
+            </Navbar>
         </div>
     );
 };

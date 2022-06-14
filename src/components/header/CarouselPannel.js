@@ -26,9 +26,9 @@ export default function CarouselPannel() {
                             been the industry's ever since 1550s
                         </p>
                     </div>
-                    <div className="slider__view">
+                    <div className="slider__view--second">
                         <h1 className="content__h1">
-                            Why bitcoin is so valuable in Reacent Times ?
+                            A Guide to Build Your Crypto Portfolio
                         </h1>
                         <p className="content__p">
                             lorem Lorem Ipsum is simply dummy text of the
@@ -36,9 +36,9 @@ export default function CarouselPannel() {
                             been the industry's ever since 1550s
                         </p>
                     </div>
-                    <div className="slider__view">
+                    <div className="slider__view--third">
                         <h1 className="content__h1">
-                            Why bitcoin is so valuable in Reacent Times ?
+                            How Crypto Enable Economical Freedom
                         </h1>
                         <p className="content__p">
                             lorem Lorem Ipsum is simply dummy text of the

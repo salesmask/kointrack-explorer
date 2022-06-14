@@ -5,7 +5,11 @@
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    background-size: 100%;
+}
+
+.carousel .control-dots .dot {
+    width: 50px !important;
 }
 
 .slide__panel {
@@ -14,6 +18,22 @@
 
 .slider__view {
     background-image: url('../../assets/header/Header_BG_with_vector.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+}
+
+.slider__view--second {
+    background-image: url('../../assets/header/Header_BG_with_vector_2.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 560px;
+}
+
+.slider__view--third {
+    background-image: url('../../assets/header/Header_BG_with_vector_.3.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -39,7 +59,7 @@
     line-height: 64px;
     padding-top: 18rem;
     width: 60%;
-    padding-left: 60px;
+    padding-left: 80px;
     text-align: left;
 }
 
@@ -48,9 +68,130 @@
     font-weight: 200;
     font-size: 16px;
     line-height: 24px;
-    padding-left: 60px;
+    padding-left: 80px;
+
     text-align: justify;
 
     width: 50%;
     color: #ffffff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .slider__view {
+        width: fit-content;
+        height: 180px;
+
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .slider__view--second {
+        width: fit-content;
+        height: 180px;
+
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .slider__view--third {
+        width: fit-content;
+        height: 180px;
+
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .carousel .control-dots .dot {
+        width: 20px !important;
+    }
+
+    .content__h1 {
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 1rem;
+        width: 60%;
+        padding-left: 38px;
+        text-align: left;
+    }
+
+    .content__p {
+        font-style: normal;
+        font-weight: 200;
+        font-size: 10px;
+        line-height: 14px;
+        padding-left: 38px;
+        text-align: justify;
+
+        width: 50%;
+        color: #ffffff;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1030px) {
+    .slider__view {
+        width: auto;
+        height: 400px;
+
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-repeat: no-repeat;
+        box-shadow: 5px 10px #888888;
+        background-size: cover;
+    }
+    .slider__view--second {
+        width: auto;
+        height: 400px;
+
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-repeat: no-repeat;
+        box-shadow: 5px 10px #888888;
+        background-size: cover;
+    }
+    .slider__view--third {
+        width: auto;
+        height: 400px;
+
+        background-repeat: no-repeat;
+        background-position: cover;
+        background-repeat: no-repeat;
+        box-shadow: 5px 10px #888888;
+        background-size: cover;
+    }
+
+    .carousel .control-dots .dot {
+        width: 30px !important;
+    }
+
+    .content__h1 {
+        color: #ffffff;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        padding-top: 12rem;
+        width: 65%;
+        padding-left: 38px;
+        text-align: left;
+    }
+
+    .content__p {
+        font-style: normal;
+        font-weight: 200;
+        padding-top: 8px;
+        font-size: 14px;
+        line-height: 18px;
+        padding-left: 38px;
+        text-align: justify;
+
+        width: 50%;
+        color: #ffffff;
+    }
 }
