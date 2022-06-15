@@ -2,7 +2,6 @@
     background-color: var(--clr-primary);
     color: var(--clr-white);
     font-size: var(--fs-tab-small);
-    padding: 6px 12px;
 }
 .readmore__angle {
     font-size: 2rem;

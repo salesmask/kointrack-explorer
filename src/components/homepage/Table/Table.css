@@ -1,147 +1,134 @@
-.table__container--main {
+.table__container--wrapper {
     background-color: var(--clr-white);
     border: 1px solid var(--clr-card-outline);
     border-radius: 10px;
-    margin: 60px 60px;
+    margin: 30px 60px;
 }
-
-.table__container--wrapper {
-    background-color: var(--clr-white);
-
-    margin: 0px 8px 0px 8px;
-}
-
 .table__main {
-    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0rem 1rem;
 }
 .table__head {
-    /* box-shadow: 0px 0.7px 0px 0px var(--clr-card-outline); */
-    position: relative;
+    box-shadow: 0px 0.7px 0px 0px var(--clr-card-outline);
+    height: 48px;
 }
-.table__head::after {
-    content: '';
-    width: 101.3%;
-    /* height: 10px; */
-    box-shadow: 0px 0.2px 0px 0.1px #1e202b;
-    /* background-color: #1E202B; */
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .table__head--row {
     background-color: var(--clr-white);
-    border-bottom: 1px solid var(--clr-card-outline);
-    border-radius: 10px;
-    padding-left: 20px;
 }
 
 .table__head--row th {
     text-align: left;
-}
-
-.table__body--bg {
-    background-color: #2b50ff;
-}
-
-.table__head--font {
-    font-weight: 400;
-    font-size: 15px;
-}
-
-.table__head--font:last-child {
-    padding-left: 40px;
-}
-
-.table__font--name {
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 1.4rem;
+    color: var(--clr-text);
     font-weight: 500;
-    font-size: 15px;
 }
 
-.table__head--row th:first-child {
-    text-align: right;
+/* Adjusting white space before thead rows */
 
-    padding-right: 20px;
+.table__head--row::before,
+.table__head--row::after {
+    content: '';
+    width: 7px;
+    height: calc(38px + 1rem);
+    background-color: #ffffff;
+    display: block;
+}
+.table__body--row::before,
+.table__body--row::after {
+    content: '';
+    width: 7px;
+    height: calc(38px + 1rem);
+    background-color: #ffffff;
+    display: block;
 }
 
-.for__tbody--margin {
-    margin-left: 20px;
-}
+/* ... */
 
-.font__size {
-    font-weight: 400;
-    font-size: 12.5px;
-    color: #1e202b;
-}
+/* tbody */
 
-.font__fade {
+.table__body--row {
+    height: 48px;
+    background-color: var(--clr-table-row);
+    color: var(--clr-text);
+}
+.table__body--row div,
+.table__body--row span {
+    font-size: 1.2rem;
     font-weight: 500;
-    color: #b1b1b1;
 }
 
 .watchlist__star {
     width: 18px;
-    margin-right: 9px;
-    margin-left: 11px;
+}
+
+.namecell__wrapper .coin__image {
+    width: 30px;
+}
+
+.namecell__wrapper .coin__symbol {
+    color: var(--clr-light-text);
 }
 
 .buy__button {
     background-color: rgba(43, 80, 255, 0.1);
     color: #2b50ff;
-    align-items: center;
-    padding: 3px 15px 3px 15px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0.3rem 1rem !important;
 }
 
-.coins__image {
-    width: 32px;
-    margin-right: 11px;
-}
-
-.display__table--cell {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.downarrow__image {
+.change__arrow--image {
     width: 18px;
-    margin-right: 6px;
-    margin-left: 3px;
 }
 
-.spacing {
-    margin-right: 6px;
+.one-day__pricechange .value__down,
+.seven-day__pricechange .value__down {
+    color: var(--clr-down);
+}
+.one-day__pricechange .value__up,
+.seven-day__pricechange .value__up {
+    color: var(--clr-up);
 }
 
-.spacing__btc {
-    margin-left: 7px;
+.day-volume .in-btc {
+    color: var(--clr-light-text);
+}
+
+.progress {
+    background-color: #dadada !important;
+    height: 0.5rem !important;
+}
+.progress-bar {
+    background-color: var(--clr-up) !important;
 }
 
 .graph__image {
-    padding-top: 2px;
-    padding-bottom: 2px;
-    width: 140px;
-
-    padding-left: 40px;
+    width: 10rem;
 }
 
 .more__icon {
-    width: 25px;
-    margin-left: 6%;
+    width: 2rem;
 }
 
-.custom__range--bar {
-    background-color: #dfe2e6;
-    margin-top: 6px;
-    width: 80%;
-    height: 6px;
-    border-radius: 7px 7px 7px 7px;
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .table__container--wrapper {
+        overflow-x: scroll;
+        margin: 1.5rem 4rem;
+    }
+    .star__wrapper {
+        width: 2rem;
+    }
 }
 
-.custom__range--bar .range {
-    background-image: linear-gradient(to right, #33b868, #33b868);
-    height: 100%;
-    width: 50%;
-    border-radius: 6px 0 0 6px;
+/* Corresponding screen width according to bootstrap smaller than sm screens */
+
+@media screen and (max-width: 576px) {
+    .table__container--wrapper {
+        overflow-x: scroll;
+        margin: 1rem 2rem;
+    }
 }

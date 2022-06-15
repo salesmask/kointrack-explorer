@@ -6,7 +6,7 @@ const ReadMore = () => {
     return (
         <>
             <button
-                className="highlights__readmore-button d-flex justify-content-center align-items-center"
+                className="highlights__readmore-button d-flex justify-content-center align-items-center px-3 py-2"
                 role="button"
             >
                 ReadMore

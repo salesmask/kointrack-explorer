@@ -203,7 +203,7 @@ img {
 }
 
 .tab__button:hover {
-    background-color: #dad7d7;
+    background-color: var(--clr-primary);
     color: var(--clr-white);
 }
 
