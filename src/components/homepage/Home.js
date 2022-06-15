@@ -14,7 +14,6 @@ const Home = () => {
             <div>
                 <Header />
                 <CarouselPannel />
-                <br></br>
             </div>
 
             <Search />

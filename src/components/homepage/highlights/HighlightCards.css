@@ -1,5 +1,4 @@
 .highlights__card--wrapper {
-    /* height: 100%; */
     background-color: var(--clr-white);
     border: 1px solid var(--clr-card-outline);
     border-radius: 10px;
@@ -8,74 +7,73 @@
 /* Heading section */
 .highlights__heading {
     border-bottom: 1px solid var(--clr-card-outline);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 12px;
 }
-
 .highlights__title-icon {
     width: 24px;
-    margin-right: 1rem;
 }
 .highlights__title span {
     font-size: var(--fs-table-head);
     font-weight: 500;
     color: var(--clr-text);
+    line-height: 2rem;
 }
 
 /* Table section */
-
 .highlights__table {
-    /* border: 1px solid; */
-    width: 95%;
-    margin: auto;
+    width: 95% !important;
 }
-.highlights__table tr {
-    /* border: 1px solid black !important; */
-    background-color: var(--clr-table-row);
-    /* display: flex; */
+.highlights__image-icon {
+    width: 20px;
+    height: 20px;
 }
-.highlights__table td {
-    /* border: 1px solid; */
-    /* background-color: rgb(136, 146, 142); */
-    display: inline-table;
-    height: inherit;
-    margin: 0 0.5rem 0 0;
-}
-.highlights__table .slno {
+.highlights__currency--slno,
+.highlights__currency--name {
     color: var(--clr-text);
-    margin-left: 1rem;
-}
-.highlights__table .image__icon {
-    width: 24px;
-    height: 24px;
-}
-
-.highlights__table .name {
-    color: var(--clr-text);
-}
-.highlights__table .symbol {
-    color: var(--clr-light-text);
-}
-.highlights__table .percent__change span {
-    color: var(--clr-up);
-    font-size: var(--fs-table-cell);
-    font-family: var(--ff-primary);
     font-weight: 500;
+    font-size: var(--fs-table-cell);
 }
-.percent__change #down {
-    color: var(--clr-down);
-}
-#recently__added--price {
-    color: var(--clr-price-digit);
+.highlights__currency--symbol {
+    color: var(--clr-light-text);
+    font-weight: 500;
+    font-size: var(--fs-table-cell);
 }
 
 .highlights__table .percent__change--upicon {
-    width: 10px;
-    padding-top: 8px;
-    margin-right: 2px;
+    font-size: 12px;
 }
-.highlights__table td:last-child {
-    float: right;
+.percent__change--value-up {
+    color: var(--clr-up);
+    font-weight: 500;
+    font-size: var(--fs-table-cell);
+}
+.percent__change--value-down {
+    color: var(--clr-down);
+    font-weight: 500;
+    font-size: var(--fs-table-cell);
+}
+.recently__added--price {
+    color: var(--clr-price-digit);
+    font-weight: 500;
+    font-size: var(--fs-table-cell);
+}
+
+/* Corresponding screen width according to bootstrap lg screens */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .highlights__currency--slno,
+    .highlights__currency--name,
+    .percent__change--value-up,
+    .percent__change--value-down,
+    .recently__added--price {
+        font-size: 1.1rem;
+    }
+}
+
+/* Corresponding screen width according to bootstrap sm, md and lg screens */
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .highlights__currency--slno,
+    .highlights__image-icon {
+        margin-right: 1rem !important;
+    }
 }
