@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/kointrack-explorer/static/css/main.3959e4ec.css",
+    "main.js": "/kointrack-explorer/static/js/main.e61d3a2b.js",
+    "static/media/Satoshi Token_Icon.svg": "/kointrack-explorer/static/media/Satoshi Token_Icon.3fd55706a0a1e09fc522660555930922.svg",
+    "static/media/Header_BG_with_vector.png": "/kointrack-explorer/static/media/Header_BG_with_vector.c99e2e2c7fc4169061b6.png",
+    "static/media/Header_BG_with_vector_.3.png": "/kointrack-explorer/static/media/Header_BG_with_vector_.3.ec6f0b33666855bac43a.png",
+    "static/media/Header_BG_with_vector_2.png": "/kointrack-explorer/static/media/Header_BG_with_vector_2.6fb082dce42c0f83c608.png",
+    "static/media/Bitcoin.svg": "/kointrack-explorer/static/media/Bitcoin.a85e584767f7f00551b347daea5a41c7.svg",
+    "static/media/Star Chain_Icon.svg": "/kointrack-explorer/static/media/Star Chain_Icon.f80c3bef61c67745c89ca762139eaec4.svg",
+    "static/media/Grapgh.svg": "/kointrack-explorer/static/media/Grapgh.974ef4948fac1332530722fc8bfa7550.svg",
+    "static/media/Sweet SOL_Icon.svg": "/kointrack-explorer/static/media/Sweet SOL_Icon.97f08852d6068a56b2c277e4d09f71a4.svg",
+    "static/media/ROAD_Icon.svg": "/kointrack-explorer/static/media/ROAD_Icon.e30458b66a8f4263a1644ba111ad0db1.svg",
+    "static/media/Terra Classic_Icon.svg": "/kointrack-explorer/static/media/Terra Classic_Icon.951ea138c5487f1b1bb54aa7404960c5.svg",
+    "static/media/Header_Logo.svg": "/kointrack-explorer/static/media/Header_Logo.8d5978c8f958be4658b8d940fd8e7860.svg",
+    "static/media/TNC Coin_Icon.svg": "/kointrack-explorer/static/media/TNC Coin_Icon.c594fd63b87eecd08a2c7010242e6f84.svg",
+    "static/media/Rare Ball Shares_Icon.svg": "/kointrack-explorer/static/media/Rare Ball Shares_Icon.3ca5b0e87665ec27ce22f74d7ebd45b3.svg",
+    "static/media/Spice Trade_Icon.svg": "/kointrack-explorer/static/media/Spice Trade_Icon.012d706593fa3956c9f46af84626ed4b.svg",
+    "static/media/Calaswap_Icon.svg": "/kointrack-explorer/static/media/Calaswap_Icon.50abdd2b6619c0c645ae39fa02000c0f.svg",
+    "static/media/Watchlist_Outline.svg": "/kointrack-explorer/static/media/Watchlist_Outline.504950e4a6764bb9edd02184eecd97da.svg",
+    "static/media/Porfolio.svg": "/kointrack-explorer/static/media/Porfolio.568b99ba8b9bcca369fbeec97e82e5cc.svg",
+    "static/media/Watchlist.svg": "/kointrack-explorer/static/media/Watchlist.62778c7748ce91fbbf03801339561a7d.svg",
+    "static/media/Filter.svg": "/kointrack-explorer/static/media/Filter.a0f28948e84b0f9e13f5a95d2976c9eb.svg",
+    "index.html": "/kointrack-explorer/index.html",
+    "static/media/Header_Search_Icon.svg": "/kointrack-explorer/static/media/Header_Search_Icon.28c02e3c25213a19633b0fc0cfeed6d5.svg",
+    "static/media/Gainers_Icon.svg": "/kointrack-explorer/static/media/Gainers_Icon.4e16cc26e37f762f3496f89be4c4b12a.svg",
+    "static/media/Search_Icon.svg": "/kointrack-explorer/static/media/Search_Icon.b49f72e81bb20aea92a6aa9551ef2f42.svg",
+    "static/media/Customize.svg": "/kointrack-explorer/static/media/Customize.af9fb2f3659c3140614f7497d8d0375d.svg",
+    "static/media/Increase_Arrow.svg": "/kointrack-explorer/static/media/Increase_Arrow.8a42d07d4006b1b20eed52d0718b5b13.svg",
+    "static/media/Decrease_Arrow.svg": "/kointrack-explorer/static/media/Decrease_Arrow.a6803d04b1f7f62d96ec646a51ead558.svg",
+    "static/media/Recently_Added_Icon.svg": "/kointrack-explorer/static/media/Recently_Added_Icon.68828104a8d72857cc9a4464ee979230.svg",
+    "static/media/More_Icon.svg": "/kointrack-explorer/static/media/More_Icon.0ad5e686bae947eb141b7d01a663f944.svg",
+    "main.3959e4ec.css.map": "/kointrack-explorer/static/css/main.3959e4ec.css.map",
+    "main.e61d3a2b.js.map": "/kointrack-explorer/static/js/main.e61d3a2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3959e4ec.css",
+    "static/js/main.e61d3a2b.js"
+  ]
+}
