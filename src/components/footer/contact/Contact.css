@@ -2,10 +2,12 @@
     text-align: left;
     /* padding-top: 22px; */
 }
+.contact_wrapper {
+    padding-top: 20px;
+}
 
-.footer_line_height {
-    line-height: 35px;
-    display: inline-block;
+.col {
+    line-height: 40px !important ;
 }
 
 .mail_logo {

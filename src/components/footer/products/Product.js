@@ -3,23 +3,21 @@ import './Product.css';
 
 const Product = () => {
     return (
-        <div className="footer__product">
-            <ul>
-                <h3 className="footer_heading">Products</h3>
-                <div className="footer_line_height">
-                    <li>
-                        <a href="">Security Audit</a>
-                    </li>
-                    <li>
-                        <a href="">Skynet</a>
-                    </li>
-                    <li>
-                        <a href="">SkyTrace</a>
-                    </li>
-                    <li>
-                        <a href="">Penetration Testing</a>
-                    </li>
-                </div>
+        <div class="col lh-lg  ps-5 ">
+            <h3>Products</h3>
+            <ul className="product_wrapper">
+                <li>
+                    <a href="#">Security Audit</a>
+                </li>
+                <li>
+                    <a href="#">Skynet</a>
+                </li>
+                <li>
+                    <a href="#">SkyTrace</a>
+                </li>
+                <li>
+                    <a href="#">Penetration Testing</a>
+                </li>
             </ul>
         </div>
     );
