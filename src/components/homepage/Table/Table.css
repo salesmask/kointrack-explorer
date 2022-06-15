@@ -76,7 +76,7 @@
     color: #2b50ff;
     font-size: 1.2rem;
     font-weight: 500;
-    padding: 0.3rem 1rem;
+    padding: 0.3rem 1rem !important;
 }
 
 .change__arrow--image {

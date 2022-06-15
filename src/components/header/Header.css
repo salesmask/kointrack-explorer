@@ -1,78 +1,187 @@
 .header__container {
-    width: auto;
     background: #151a33;
 }
 
 .header__box {
-    display: flex;
-    color: #ffffff !important;
-    align-items: center;
-    padding-top: 26px;
-    padding-left: 60px;
-    padding-right: 60px;
-    gap: 4rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
-.select__coin {
-    background: none;
-    background-color: #151a33;
-    color: #ffffff;
-    font-family: var(--ff-primary);
-    font-style: normal;
-    font-weight: 200;
-    font-size: 16px;
+.navbar__band {
+    margin-left: -30px;
 }
 
-.header__logo {
-    margin-right: 120px;
+.nav__content {
+    padding-left: 110px !important;
 }
 
-.select__product {
-    background: none;
-    background-color: #151a33;
-    color: var(--clr-white);
-    font-family: var(--ff-primary);
-    font-style: normal;
-    font-weight: 200;
-    font-size: 16px;
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255) !important;
+    margin-left: 20px;
 }
 
 .nav-link {
-    color: #ffffff;
     font-family: var(--ff-primary);
     font-style: normal;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 16px;
-}
-
-.left__headerwrapper {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-left: auto;
 }
 
 .sign__up {
     background: #e96e5d;
     box-shadow: 0px 4px 4px rgba(24, 27, 45, 0.25);
-    border-radius: 100px;
 
     height: 37px;
     width: 80px;
-    text-align: center;
+}
+
+.navbar__form {
+    display: flex;
+
+    gap: 15px;
+    margin-right: -30px;
+}
+
+.header__button {
+    display: flex;
+    gap: 15px;
 }
 
 .log__in {
     background: #08ad98;
     box-shadow: 0px 4px 4px rgba(24, 27, 45, 0.25);
-    border-radius: 100px;
 
     height: 37px;
     width: 80px;
-    text-align: center;
+}
+
+button {
+    border-radius: 100px;
+    font-size: var(--fs-tab-normal);
+    font-family: var(--ff-primary);
+    font-weight: 400 !important;
+    color: #ffffff;
+    padding: 0px 0px !important;
 }
 
 .hr {
     margin-top: 26px;
     border: 0.5px solid #1c2342;
+}
+
+.search-box {
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, 0%); */
+    background: #f3f4f6;
+    height: 40px;
+
+    border-radius: 38px;
+}
+
+.search-box:hover > .search-text {
+    width: 240px;
+    padding-left: 15px;
+}
+
+.search-box:hover > .search-btn {
+    background: #f3f4f6;
+    color: black;
+    padding: 5px 4px;
+}
+
+.search-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 500%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.search-btn > i {
+    font-size: 25px;
+}
+
+.search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: rgb(26, 25, 25);
+    font-size: 14px;
+
+    font-weight: normal;
+    transition: 0.6s;
+    line-height: 40px;
+    width: 0px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .header__box {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .navbar__band {
+        margin-left: 30px;
+    }
+
+    .nav__content {
+        padding-top: 20px;
+        padding-left: 10px !important;
+        padding-bottom: 20px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .navbar-toggler {
+        margin-right: 30px;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .header__button {
+        margin-left: 30px;
+        gap: 15px;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1201px) {
+    .header__box {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .navbar__band {
+        margin-left: 0px;
+    }
+
+    .nav__content {
+        padding-top: 20px;
+        padding-left: 0px !important;
+        padding-bottom: 20px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .search-box {
+        display: none;
+    }
+
+    .header__button {
+        margin-left: 0px;
+        gap: 15px;
+    }
 }

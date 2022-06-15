@@ -38,7 +38,7 @@
     transform: translate(0%, -50%);
     background-color: var(--clr-primary);
     height: 54px;
-    width: 95px;
+    width: 95px !important;
 }
 
 /* Corresponding screen width according to bootstrap md screens */

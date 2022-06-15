@@ -199,6 +199,12 @@ img {
     align-items: center;
     white-space: nowrap;
     cursor: pointer;
+    transition: 150ms ease-in;
+}
+
+.tab__button:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
 }
 
 /*

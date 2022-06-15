@@ -5,7 +5,7 @@ import DownIcon from '../../../assets/homepage/search/Decrease_Arrow.svg';
 
 const Search = () => {
     return (
-        <div className="home__search text-center p-4 mb-5">
+        <div className="home__search text-center p-4 mb-5 mt-5">
             <h1 className="home__search--heading mb-4">
                 Today's Cryptocurrency Prices by Market Cap
             </h1>
@@ -35,6 +35,7 @@ const Search = () => {
                         <img
                             src={SearchIcon}
                             alt="icon"
+                            className="w-25"
                         />
                     </button>
                 </div>

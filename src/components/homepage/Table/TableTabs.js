@@ -4,9 +4,9 @@ import Watchlist from '../../../assets/table/Watchlist.svg';
 import Portfolio from '../../../assets/table/Porfolio.svg';
 import Customize from '../../../assets/table/Customize.svg';
 import Filter from '../../../assets/table/Filter.svg';
+
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { Link } from 'react-router-dom';
 
 export default function TableTabs() {
     return (
@@ -51,7 +51,7 @@ export default function TableTabs() {
 
             <div className="tab__container">
                 <Tabs>
-                    <TabList className="react-tabs__tab-list d-flex justify-content-flex-start align-items-center border-bottom-0">
+                    <TabList className="react-tabs__tab-list d-flex justify-content-flex-start align-items-center py-3 border-bottom-0">
                         <Tab className="react-tabs__tab tab__button">
                             Cryptocurrencies
                         </Tab>

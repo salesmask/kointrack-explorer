@@ -6,6 +6,11 @@
     font-weight: 500 !important;
     gap: 1rem;
 }
+.editables__tab:hover {
+    background-color: var(--clr-tab-background) !important;
+    color: var(--clr-text) !important;
+}
+
 .tab__container {
     gap: 2rem;
     margin: 0 6rem;
