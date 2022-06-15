@@ -17,6 +17,9 @@
 .react-tabs__tab-list::-webkit-scrollbar {
     display: none;
 }
+.react-tabs__tab-list {
+    overflow-x: scroll !important;
+}
 
 .editables__container::-webkit-scrollbar {
     display: none;
