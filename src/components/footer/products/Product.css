@@ -1,12 +1,3 @@
-.footer_heading {
-    padding-bottom: 16px;
-}
-
-.footer__product {
-    /* border: 3px solid gray; */
-    text-align: left;
-    /* padding-top: 22px; */
-}
-.footer_line_height {
-    line-height: 200%;
+.product_wrapper {
+    padding-top: 20px;
 }
