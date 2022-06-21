@@ -1,7 +1,7 @@
 .head-details__wrapper {
     background-color: var(--clr-table-row);
     margin: 0 6rem;
-    margin-bottom: 2rem; /* need to change later */
+    margin-bottom: 3rem;
 }
 
 /* Name and details section */
