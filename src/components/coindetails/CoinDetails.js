@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../header/Header';
 import Footer from '../footer/Footer';
-import PriceDetails from './pricedetails/PriceDetails';
+import CoinHeadDetails from './coin-head-details/CoinHeadDetails';
 import Breadcrumbs from './breadcrumbs/Breadcrumbs';
 
 const CoinDetails = () => {
@@ -9,7 +9,7 @@ const CoinDetails = () => {
         <>
             <Header />
             <Breadcrumbs />
-            <PriceDetails />
+            <CoinHeadDetails />
 
             <Footer />
         </>
