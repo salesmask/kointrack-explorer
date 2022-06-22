@@ -1,7 +1,6 @@
-.logo__wrapper {
-    /* width: 180px;
-height: 32.17px; */
-    /* padding-top: 22px; */
-    left: 60px;
-    /* top: 22px; */
+.footer_koin_logo {
+    width: 200px;
+}
+.footer_koin_info {
+    padding-top: 20px;
 }

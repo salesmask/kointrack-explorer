@@ -10,39 +10,32 @@ import Sociallinks from './sociallinks/Sociallinks';
 
 function Footer() {
     return (
-        <div className="footer_layout">
-            <div className="footer_wrapper">
-                <div className="footer_logo">
-                    <FooterLogo />
-                    <p className="footer_info">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the
-                    </p>
-                    <div>
-                        <Sociallinks />
+        <>
+            <div class="footer-dark ">
+                <footer>
+                    <div class="container-fluid">
+                        <div class="row gx-5">
+                            <FooterLogo />
+
+                            <Product />
+
+                            <Resourcess />
+
+                            <Company />
+
+                            <Contact />
+                        </div>
+
+                        {/* <Sociallinks/> */}
                     </div>
-                </div>
-
-                <Product />
-
-                <div>
-                    <Resourcess />
-                </div>
-
-                <div>
-                    <Company />
-                </div>
-
-                <div>
-                    <Contact />
-                </div>
+                </footer>
             </div>
-
-            <div className="copywrite__wrapper">
-                Copyright 2021-22 www.kointrack.com
+            <div class="copyright container-fluid d-flex justify-content-center align-items-center py-3">
+                <p className="copyright__content mb-0">
+                    © Copyright 2021-22 www.kointrack.com
+                </p>
             </div>
-        </div>
+        </>
     );
 }
 

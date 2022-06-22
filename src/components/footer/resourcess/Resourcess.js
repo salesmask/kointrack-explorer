@@ -3,11 +3,11 @@ import './Resourcess.css';
 
 const Resourcess = () => {
     return (
-        <div className="footer__resources">
-            <ul>
-                <h3 className="footer_heading">Resources</h3>
+        <div class="col lh-lg">
+            <h3>Resources</h3>
+            <ul className="resource_wrapper">
                 <li>
-                    <a href="">Blog</a>
+                    <a href="#">Blog</a>
                 </li>
             </ul>
         </div>

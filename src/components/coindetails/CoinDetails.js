@@ -7,6 +7,7 @@ import Breadcrumbs from './breadcrumbs/Breadcrumbs';
 import InfoSources from './info-sources/InfoSources';
 import CoinMoreDetails from './coin-more-details/CoinMoreDetails';
 import ChartTabs from './charttabs/ChartTabs';
+import PriceEstimates from './priceestimates/PriceEstimates';
 
 const CoinDetails = () => {
     return (
@@ -26,6 +27,8 @@ const CoinDetails = () => {
                     <div className="gravity-side__wrapper">gravity-col</div>
                 </div>
             </section>
+
+            <PriceEstimates />
 
             <Footer />
         </>
