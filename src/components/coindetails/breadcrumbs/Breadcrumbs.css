@@ -1,0 +1,44 @@
+.breadcrumb__wrapper {
+    padding: 0 6rem;
+}
+.breadcrumb-item,
+.breadcrumb-item a {
+    font-size: 1.8rem;
+}
+.breadcrumb-item a {
+    font-weight: 400;
+}
+.breadcrumb-item a:hover {
+    color: var(--clr-primary);
+}
+.breadcrumb-item.active {
+    font-weight: 700;
+    color: var(--clr-black) !important;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    font-weight: 400;
+}
+
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .breadcrumb__wrapper {
+        padding: 0 4rem;
+    }
+    .breadcrumb-item,
+    .breadcrumb-item a {
+        font-size: 1.4rem;
+    }
+}
+
+/* Corresponding screen width according to bootstrap less than sm screens */
+
+@media screen and (max-width: 576px) {
+    .breadcrumb__wrapper {
+        padding: 0 2rem;
+    }
+    .breadcrumb-item,
+    .breadcrumb-item a {
+        font-size: 1.2rem;
+    }
+}

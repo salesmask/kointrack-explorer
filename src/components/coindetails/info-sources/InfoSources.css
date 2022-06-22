@@ -1,0 +1,52 @@
+.infosources__wrapper {
+    height: auto;
+    margin: 0 6rem;
+    margin-bottom: 3rem;
+}
+.infosources__wrapper li {
+    border: 1px solid var(--clr-card-outline);
+    padding: 0.7rem 1.2rem;
+    white-space: nowrap;
+}
+.infosources__inner--wrapper {
+    overflow-x: scroll;
+}
+.infosources__inner--wrapper::-webkit-scrollbar {
+    display: none;
+}
+.infosources__wrapper li:hover {
+    background: var(--clr-tab-background);
+}
+.infosources__wrapper li:active span {
+    font-weight: 600;
+}
+.infosources__wrapper li.active {
+    background: var(--clr-tab-background);
+}
+.infosources__wrapper li.active span {
+    font-weight: 600;
+}
+
+.infosources__wrapper li span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.infosources__wrapper li img {
+    width: 1.4rem;
+}
+
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .infosources__wrapper {
+        margin: 1.5rem 4rem;
+    }
+}
+
+/* Corresponding screen width according to bootstrap less than sm screens */
+
+@media screen and (max-width: 576px) {
+    .infosources__wrapper {
+        margin: 1rem 2rem;
+    }
+}
