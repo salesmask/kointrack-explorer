@@ -1,0 +1,140 @@
+.head-details__wrapper {
+    background-color: var(--clr-table-row);
+    margin: 0 6rem;
+    margin-bottom: 3rem;
+}
+
+/* Name and details section */
+
+.head-details__name--wrapper .image__wrapper {
+    width: 64px;
+    height: 64px;
+}
+.head-details__name--wrapper .name {
+    font-size: 2.4rem;
+    color: var(--clr-text);
+}
+.head-details__name--wrapper .symbol {
+    font-size: 1.8rem;
+    color: var(--clr-light-text);
+}
+
+.head-details__name--wrapper .name,
+.head-details__name--wrapper .symbol {
+    font-weight: 700;
+}
+.head-details__name--wrapper .watchlist__wrapper {
+    background-color: #efefef;
+    padding: 0.3rem;
+    border-radius: 4px;
+}
+.head-details__name--wrapper .rank,
+.head-details__name--wrapper .type,
+.head-details__name--wrapper .watchlist-count {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.head-details__name--wrapper .rank {
+    font-weight: 700;
+}
+.head-details__name--wrapper span {
+    padding: 0 0.5rem;
+    font-weight: 400;
+}
+
+/* Range bar */
+
+.head-details__range--wrapper {
+    width: auto;
+}
+
+.head-details__range--wrapper .progress {
+    height: 1rem !important;
+}
+.range-of__time {
+    border: 1px solid var(--clr-card-outline);
+}
+.range__lowhigh--values {
+    gap: 10rem;
+}
+
+.range__lowhigh--values * {
+    font-size: 1.4rem;
+}
+.range__lowhigh--values > div {
+    font-weight: 500;
+}
+.range__lowhigh--values > div > span {
+    font-weight: 700;
+}
+
+.range__lowhigh--values .low__value {
+    color: var(--clr-down);
+}
+.range__lowhigh--values .high__value {
+    color: var(--clr-up);
+}
+.range-of__time .time {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--clr-text);
+}
+.range-of-time__icon {
+    width: 1ch;
+}
+
+/* Current price details section */
+
+.head-details__price--wrapper .name-symbol {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--clr-light-text);
+}
+.head-details__price--wrapper .current__price .price {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--clr-text);
+}
+.head-details__price--wrapper
+    .current__price
+    .percent-change
+    .current__price--image {
+    width: 1.5ch;
+}
+.head-details__price--wrapper .current__price .percent-change {
+    background-color: var(--clr-down);
+}
+.head-details__price--wrapper .current__price .percent-change span {
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.corresponding-current-eth .eth__price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--clr-light-text);
+}
+.corresponding-current-eth .eth-change img {
+    width: 1.5ch;
+}
+.corresponding-current-eth .eth-change span {
+    color: var(--clr-up);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .head-details__wrapper {
+        margin: 0 4rem;
+    }
+}
+
+/* Corresponding screen width according to bootstrap less than sm screens */
+
+@media screen and (max-width: 576px) {
+    .head-details__wrapper {
+        margin: 0 2rem;
+    }
+}

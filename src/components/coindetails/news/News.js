@@ -57,7 +57,7 @@ const News = () => {
             </div>
 
             {/* card tiles */}
-            <div className="container  ">
+            <div className="container">
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="d-flex pb-5 mx-0 ">
