@@ -5,6 +5,7 @@ import CoinHeadDetails from './coin-head-details/CoinHeadDetails';
 import Breadcrumbs from './breadcrumbs/Breadcrumbs';
 import InfoSources from './info-sources/InfoSources';
 import CoinMoreDetails from './coin-more-details/CoinMoreDetails';
+import ChartTabs from './charttabs/ChartTabs';
 
 const CoinDetails = () => {
     return (
@@ -14,7 +15,7 @@ const CoinDetails = () => {
             <CoinHeadDetails />
             <InfoSources />
             <CoinMoreDetails />
-
+            <ChartTabs />
             <Footer />
         </>
     );
