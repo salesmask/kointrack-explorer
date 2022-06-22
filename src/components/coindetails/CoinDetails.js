@@ -8,6 +8,7 @@ import InfoSources from './info-sources/InfoSources';
 import CoinMoreDetails from './coin-more-details/CoinMoreDetails';
 import ChartTabs from './charttabs/ChartTabs';
 import PriceEstimates from './priceestimates/PriceEstimates';
+import News from './news/News';
 
 const CoinDetails = () => {
     return (
@@ -29,6 +30,7 @@ const CoinDetails = () => {
             </section>
 
             <PriceEstimates />
+            <News />
 
             <Footer />
         </>

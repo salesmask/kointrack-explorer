@@ -31,8 +31,8 @@ const Header = () => {
                         ></img>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto nav__content">
+                    <Navbar.Collapse id="basic-navbar-nav navbar-left">
+                        <Nav className="me-auto nav__content ">
                             <NavDropdown
                                 className="header__text"
                                 title="Coins"
