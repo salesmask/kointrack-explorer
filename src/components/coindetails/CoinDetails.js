@@ -10,6 +10,7 @@ import ChartTabs from './charttabs/ChartTabs';
 import PriceEstimates from './priceestimates/PriceEstimates';
 import News from './news/News';
 import Gravity from './gravity/Gravity';
+import BitcoinMarkets from '../bitcoinmarkets/BitcoinMarkets';
 
 const CoinDetails = () => {
     return (
@@ -32,6 +33,7 @@ const CoinDetails = () => {
                 </div>
             </section>
 
+            <BitcoinMarkets />
             <PriceEstimates />
             <News />
 

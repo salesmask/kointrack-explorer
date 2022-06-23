@@ -1,85 +1,125 @@
-.price_estimates_layout {
-    border: 1px solid greenyellow;
-    background-color: #ffffff;
-    padding: 10rem;
+.main_container {
+    padding: 60px 60px 60px 60px !important;
 }
 
 .price_estimates_wrapper {
     display: flex;
     gap: 3rem;
 }
+.price_heading {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+}
+.header___logo {
+    display: flex;
+}
 .price_paragraph {
-    font-style: normal;
+    /* width: 324px !important; */
     font-weight: 300;
     font-size: 14px;
     line-height: 21px;
+    padding-bottom: 15px;
     color: #1e202b;
 }
-.price_box1 {
-    width: 300px;
-    height: 185px;
-    border: 1px solid #e4e4e4;
-    text-align: center;
-}
-.price_box1_child1 {
-    width: 300px;
-    height: 40px;
-    border: 1px solid #e4e4e4;
-}
-.price_box1_child2 {
-    width: 300px;
-    height: 155px;
-}
-.price_button {
-    background-color: #2b50ff;
+.beta_logo {
+    width: 60px;
+    padding: 0px 0px 5px 15px;
 }
 
-.price_box2 {
-    width: 300px;
-    height: 185px;
-    border: 1px solid #e4e4e4;
+.button_manual {
+    color: #ffffff !important;
+    background-color: #2b50ff !important;
+    /* border-radius: 100px !important; */
+    width: 131px;
+    height: 30px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
 }
-.price_box2_child1 {
-    width: 300px;
-    height: 40px;
-    border: 1px solid #e4e4e4;
+.customer_logo {
+    width: 35px;
+    /* height:24px; */
 }
-.price_box2_child2 {
-    width: 300px;
-    height: 155px;
+.customer_vote {
+    color: #1e202b;
+    font-weight: 600;
+    font-size: 14px;
 }
-.price_button {
-    background-color: #2b50ff;
+
+.login_date {
+    color: #1e202b;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: right !important;
 }
-.price_box3 {
-    width: 300px;
-    height: 185px;
-    border: 1px solid #e4e4e4;
+.estimate {
+    padding: 60px;
 }
-.price_box3_child1 {
-    width: 300px;
-    height: 40px;
-    border: 1px solid #e4e4e4;
+.customer_vote {
+    padding-left: 5px;
 }
-.price_box3_child2 {
-    width: 300px;
-    height: 155px;
+.gap {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
-.price_button1 {
-    background-color: #2b50ff;
+.button_last_box {
+    color: #1e202b !important;
+    background-color: #eaebf2 !important;
+    /* border-radius: 100px !important; */
+    width: 131px;
+    height: 30px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: 1px solid #eaebf2 !important;
+    font-style: normal;
+    font-weight: 500 !important;
 }
-.price_button2 {
-    background-color: #2b50ff;
+
+/* Corresponding screen width according to bootstrap xl screens  */
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .card-title {
+        font-size: 16px;
+    }
+    .card-text {
+        font-size: 12px;
+    }
 }
-.price_button3 {
-    background-color: #2b50ff;
+
+/* Corresponding screen width according to bootstrap lg screens  */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .media_style {
+        display: none;
+    }
 }
-.price_button4 {
-    background-color: #eaebf2;
+
+/* Corresponding screen width according to bootstrap md screens  */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .media_style {
+        display: none;
+    }
+
+    .media_style_wrap {
+        display: none !important;
+    }
 }
-.price_box4 {
-    width: 300px;
-    height: 185px;
-    border: 1px solid #e4e4e4;
-    text-align: center;
+
+/* Corresponding screen width according to bootstrap sm screens  */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    /* .media_style{
+            display: none;
+      } */
+
+    .media_style_wrap {
+        display: none !important;
+    }
+    .media_style_wrapper {
+        display: none !important;
+    }
 }
