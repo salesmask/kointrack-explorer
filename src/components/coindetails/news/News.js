@@ -88,7 +88,7 @@ const News = () => {
 
                                     <div
                                         href="#"
-                                        className=" btn news__button rounded-pill d-flex gap-2 py-3 fw-bold align-items-center px-3 "
+                                        className=" btn news__button rounded-pill d-flex gap-2 py-2 fw-bold align-items-center px-3 "
                                     >
                                         <img
                                             src={bitcoin_small}
@@ -99,7 +99,7 @@ const News = () => {
 
                                     <div
                                         type="button"
-                                        className=" btn news__button rounded-pill d-flex gap-2 fw-bold align-items-center px-3 py-3 ms-lg-auto ms-md-auto"
+                                        className=" btn news__button rounded-pill d-flex gap-2 fw-bold align-items-center px-3 py-2 ms-lg-auto ms-md-auto"
                                     >
                                         Read More
                                         <svg
@@ -158,7 +158,7 @@ const News = () => {
 
                                                 <div
                                                     href="#"
-                                                    className="news__button btn news__button rounded-pill d-flex gap-2 fw-bold align-items-center px-3 py-3"
+                                                    className="news__button btn news__button rounded-pill d-flex gap-2 fw-bold align-items-center px-3 py-2"
                                                 >
                                                     <img
                                                         src={bitcoin_small}
@@ -169,7 +169,7 @@ const News = () => {
 
                                                 <div
                                                     type="button"
-                                                    className=" btn news__button  rounded-pill d-flex gap-0  fw-bold align-items-center py-3 px-2 me-ms-auto me-lg-auto ms-xl-auto me-xl-0"
+                                                    className=" btn news__button  rounded-pill d-flex gap-0  fw-bold align-items-center py-2 px-2 me-ms-auto me-lg-auto ms-xl-auto me-xl-0"
                                                 >
                                                     Read More
                                                     <svg
