@@ -8,6 +8,7 @@ import InfoSources from './info-sources/InfoSources';
 import CoinMoreDetails from './coin-more-details/CoinMoreDetails';
 import ChartTabs from './charttabs/ChartTabs';
 import PriceEstimates from './priceestimates/PriceEstimates';
+import ChartSection from './chartsection/ChartSection';
 import News from './news/News';
 import Gravity from './gravity/Gravity';
 import BitcoinMarkets from '../bitcoinmarkets/BitcoinMarkets';
@@ -26,7 +27,9 @@ const CoinDetails = () => {
 
             <section className="tabdetails__outer--container">
                 <div className="tabdetails__inner--container">
-                    <div className="chart-side__wrapper">graph-col</div>
+                    <div className="chart-side__wrapper">
+                        <ChartSection />
+                    </div>
                     <div className="gravity-side__wrapper">
                         <Gravity />
                     </div>

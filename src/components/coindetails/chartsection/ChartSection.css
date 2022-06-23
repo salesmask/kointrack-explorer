@@ -1,0 +1,139 @@
+.chart-section__wrapper {
+    /* border-bottom: 1px solid green; */
+    margin-bottom: 2rem;
+}
+.chart-section__wrapper * {
+    white-space: nowrap;
+}
+
+.chart-section__heading {
+    color: var(--clr-text);
+    margin-bottom: 2rem;
+}
+.control-tabs__wrapper {
+    /* border: 1px solid blueviolet; */
+    margin-bottom: 2rem;
+}
+
+/* Chart deciding tabs */
+
+.control-tabs__wrapper li {
+    /* border: 1px solid var(--clr-card-outline); */
+    background-color: var(--clr-tab-background);
+    padding: 0.6rem 1.4rem;
+    margin-right: 0.5rem;
+    transition: ease-in 150ms;
+}
+.control-tabs__wrapper li.active {
+    background-color: var(--clr-primary);
+}
+.control-tabs__wrapper li.active a {
+    color: var(--clr-white);
+}
+.control-tabs__wrapper li a {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--clr-text);
+}
+
+.control-tabs__wrapper li:hover {
+    background-color: var(--clr-primary);
+}
+.control-tabs__wrapper li:hover a {
+    color: var(--clr-white);
+}
+
+/* Checkbox */
+
+.checkbox__wrapper label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--clr-text);
+}
+
+/* Time based tabs */
+
+.time-tag__wrapper {
+    border: 1px solid var(--clr-card-outline);
+    padding: 1px;
+}
+.time-tag__wrapper li {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    background-color: var(--clr-white);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-right: 2px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--clr-light-text);
+}
+.time-tag__wrapper li:last-child {
+    margin-right: 0.5rem;
+    color: var(--clr-text);
+}
+
+.time-tag__wrapper li.active {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+.time-tag__wrapper li:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+/* .calendar__icon--wrapper{
+     border-right: 1px solid var(--clr-card-outline);
+} */
+.calender__icon {
+    width: 1.6rem;
+}
+
+/* vertical line */
+.vertical__line {
+    color: var(--clr-card-outline);
+    padding: 0 2px !important;
+    width: max-content !important;
+}
+.vertical__line:hover {
+    background-color: white !important;
+    cursor: default;
+    color: var(--clr-card-outline) !important;
+}
+
+/* Chart-outline container */
+
+.chart-outline__wrapper {
+    border: 1px solid var(--clr-card-outline);
+    border-radius: 1rem;
+}
+
+/* graph */
+.chart__main--wrapper {
+    /* border: 1px solid; */
+    height: 300px;
+    /* background-color: rgb(221, 231, 221); */
+    font-size: 3rem;
+    font-weight: 900;
+    color: goldenrod;
+    border-radius: 1rem 1rem 0 0;
+}
+
+/* Coin review section */
+
+.coin__review--wrapper {
+    border: 1px solid var(--clr-card-outline);
+    border-radius: 1rem;
+    margin: 0 2rem;
+    padding: 2rem;
+}
+
+/* Coin description section */
+
+.coin__description--wrapper {
+    margin: 2rem 2rem 0;
+    /* border: 1px solid; */
+}

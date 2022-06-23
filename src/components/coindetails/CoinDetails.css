@@ -2,6 +2,7 @@
     /* border: 1px solid black; */
     padding: 0rem 6rem;
     margin-bottom: 3rem;
+    margin-bottom: 15rem; /* Need to remove later */
 }
 .tabdetails__inner--container {
     /* border: 1px solid rgb(203, 47, 47); */
@@ -12,7 +13,7 @@
 }
 
 .chart-side__wrapper {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .gravity-side__wrapper {
     border: 1px solid black;

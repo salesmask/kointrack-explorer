@@ -1,0 +1,20 @@
+.coin__description {
+    white-space: pre-wrap !important;
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--clr-text);
+    line-height: 25px;
+}
+.description-read-more__wrapper {
+    width: max-content;
+    background-color: var(--clr-tab-background);
+    padding: 0.6rem 1.2rem;
+}
+.description-read-more__wrapper span {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--clr-text);
+}
+.description-read-more__icon {
+    width: 1.4rem;
+}
