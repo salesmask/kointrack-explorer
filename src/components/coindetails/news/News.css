@@ -1,0 +1,37 @@
+.head-details__wrapper {
+    /* background-color: var(--clr-table-row); */
+    margin: 0 6rem;
+    /* margin-bottom: 3rem; */
+}
+
+.news__card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 10px !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.news__button {
+    background-color: #eaebf2 !important;
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    /* width: 92px !important;
+height: 30px !important; */
+
+    padding: 6px 18px !important;
+    gap: 8px;
+}
+
+/* Corresponding screen width according to bootstrap sm screens */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .head-details__wrapper {
+        margin: 0 4rem;
+    }
+}
+/* Corresponding screen width according to bootstrap less than sm screens */
+@media screen and (max-width: 576px) {
+    .head-details__wrapper {
+        margin: 0 2rem;
+    }
+}

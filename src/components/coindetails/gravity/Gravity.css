@@ -1,0 +1,79 @@
+.gravity__rounder {
+    border-radius: 10px !important;
+}
+
+.gravity__button {
+    background-color: #ff817c !important;
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    width: 60px;
+}
+
+.showmore__button {
+    background-color: #eaebf2 !important;
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    width: 86px;
+}
+
+.gravity__arrow {
+    width: 16px;
+    height: 10px;
+}
+
+.follow__button {
+    background-color: #ffffff !important;
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    width: 83px;
+}
+
+.trend__button {
+    background-color: #f7f7f7;
+    width: 82px;
+}
+
+.Post__button {
+    background-color: #2b50ff;
+    width: 62px;
+    height: 29px;
+}
+
+.switch__box {
+    background-color: #f4f4f4;
+    width: 212px;
+    height: 30px;
+}
+
+.switch__button {
+    background-color: #2b50ff;
+    width: 100px;
+}
+
+.readmore__button {
+    background-color: #eaebf2 !important;
+    font-family: 'Poppins' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 12px !important;
+    width: 100px;
+}
+
+.button__chat {
+    background-color: #33b868;
+}
+
+.refresh__icon {
+    height: 20px;
+    width: 20px;
+}
+
+.gravity__contents {
+    background-color: #2b50ff;
+}

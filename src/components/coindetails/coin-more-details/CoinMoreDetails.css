@@ -1,0 +1,99 @@
+.more-details__wrapper {
+    /* background-color: aquamarine; */
+    /* border: 1px solid; */
+    /* width: 100%; */
+    /* height: 100px; */
+    margin: 0 6rem 3rem !important;
+}
+.more-details__wrapper * {
+    font-size: 1.4rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+.more-details__inner--wrapper {
+    height: max-content;
+}
+
+.more-details__wrapper .row > div {
+    border: 1px solid;
+}
+
+/* supply counts */
+
+.supply__wrapper {
+    /* border: 2px solid palevioletred !important; */
+    border: 1px solid var(--clr-card-outline);
+    border-radius: 10px;
+}
+
+.circulating__supply .range__wrapper {
+    border: 5px solid var(--clr-up);
+    padding: 3rem;
+    border-radius: 50%;
+}
+
+.help__tooltip {
+    width: 1.4rem;
+}
+
+/* market capital */
+.market-capital__wrapper {
+    /* border: 1px solid greenyellow; */
+    border: 1px solid var(--clr-card-outline);
+    border-radius: 10px;
+}
+.market__cap,
+.diluted__cap {
+    border-right: 1px solid var(--clr-card-outline);
+}
+.percent__change--value.down {
+    color: var(--clr-down);
+}
+.percent__change--value.up {
+    color: var(--clr-up);
+}
+.percent__arrow--icon {
+    width: 1.4rem;
+}
+
+/* Tags */
+
+.tags__wrapper {
+    border: 1px solid var(--clr-card-outline);
+    border-radius: 10px;
+    width: 22%;
+}
+.tags__wrapper .heading {
+    border-bottom: 1px solid var(--clr-card-outline);
+    border-radius: 10px;
+}
+
+.tags__list--container {
+    display: flex !important;
+    flex-wrap: wrap;
+}
+.tags__wrapper li {
+    /* border: 1px solid black; */
+    width: max-content;
+    border-radius: 100px;
+    padding: 0.4rem 0.7rem;
+    background-color: var(--clr-tab-background);
+    margin: 0 0.5rem 0.5rem 0;
+}
+.tags__wrapper li a {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.tags__wrapper li:hover {
+    background-color: var(--clr-primary);
+}
+.tags__wrapper li:hover a {
+    color: var(--clr-white);
+}
+
+.tags__wrapper .view__all {
+    background-color: var(--clr-primary);
+}
+.tags__wrapper .view__all a {
+    color: var(--clr-white);
+}
