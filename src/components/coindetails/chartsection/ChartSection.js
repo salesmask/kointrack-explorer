@@ -4,6 +4,7 @@ import './ChartSection.css';
 import CalendarIcon from '../../../assets/coindetails/chart-section/calendar-icon.svg';
 import CoinReview from './coinreview/CoinReview';
 import CoinDescription from './coindescription/CoinDescription';
+import Chart from './chart/Chart';
 
 const ChartSection = () => {
     return (
@@ -90,8 +91,8 @@ const ChartSection = () => {
             </div>
             {/* Chart-outline container */}
             <div className="chart-outline__wrapper ">
-                <div className="graph__main--wrapper d-flex justify-content-center align-items-center mb-5">
-                    The Chart..yyo
+                <div className="chart__main--wrapper container-fluid mb-5 w-100">
+                    <Chart />
                 </div>
 
                 {/* Coin review section */}
