@@ -1,0 +1,130 @@
+.border {
+    border: 1px solid #e4e4e4 !important;
+}
+
+.bitcoin_market {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #1e202b;
+    padding: 0px 40px 40px 0px;
+}
+.button_spot {
+    background-color: #2b50ff !important;
+    color: #ffffff !important;
+    width: 64px;
+    height: 30px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 6px 18px;
+    gap: 10px;
+}
+.button_perpetual {
+    background-color: #eaebf2 !important;
+    color: #1e202b !important;
+    width: 80px;
+    height: 30px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 6px 18px;
+    gap: 10px;
+}
+.button_features {
+    background-color: #eaebf2 !important;
+    color: #1e202b !important;
+    width: 80px;
+    height: 30px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 6px 18px;
+    gap: 10px;
+}
+.button_high {
+    background-color: #33b868 !important;
+    color: #ffffff !important;
+    width: 64px;
+    height: 30px;
+    text-align: center !important;
+}
+.button_high_parent {
+    vertical-align: middle !important;
+}
+.button_show_all {
+    background-color: #eaebf2 !important;
+    color: #1e202b !important;
+    width: 160px;
+    height: 30px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-style: normal;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+}
+.btc_color {
+    color: #2b50ff;
+}
+
+.bitcoin_market_styles {
+    padding: 60px !important;
+}
+
+.table_styles {
+    line-height: 5rem !important;
+    border-collapse: separate !important;
+    border-spacing: 0rem 1rem !important;
+}
+.binance_logo {
+    width: 32px;
+    height: 32px;
+}
+.source {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #1e202b;
+}
+.table > :not(:first-child) {
+    border-top: none !important;
+}
+.button_down_market {
+    display: flex;
+    text-align: center !important;
+    justify-content: center !important;
+    padding-top: 40px;
+}
+.before_after::before,
+.before_after::after {
+    content: '';
+    width: 10px;
+    height: calc(50px + 1rem);
+    background-color: #ffffff;
+    display: block;
+}
+.top_border::before,
+.top_border::after {
+    content: '';
+    width: 10px;
+    /* height: calc(50px + 1rem); */
+    /* background-color: #ffffff; */
+    /* display: block; */
+}
+.top_border {
+    background-color: #ffffff !important;
+    box-shadow: 0px 1px 0px 1px #eaebf2 !important ;
+}
+
+.table_main {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-x: scroll;
+}
+
+.table_main::-webkit-scrollbar {
+    display: none;
+}

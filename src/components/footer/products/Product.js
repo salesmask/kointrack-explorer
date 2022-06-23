@@ -3,7 +3,7 @@ import './Product.css';
 
 const Product = () => {
     return (
-        <div class="col lh-lg  ps-5 ">
+        <div class="col lh-lg  ">
             <h3>Products</h3>
             <ul className="product_wrapper">
                 <li>
