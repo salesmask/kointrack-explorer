@@ -72,7 +72,7 @@ const BitcoinMarkets = () => {
                                 <td className="button_high_parent">
                                     <a
                                         href="#"
-                                        class="btn  rounded-pill button_high"
+                                        class="btn  rounded-pill button_high "
                                     >
                                         High
                                     </a>
@@ -95,7 +95,7 @@ const BitcoinMarkets = () => {
                                 <td>$16,697,927.67</td>
                                 <td>$3,120,563,182</td>
                                 <td>7.52%</td>
-                                <td>
+                                <td className="button_high_parent">
                                     <a
                                         href="#"
                                         class="btn  rounded-pill button_high"
@@ -121,7 +121,7 @@ const BitcoinMarkets = () => {
                                 <td>$16,697,927.67</td>
                                 <td>$3,120,563,182</td>
                                 <td>7.52%</td>
-                                <td>
+                                <td className="button_high_parent">
                                     <a
                                         href="#"
                                         class="btn  rounded-pill button_high"
@@ -148,7 +148,7 @@ const BitcoinMarkets = () => {
                                 <td>$16,697,927.67</td>
                                 <td>$3,120,563,182</td>
                                 <td>7.52%</td>
-                                <td>
+                                <td className="button_high_parent">
                                     <a
                                         href="#"
                                         class="btn  rounded-pill button_high"
@@ -202,7 +202,7 @@ const BitcoinMarkets = () => {
                                 <td>$16,697,927.67</td>
                                 <td>$3,120,563,182</td>
                                 <td>7.52%</td>
-                                <td>
+                                <td className="button_high_parent">
                                     <a
                                         href="#"
                                         class="btn  rounded-pill button_high"

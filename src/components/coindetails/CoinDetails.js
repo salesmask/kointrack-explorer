@@ -33,8 +33,9 @@ const CoinDetails = () => {
                 </div>
             </section>
 
-            <BitcoinMarkets />
             <PriceEstimates />
+            <BitcoinMarkets />
+
             <News />
 
             <Footer />
