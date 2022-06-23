@@ -49,6 +49,9 @@
     width: 64px;
     height: 30px;
     text-align: center !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .button_high_parent {
     vertical-align: middle !important;

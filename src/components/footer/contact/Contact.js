@@ -6,7 +6,7 @@ import Place from '../../../assets/footer/Place.png';
 
 const Contact = () => {
     return (
-        <div class="col ">
+        <div class="col contact_main_column">
             <h3>Contact</h3>
             <ul className="contact_wrapper">
                 <li>
