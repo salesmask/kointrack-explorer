@@ -33,7 +33,7 @@ const Gravity = () => {
                     </div>
                 </div>
 
-                <div className="rounded__border border mt-5">
+                <div className="rounded__border border mt-4">
                     <div className="d-flex align-items-center justify-content-start gravity__rounder px-3 py-3  gravity__contents ">
                         <div className=" rounded-circle">
                             <img
