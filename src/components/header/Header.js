@@ -14,15 +14,15 @@ import {
 
 const Header = () => {
     return (
-        <div>
+        <div className="header__wrapper py-4">
             <Navbar
                 fluid
-                className="header__container  mx-auto"
+                className=""
                 expand="lg"
             >
-                <Container className="header__box mx-auto">
+                <div className="d-flex container-fluid container__fixed  d-flex">
                     <Navbar.Brand
-                        className="navbar__band"
+                        className=""
                         href="#home"
                     >
                         <img
@@ -31,10 +31,10 @@ const Header = () => {
                         ></img>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav navbar-left">
-                        <Nav className="me-auto nav__content ">
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="gap-lg-4">
                             <NavDropdown
-                                className="header__text"
+                                className="nav__bar"
                                 title="Coins"
                                 id="basic-nav-dropdown"
                             >
@@ -52,8 +52,10 @@ const Header = () => {
                                     Separated link
                                 </NavDropdown.Item>
                             </NavDropdown>
+
                             <Nav.Link href="#home">Exchanges</Nav.Link>
                             <Nav.Link href="#link">Portfolio</Nav.Link>
+
                             <NavDropdown
                                 title="Products"
                                 id="basic-nav-dropdown"
@@ -74,16 +76,16 @@ const Header = () => {
                             </NavDropdown>
                         </Nav>
 
-                        <Form className="navbar__form navbar-nav">
-                            <div class="search-box">
+                        <div className="d-flex ms-auto gap-4">
+                            <div className="search-box d-none d-lg-block">
                                 <input
-                                    class="search-text"
+                                    className="search-text"
                                     type="text"
                                     placeholder="Search Anything"
                                 ></input>
                                 <a
                                     href="#"
-                                    class="search-btn"
+                                    className="search-btn"
                                 >
                                     <img
                                         src={header_search_icon}
@@ -91,17 +93,12 @@ const Header = () => {
                                     ></img>
                                 </a>
                             </div>
-                            <div className="header__button">
-                                <button className="sign__up display__center ">
-                                    Sign Up
-                                </button>
-                                <button className="log__in display__center">
-                                    Log In
-                                </button>
-                            </div>
-                        </Form>
+
+                            <button className="sign__up">Sign Up</button>
+                            <button className="log__in">Log In</button>
+                        </div>
                     </Navbar.Collapse>
-                </Container>
+                </div>
                 <NavDropdown.Divider />
             </Navbar>
         </div>

@@ -12,6 +12,10 @@ import like from '../../../assets/coindata/Like.svg';
 import next_arrow from '../../../assets/coindata/Next Arrow.svg';
 import fire from '../../../assets/coindata/fire.svg';
 import shoe_coin from '../../../assets/coindata/shoecoin.svg';
+import green__up from '../../../assets/coindata/green__up.svg';
+import red__down from '../../../assets/coindata/red__down.svg';
+import white__up from '../../../assets/coindata/white__up.svg';
+import black__left from '../../../assets/coindata/black__left.svg';
 
 const Gravity = () => {
     return (
@@ -73,10 +77,10 @@ const Gravity = () => {
                             <div className="ms-auto d-flex flex-wrap gap-3">
                                 <div
                                     type="button"
-                                    className="trend__button d-flex fw-bolder align-items-center text-success rounded-pill text-center py-2 justify-content-center"
+                                    className="trend__button d-flex fw-bolder align-items-center text-success rounded-pill text-center py-2 justify-content-center gap-1"
                                 >
                                     <img
-                                        src={up_arrow}
+                                        src={green__up}
                                         className="gravity__arrow "
                                         alt=""
                                     ></img>
@@ -85,11 +89,11 @@ const Gravity = () => {
 
                                 <div
                                     type="button"
-                                    className="trend__button d-flex text-danger fw-bolder align-items-center rounded-pill text-center py-2 justify-content-center"
+                                    className="trend__button  d-flex text-danger fw-bolder align-items-center rounded-pill text-center py-2 justify-content-center gap-1"
                                 >
                                     <img
-                                        src={down_arrow}
-                                        className="gravity__arrow "
+                                        src={red__down}
+                                        className="gravity__arrow  "
                                         alt=""
                                     ></img>
                                     Bearish
@@ -97,7 +101,7 @@ const Gravity = () => {
                             </div>
                         </div>
 
-                        <div className="d-flex align-items-center  justify-content-start rounded-pill px-2 py-2 border">
+                        <div className="d-flex mt-2 align-items-center  justify-content-start rounded-pill px-2 py-2 border btc__background">
                             <h3 className="fs-3  text-primary text-center my-0">
                                 BTC
                             </h3>
@@ -123,7 +127,7 @@ const Gravity = () => {
                             <div className="switch__box d-flex flex-wrap rounded-pill gap-2 justify-items-start align-items-center">
                                 <div
                                     type="button"
-                                    className="switch__button rounded-pill py-2 fw-bolder my-0 text-center "
+                                    className="switch__button rounded-pill py-2 fw-bolder my-0 text-center text-light "
                                 >
                                     Top
                                 </div>
@@ -163,7 +167,7 @@ const Gravity = () => {
                                     className=" button__chat px-3 d-flex fw-bolder align-items-center  gap-2 text-light rounded-pill text-center py-2 justify-content-center"
                                 >
                                     <img
-                                        src={up_arrow}
+                                        src={white__up}
                                         className="gravity__arrow "
                                         alt=""
                                     ></img>
@@ -202,11 +206,11 @@ const Gravity = () => {
 
                             <div
                                 type="button"
-                                className="readmore__button rounded-pill text-center ms-auto py-2 "
+                                className="readmore__button rounded-pill text-center ms-auto py-2"
                             >
                                 Read More
                                 <img
-                                    src={next_arrow}
+                                    src={black__left}
                                     className="gravity__arrow"
                                 ></img>
                             </div>
@@ -242,10 +246,10 @@ const Gravity = () => {
                             </p>
                             <div
                                 type="button"
-                                className="d-flex text-danger font__style--right   align-items-center text-center justify-content-end"
+                                className="d-flex text-danger font__style--right   align-items-center text-center justify-content-end gap-1"
                             >
                                 <img
-                                    src={down_arrow}
+                                    src={red__down}
                                     className="gravity__arrow"
                                     alt=""
                                 ></img>
@@ -280,10 +284,10 @@ const Gravity = () => {
                             </p>
                             <div
                                 type="button"
-                                className="d-flex text-success font__style--right   align-items-center text-center justify-content-end"
+                                className="d-flex text-success font__style--right   align-items-center text-center justify-content-end gap-1"
                             >
                                 <img
-                                    src={down_arrow}
+                                    src={green__up}
                                     className="gravity__arrow"
                                     alt=""
                                 ></img>
