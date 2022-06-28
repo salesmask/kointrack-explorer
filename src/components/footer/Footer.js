@@ -11,9 +11,9 @@ import Sociallinks from './sociallinks/Sociallinks';
 function Footer() {
     return (
         <>
-            <div class="footer-dark ">
+            <div class="container-fluid ">
                 <footer>
-                    <div class="container-fluid">
+                    <div class="footer-dark ">
                         <div class="row gx-5">
                             <FooterLogo />
 
