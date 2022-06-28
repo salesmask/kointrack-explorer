@@ -15,7 +15,6 @@
     font-size: var(--fs-table-head);
     font-weight: 500;
     color: var(--clr-text);
-    line-height: 2rem;
 }
 
 /* Table section */
@@ -27,15 +26,21 @@
     height: 20px;
 }
 .highlights__currency--slno,
-.highlights__currency--name {
-    color: var(--clr-text);
+.highlights__currency--name,
+.highlights__currency--symbol,
+.percent__change--value-up,
+.percent__change--value-down,
+.recently__added--price {
     font-weight: 500;
     font-size: var(--fs-table-cell);
 }
+
+.highlights__currency--slno,
+.highlights__currency--name {
+    color: var(--clr-text);
+}
 .highlights__currency--symbol {
     color: var(--clr-light-text);
-    font-weight: 500;
-    font-size: var(--fs-table-cell);
 }
 
 .highlights__table .percent__change--upicon {
@@ -43,18 +48,12 @@
 }
 .percent__change--value-up {
     color: var(--clr-up);
-    font-weight: 500;
-    font-size: var(--fs-table-cell);
 }
 .percent__change--value-down {
     color: var(--clr-down);
-    font-weight: 500;
-    font-size: var(--fs-table-cell);
 }
 .recently__added--price {
     color: var(--clr-price-digit);
-    font-weight: 500;
-    font-size: var(--fs-table-cell);
 }
 
 /* Corresponding screen width according to bootstrap lg screens */
