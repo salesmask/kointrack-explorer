@@ -9,19 +9,19 @@ import ETHArrowUp from '../../../assets/coindetails/coin-head-details/Increase_A
 
 const CoinHeadDetails = () => {
     return (
-        <div className="head-details__wrapper p-4 d-flex justify-content-between align-items-center">
+        <div className="coin-head__wrapper d-flex justify-content-between align-items-center">
             {/* Name and details section */}
 
-            <div className="head-details__name--wrapper">
-                <div className="d-flex justify-content-between align-items-center mb-3">
-                    <div className="image__wrapper">
+            <div className="coin-head__name--wrapper">
+                <div className="d-flex justify-content-start align-items-center mb-3">
+                    <div className="image__wrapper pe-3">
                         <img
                             src={CoinImage}
                             alt="coin"
                         />
                     </div>
-                    <div className="name">Bitcoin</div>
-                    <div className="symbol">BTC</div>
+                    <div className="name pe-3">Bitcoin</div>
+                    <div className="symbol pe-3">BTC</div>
                     <div className="watchlist__wrapper">
                         <img
                             src={WatchListStar}
@@ -29,7 +29,7 @@ const CoinHeadDetails = () => {
                         />
                     </div>
                 </div>
-                <div className="d-flex justify-content-between align-items-center">
+                <div className="d-flex justify-content-center align-items-center">
                     <div className="rank">Rank #1</div>
                     <span>/</span>
                     <div className="type">Coin</div>
@@ -40,8 +40,8 @@ const CoinHeadDetails = () => {
                 </div>
             </div>
 
-            {/* Range section */}
-            <div className="head-details__range--wrapper d-flex justify-content-between align-items-center d-none d-xl-flex">
+            {/* Range bar section */}
+            <div className="coin-head__range--wrapper d-flex justify-content-between align-items-center d-none d-xl-flex">
                 <div className="range__inner--wrapper">
                     <div className="range__lowhigh--values d-flex justify-content-between align-items-center mb-4">
                         <div className="low__value">
@@ -64,7 +64,7 @@ const CoinHeadDetails = () => {
                         ></div>
                     </div>
                 </div>
-                <div className="range-of__time rounded-pill d-flex justify-content-between align-items-center ms-5 px-3 py-1">
+                <div className="range-of__time rounded-pill d-flex justify-content-between align-items-center ms-4 px-3 py-1">
                     <div className="pe-3 time">24h</div>
                     <img
                         src={RangeofTimeIcon}
@@ -76,15 +76,15 @@ const CoinHeadDetails = () => {
 
             {/* Current price details section */}
 
-            <div className="head-details__price--wrapper text-end">
+            <div className="coin-head__price--wrapper text-end">
                 <div className="name-symbol">Bitcoin Price (BTC)</div>
-                <div className="current__price d-flex justify-content-center align-items-center">
-                    <span className="price">$29,651.69</span>
-                    <span className="percent-change ms-3 py-1 px-2 rounded-pill">
+                <div className="current__price--wrapper d-flex justify-content-center align-items-center">
+                    <span className="current-price">$29,651.69</span>
+                    <span className="percent-change ms-3 py-1 px-3 rounded-pill">
                         <img
                             src={CurrentPriceArrowDown}
                             alt="change-icon"
-                            className="current__price--image"
+                            className="change-icon"
                         />
                         <span className="ps-1">6.45%</span>
                     </span>

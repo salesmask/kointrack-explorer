@@ -1,5 +1,4 @@
 .home__search--heading {
-    margin-bottom: 7px;
     color: var(--clr-text);
 }
 .home__search--description,
@@ -20,8 +19,8 @@
 
 .search__wrapper {
     box-shadow: 0px 0px 20px rgba(21, 26, 51, 0.2);
-    width: 75rem;
     position: relative;
+    max-width: 90rem !important;
 }
 .search__input {
     padding: 1.5rem 2.6rem;
@@ -41,6 +40,17 @@
     width: 95px !important;
 }
 
+/* Corresponding screen width according to bootstrap for xxl screens */
+@media screen and (min-width: 1400px) {
+    .home__search--heading {
+        font-size: clamp(3.2rem, 2.5vw, 5rem);
+    }
+    .home__search--description,
+    .home__search--description .price__change {
+        font-size: 2.2rem;
+    }
+}
+
 /* Corresponding screen width according to bootstrap md screens */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -50,9 +60,6 @@
     .home__search--description,
     .home__search--description .price__change {
         font-size: 1.4rem;
-    }
-    .search__wrapper {
-        width: 55rem;
     }
 }
 
@@ -66,8 +73,8 @@
     .home__search--description .price__change {
         font-size: 1.2rem;
     }
-    .search__wrapper {
-        width: 47rem;
+    .home__search--description .arrow_icon {
+        width: 14px;
     }
     .search__input {
         padding: 1.2rem 2rem;
@@ -90,8 +97,8 @@
     .home__search--description .price__change {
         font-size: 1rem;
     }
-    .search__wrapper {
-        width: 33rem;
+    .home__search--description .arrow_icon {
+        width: 11px;
     }
     .search__input {
         padding: 1rem 1.6rem;
@@ -99,6 +106,6 @@
     }
     .search__button {
         height: 35px;
-        width: 60px;
+        width: 60px !important;
     }
 }

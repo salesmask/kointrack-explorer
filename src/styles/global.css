@@ -56,14 +56,9 @@ html {
 
 body {
     margin: auto;
-    max-width: 1600px;
+    width: 100%;
     overflow-x: hidden;
     background-color: var(--clr-white);
-
-    /*
-     * Assigned default font family as "'Poppins', sans-serif".
-     * Font family may vary in particular components.
-     */
     font-family: var(--ff-primary);
 }
 

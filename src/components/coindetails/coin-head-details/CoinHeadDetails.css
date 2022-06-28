@@ -1,54 +1,56 @@
-.head-details__wrapper {
+.coin-head__wrapper {
     background-color: var(--clr-table-row);
-    margin: 0 6rem;
-    margin-bottom: 3rem;
+    margin: 0 6rem 5.5rem;
+    padding: 2rem;
+    border-radius: 1rem;
 }
 
 /* Name and details section */
 
-.head-details__name--wrapper .image__wrapper {
+.coin-head__name--wrapper .image__wrapper {
     width: 64px;
     height: 64px;
 }
-.head-details__name--wrapper .name {
+.coin-head__name--wrapper .name {
     font-size: 2.4rem;
     color: var(--clr-text);
 }
-.head-details__name--wrapper .symbol {
+.coin-head__name--wrapper .symbol {
     font-size: 1.8rem;
     color: var(--clr-light-text);
 }
 
-.head-details__name--wrapper .name,
-.head-details__name--wrapper .symbol {
+.coin-head__name--wrapper .name,
+.coin-head__name--wrapper .symbol {
     font-weight: 700;
 }
-.head-details__name--wrapper .watchlist__wrapper {
+.coin-head__name--wrapper .watchlist__wrapper {
+    width: 2.4rem;
     background-color: #efefef;
-    padding: 0.3rem;
+    padding: 0.2rem;
     border-radius: 4px;
 }
-.head-details__name--wrapper .rank,
-.head-details__name--wrapper .type,
-.head-details__name--wrapper .watchlist-count {
+.coin-head__name--wrapper .rank,
+.coin-head__name--wrapper .type,
+.coin-head__name--wrapper .watchlist-count {
     font-size: 1.4rem;
     font-weight: 400;
 }
-.head-details__name--wrapper .rank {
+.coin-head__name--wrapper .rank {
     font-weight: 700;
 }
-.head-details__name--wrapper span {
+.coin-head__name--wrapper span {
     padding: 0 0.5rem;
     font-weight: 400;
 }
 
-/* Range bar */
+/* Range bar section*/
 
-.head-details__range--wrapper {
+.coin-head__range--wrapper {
     width: auto;
 }
 
-.head-details__range--wrapper .progress {
+.coin-head__range--wrapper .progress {
     height: 1rem !important;
 }
 .range-of__time {
@@ -85,26 +87,23 @@
 
 /* Current price details section */
 
-.head-details__price--wrapper .name-symbol {
+.coin-head__price--wrapper .name-symbol {
     font-weight: 700;
     font-size: 1.4rem;
     color: var(--clr-light-text);
 }
-.head-details__price--wrapper .current__price .price {
+.current__price--wrapper .current-price {
     font-size: 3.2rem;
     font-weight: 700;
     color: var(--clr-text);
 }
-.head-details__price--wrapper
-    .current__price
-    .percent-change
-    .current__price--image {
-    width: 1.5ch;
-}
-.head-details__price--wrapper .current__price .percent-change {
+.current__price--wrapper .percent-change {
     background-color: var(--clr-down);
 }
-.head-details__price--wrapper .current__price .percent-change span {
+.current__price--wrapper .change-icon {
+    width: 1.5ch;
+}
+.current__price--wrapper .percent-change span {
     color: var(--clr-white);
     font-size: 1.2rem;
     font-weight: 500;
@@ -126,7 +125,7 @@
 /* Corresponding screen width according to bootstrap sm screens */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    .head-details__wrapper {
+    .coin-head__wrapper {
         margin: 0 4rem;
     }
 }
@@ -134,7 +133,7 @@
 /* Corresponding screen width according to bootstrap less than sm screens */
 
 @media screen and (max-width: 576px) {
-    .head-details__wrapper {
+    .coin-head__wrapper {
         margin: 0 2rem;
     }
 }

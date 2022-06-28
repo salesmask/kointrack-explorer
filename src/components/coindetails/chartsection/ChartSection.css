@@ -113,7 +113,7 @@
 
 /* graph */
 .chart__main--wrapper {
-    /* border: 1px solid; */
+    border: 1px solid;
     height: 300px;
     /* background-color: rgb(221, 231, 221); */
     font-size: 3rem;
