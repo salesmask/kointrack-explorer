@@ -1,8 +1,5 @@
 .charttabs__wrapper {
-    width: 100%;
     border: 5px solid var(--clr-table-row);
-    padding: 4rem 6rem;
-    margin-bottom: 3rem;
 }
 
 .charttabs__inner--wrapper {
@@ -20,10 +17,12 @@
     white-space: nowrap;
     transition: ease-in 150ms;
 }
-.charttabs__inner--wrapper li:hover {
+.charttabs__inner--wrapper li:hover,
+.charttabs__inner--wrapper li.active {
     background-color: var(--clr-primary);
 }
-.charttabs__inner--wrapper li:hover a {
+.charttabs__inner--wrapper li:hover a,
+.charttabs__inner--wrapper li.active a {
     color: var(--clr-white);
 }
 
@@ -32,19 +31,10 @@
     font-size: 1.2rem;
     font-weight: 400;
 }
-.charttabs__inner--wrapper li.active {
-    background-color: var(--clr-primary);
-}
-.charttabs__inner--wrapper li.active a {
-    color: var(--clr-white);
-}
 
 /* Corresponding screen width according to bootstrap sm screens */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-    .charttabs__wrapper {
-        padding: 3rem 4rem;
-    }
     .charttabs__inner--wrapper li {
         padding: 0.6rem 1.2rem;
     }
@@ -53,9 +43,6 @@
 /* Corresponding screen width according to bootstrap less than sm screens */
 
 @media screen and (max-width: 576px) {
-    .charttabs__wrapper {
-        padding: 2rem 2rem;
-    }
     .charttabs__inner--wrapper li {
         padding: 0.4rem 1rem;
     }
