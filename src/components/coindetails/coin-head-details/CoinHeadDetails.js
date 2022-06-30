@@ -9,7 +9,7 @@ import ETHArrowUp from '../../../assets/coindetails/coin-head-details/Increase_A
 
 const CoinHeadDetails = () => {
     return (
-        <div className=" container-fluid px-0 yoyo-test">
+        <div className=" container-fluid px-0">
             <div className="row mx-0">
                 <div className="col-11 mx-auto d-flex px-0">
                     <div className="coin-head__wrapper w-100 p-0 p-md-4 ">
