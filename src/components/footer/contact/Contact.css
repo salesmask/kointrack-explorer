@@ -4,11 +4,12 @@
 }
 .contact_wrapper {
     padding-top: 20px;
+    line-height: 50px !important;
 }
 
-.contact_main_column {
+/* .contact_main_column {
     line-height: 40px !important ;
-}
+} */
 
 .mail_logo {
     width: 28px;
@@ -58,4 +59,7 @@
 .contact_call_logo_list {
     display: block;
     margin-bottom: 16px;
+}
+.place_logo_lineheight {
+    line-height: 32px !important;
 }

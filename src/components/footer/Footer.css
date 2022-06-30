@@ -1,12 +1,6 @@
-.footer-dark {
+.footer__wrapper {
     background-color: var(--clr-footer);
-    width: 100%;
     color: #ffffff;
-    padding: 60px 60px 0;
-}
-.row {
-    /* padding:0 6%; */
-    /* padding-bottom: 40px; */
 }
 
 /* Copyright section */
@@ -16,6 +10,19 @@
     /* border-top: 1px solid white; */
     box-shadow: 0px 1px 1px 1px #ffffff !important;
 }
+
 .copyright__content {
     color: #ffffff;
 }
+
+/* Corresponding screen width according to bootstrap for xxl screens */
+/* 
+@media screen and (min-width: 1400px){
+    .footer__wrapper h3{
+            font-size: 3rem !important;
+    }
+    .footer__wrapper li,
+    .footer__wrapper a{
+        font-size: 1.8rem !important;
+}
+} */

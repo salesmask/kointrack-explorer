@@ -6,15 +6,14 @@ import Company from './company/Company';
 import Resourcess from './resourcess/Resourcess';
 import Contact from './contact/Contact';
 import FooterLogo from './logo/FooterLogo';
-import Sociallinks from './sociallinks/Sociallinks';
 
 function Footer() {
     return (
         <>
-            <div class="footer-dark ">
-                <footer>
-                    <div class="container-fluid">
-                        <div class="row gx-5">
+            <footer>
+                <div class="footer__wrapper container-fluid py-5 px-0 ">
+                    <div class="row  py-5 mx-0 ">
+                        <div className="col-11 mx-auto d-flex flex-wrap px-0 gap-5">
                             <FooterLogo />
 
                             <Product />
@@ -25,11 +24,12 @@ function Footer() {
 
                             <Contact />
                         </div>
-
-                        {/* <Sociallinks/> */}
                     </div>
-                </footer>
-            </div>
+                </div>
+            </footer>
+
+            {/* copyright section */}
+
             <div class="copyright container-fluid d-flex justify-content-center align-items-center py-3">
                 <p className="copyright__content mb-0">
                     © Copyright 2021-22 www.kointrack.com
