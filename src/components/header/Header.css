@@ -1,10 +1,11 @@
 .header__wrapper {
     background: #151a33;
-    padding: 0 6rem;
 }
 
-.container__fixed {
-    padding: 0 !important;
+.box__shadow {
+    box-shadow: 2px 2px 2px 1px rgb(251, 251, 251);
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -15,8 +16,8 @@
     background: #e96e5d;
     color: #ffffff;
     height: 37px;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 13px;
     display: flex;
     align-items: center;
 }
@@ -25,8 +26,8 @@
     background: #08ad98;
     color: #ffffff;
     height: 37px;
-    font-weight: 600;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 13px;
     display: flex;
     align-items: center;
 }
@@ -35,15 +36,18 @@
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAA50lEQVRoge3WMU7DQBSE4f8ZFKDIAcjB6Ai3CKKBKNzElJyHI8AFkIlC4A0FtuJFQpBuQfM19pNW9qwsawfMzMz+sCim5cOEbnsbwTnKUySQCD6vSICI0T3qZwTKX60v1+QPz+zn0JNSd+vNwTX3Z69D5MNiAy/bVcBiCFJNeASpWSgvTybvWsPVELn58jnmUGF47d7RSBfjzMUGUKrm8P2c324gkrby8ADtOHPxD+T06KZ57kDMkWaVhX8E2u7teImZWTXchdyF9jzU3IXchdyFzOxfcRdyF9rzUHMXchdyFzIzM9v5ADn1CZvVM6PIAAAAAElFTkSuQmCC') !important;
 }
 
+.Navbar {
+    box-shadow: hsl(222, 88%, 13%);
+}
+
 .search-box {
     background: #f3f4f6;
-    height: 40px;
-
+    height: 38px;
     border-radius: 38px;
 }
 
 .search-box:hover > .search-text {
-    width: 240px;
+    width: 230px;
     padding-left: 15px;
 }
 
@@ -54,8 +58,8 @@
 }
 
 .search-btn {
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 38px;
     border-radius: 500%;
 
     display: flex;
@@ -77,29 +81,10 @@
     float: left;
     padding: 0;
     color: rgb(26, 25, 25);
-    font-size: 14px;
+    font-size: 13px;
 
     font-weight: normal;
     transition: 0.6s;
-    line-height: 40px;
+    line-height: 38px;
     width: 0px;
-}
-
-@media (min-width: 992px) and (max-width: 1280px) {
-    .nav__bar {
-        margin-left: 12rem;
-    }
-}
-
-/* Corresponding screen width according to bootstrap sm screens */
-@media screen and (min-width: 576px) and (max-width: 768px) {
-    .header__wrapper {
-        padding: 0 4rem;
-    }
-}
-/* Corresponding screen width according to bootstrap less than sm screens */
-@media screen and (max-width: 576px) {
-    .header__wrapper {
-        padding: 0 2rem;
-    }
 }

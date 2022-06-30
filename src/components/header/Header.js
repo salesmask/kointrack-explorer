@@ -14,13 +14,13 @@ import {
 
 const Header = () => {
     return (
-        <div className="header__wrapper py-4">
+        <div className="header__wrapper container-fluid">
             <Navbar
                 fluid
-                className=""
+                className="row "
                 expand="lg"
             >
-                <div className="d-flex container-fluid container__fixed  d-flex">
+                <div className="col-11 mx-auto d-flex justify-content-between py-4">
                     <Navbar.Brand
                         className=""
                         href="#home"
@@ -30,9 +30,9 @@ const Header = () => {
                             alt=""
                         ></img>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="gap-lg-4">
+                    <Navbar.Toggle aria-controls="basic-navbar-nav " />
+                    <Navbar.Collapse id="basic-navbar-nav ">
+                        <Nav className="gap-lg-4 ms-lg-5 ps-lg-5">
                             <NavDropdown
                                 className="nav__bar"
                                 title="Coins"
@@ -76,8 +76,10 @@ const Header = () => {
                             </NavDropdown>
                         </Nav>
 
+                        {/* search box */}
+
                         <div className="d-flex ms-auto gap-4">
-                            <div className="search-box d-none d-lg-block">
+                            <div className="search-box d-none d-md-block">
                                 <input
                                     className="search-text"
                                     type="text"
@@ -99,8 +101,8 @@ const Header = () => {
                         </div>
                     </Navbar.Collapse>
                 </div>
-                <NavDropdown.Divider />
             </Navbar>
+            <div className="box__shadow"></div>
         </div>
     );
 };
