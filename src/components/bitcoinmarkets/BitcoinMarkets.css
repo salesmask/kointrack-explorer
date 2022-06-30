@@ -131,3 +131,23 @@
 .table_main::-webkit-scrollbar {
     display: none;
 }
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .table_main {
+        overflow-x: scroll;
+        margin: 1.5rem 4rem;
+    }
+    .star__wrapper {
+        width: 2rem;
+    }
+}
+
+/* Corresponding screen width according to bootstrap smaller than sm screens */
+
+@media screen and (max-width: 576px) {
+    .table_main {
+        overflow-x: scroll;
+        margin: 1rem 2rem;
+    }
+}

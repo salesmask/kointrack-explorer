@@ -3,10 +3,10 @@ import './Resourcess.css';
 
 const Resourcess = () => {
     return (
-        <div class="col lh-lg">
+        <div class=" col-11 col-sm-5 col-md-3 col-xl ">
             <h3>Resources</h3>
             <ul className="resource_wrapper">
-                <li>
+                <li class="mb-2">
                     <a href="#">Blog</a>
                 </li>
             </ul>

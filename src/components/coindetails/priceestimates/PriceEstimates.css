@@ -36,6 +36,7 @@
     display: flex !important;
     justify-content: center;
     align-items: center;
+    font-size: 12px !important;
 }
 .customer_logo {
     width: 35px;
@@ -52,6 +53,8 @@
     font-weight: 500;
     font-size: 12px;
     text-align: right !important;
+    vertical-align: middle !important;
+    padding-top: 8px !important;
 }
 .estimate {
     padding: 60px;
@@ -76,6 +79,7 @@
     border: 1px solid #eaebf2 !important;
     font-style: normal;
     font-weight: 500 !important;
+    font-size: 12px !important;
 }
 
 /* Corresponding screen width according to bootstrap xl screens  */

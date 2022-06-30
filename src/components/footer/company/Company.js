@@ -3,26 +3,31 @@ import './Company.css';
 
 const Company = () => {
     return (
-        <div class="col lh-lg ">
+        <div class="col-11 col-sm-5  col-md-4   col-xl ">
             <h3>Company</h3>
-            <ul className="company_wrapper">
-                <li>
+            <ul className="company_links-wrapper pt-4">
+                <li class="mb-3">
                     <a href="#">About</a>
                 </li>
-                <li>
+                <li class="mb-3">
                     <a href="#">Careers</a>
                 </li>
-                <li>
+                <li class="mb-3">
                     <a href="#">Disclaimer</a>
                 </li>
-                <li>
+                <li class="mb-3">
                     <a href="#">Privacy Policy</a>
                 </li>
-                <li>
+                <li class="mb-3">
                     <a href="#">Cookie Policy</a>
                 </li>
-                <li>
-                    <a href="#">Terms and Conditions</a>
+                <li class="mb-3">
+                    <a
+                        href="#"
+                        className="text-nowrap"
+                    >
+                        Terms and Conditions
+                    </a>
                 </li>
             </ul>
         </div>
