@@ -5,7 +5,7 @@ import Sociallinks from '../sociallinks/Sociallinks';
 
 const FooterLogo = () => {
     return (
-        <div class="col-lg-3 mb-3 ">
+        <div class=" col-sm-5 col-md-4 col-xl  ">
             <div className="footer_koin_logo">
                 <img
                     src={Header_Logo}
