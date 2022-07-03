@@ -29,7 +29,7 @@ const CoinDetails = () => {
                 <div className="row mx-0 border border-primary">
                     <div className="tabdetails__inner--container col-11 mx-auto px-0">
                         <div className="row mx-0 d-flex flex-wrap  border border-danger">
-                            <div className="col-12 col-lg-8 ps-0 pe-5">
+                            <div className="col-12 col-lg-8 px-0 pe-lg-5">
                                 <div className="chart-side__wrapper">
                                     <ChartSection />
                                 </div>

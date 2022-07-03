@@ -97,13 +97,13 @@ const ChartSection = () => {
 
                 {/* Coin review section */}
 
-                <div className="coin__review--wrapper">
+                <div className="coin__review--wrapper mx-2 mx-md-4 p-3 p-md-4">
                     <CoinReview />
                 </div>
 
                 {/* Coin description section */}
 
-                <div className="coin__description--wrapper">
+                <div className="coin__description--wrapper my-3 mx-2 m-md-4">
                     <CoinDescription />
                 </div>
             </div>

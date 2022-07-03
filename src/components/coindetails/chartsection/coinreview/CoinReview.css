@@ -33,3 +33,36 @@
     font-weight: 600;
     color: var(--clr-white);
 }
+
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .coin-review__button--wrapper .good__wrapper,
+    .coin-review__button--wrapper .bad__wrapper {
+        padding: 0.5rem 1rem;
+    }
+    .coin-review__question--wrapper .question {
+        font-size: 1.6rem;
+    }
+    .coin-review__question--wrapper .comment {
+        font-weight: 400;
+    }
+}
+
+/* Corresponding screen width according to bootstrap less than sm screens */
+
+@media screen and (max-width: 576px) {
+    .coin-review__question--wrapper .question {
+        white-space: normal;
+    }
+    .coin-review__button--wrapper .good__wrapper,
+    .coin-review__button--wrapper .bad__wrapper {
+        padding: 0.5rem 1rem;
+    }
+    /* .coin-review__question--wrapper .question{
+          font-size: 1.6rem;
+     }
+     .coin-review__question--wrapper .comment{
+          font-weight: 400;
+     } */
+}

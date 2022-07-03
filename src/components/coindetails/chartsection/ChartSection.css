@@ -121,15 +121,15 @@
 .coin__review--wrapper {
     border: 1px solid var(--clr-card-outline);
     border-radius: 1rem;
-    margin: 0 2rem;
-    padding: 2rem;
+    /* margin: 0 2rem; */
+    /* padding: 2rem; */
 }
 
 /* Coin description section */
 
-.coin__description--wrapper {
+/* .coin__description--wrapper {
     margin: 2rem 2rem 0;
-}
+} */
 
 /* Corresponding screen width according to bootstrap sm screens */
 
@@ -138,6 +138,18 @@
         padding: 0.4rem 1.2rem;
         margin-right: 0.5rem;
     }
+    /* Coin review section */
+
+    .coin__review--wrapper {
+        /* margin: 0 0.5rem; */
+        /* padding: 1rem; */
+    }
+
+    /* Coin description section */
+
+    /* .coin__description--wrapper {
+        margin: 1.5rem 2rem 0;
+    } */
 }
 
 /* Corresponding screen width according to bootstrap less than sm screens */
