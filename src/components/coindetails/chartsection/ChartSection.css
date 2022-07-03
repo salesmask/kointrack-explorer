@@ -1,5 +1,4 @@
 .chart-section__wrapper {
-    /* border-bottom: 1px solid green; */
     margin-bottom: 2rem;
 }
 .chart-section__wrapper * {
@@ -11,35 +10,33 @@
     margin-bottom: 2rem;
 }
 .control-tabs__wrapper {
-    /* border: 1px solid blueviolet; */
     margin-bottom: 2rem;
 }
 
 /* Chart deciding tabs */
 
-.control-tabs__wrapper li {
-    /* border: 1px solid var(--clr-card-outline); */
+.chart-decide-tabs__wrapper li {
     background-color: var(--clr-tab-background);
     padding: 0.6rem 1.4rem;
     margin-right: 0.5rem;
     transition: ease-in 150ms;
 }
-.control-tabs__wrapper li.active {
+.chart-decide-tabs__wrapper li.active {
     background-color: var(--clr-primary);
 }
-.control-tabs__wrapper li.active a {
+.chart-decide-tabs__wrapper li.active a {
     color: var(--clr-white);
 }
-.control-tabs__wrapper li a {
+.chart-decide-tabs__wrapper li a {
     font-size: 1.4rem;
     font-weight: 400;
     color: var(--clr-text);
 }
 
-.control-tabs__wrapper li:hover {
+.chart-decide-tabs__wrapper li:hover {
     background-color: var(--clr-primary);
 }
-.control-tabs__wrapper li:hover a {
+.chart-decide-tabs__wrapper li:hover a {
     color: var(--clr-white);
 }
 
@@ -57,6 +54,7 @@
     border: 1px solid var(--clr-card-outline);
     padding: 1px;
 }
+
 .time-tag__wrapper li {
     width: 30px;
     height: 30px;
@@ -85,9 +83,6 @@
     color: var(--clr-white);
 }
 
-/* .calendar__icon--wrapper{
-     border-right: 1px solid var(--clr-card-outline);
-} */
 .calender__icon {
     width: 1.6rem;
 }
@@ -115,7 +110,6 @@
 .chart__main--wrapper {
     border: 1px solid;
     height: 300px;
-    /* background-color: rgb(221, 231, 221); */
     font-size: 3rem;
     font-weight: 900;
     color: goldenrod;
@@ -135,5 +129,29 @@
 
 .coin__description--wrapper {
     margin: 2rem 2rem 0;
-    /* border: 1px solid; */
+}
+
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .chart-decide-tabs__wrapper li {
+        padding: 0.4rem 1.2rem;
+        margin-right: 0.5rem;
+    }
+}
+
+/* Corresponding screen width according to bootstrap less than sm screens */
+
+@media screen and (max-width: 576px) {
+    .chart-decide-tabs__wrapper li {
+        padding: 0.4rem 1rem;
+        margin-right: 0.5rem;
+    }
+    .time-tag__wrapper li {
+        width: 24px;
+        height: 24px;
+        padding: 4px;
+        margin-right: 1px;
+        font-size: 1rem;
+    }
 }
