@@ -23,7 +23,7 @@
 
 .font__header {
     font-weight: 700;
-    font-size: 54px;
+    font-size: clamp(14px, 3vw, 54px);
 }
 
 .font__paragraph {
@@ -37,7 +37,7 @@
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .font__header {
         font-weight: 700;
-        font-size: 14px;
+        /* font-size: 14px; */
     }
 
     .font__paragraph {
@@ -62,7 +62,7 @@
 
     .font__header {
         font-weight: 700;
-        font-size: 14px;
+        /* font-size: 14px; */
     }
 
     .font__paragraph {
