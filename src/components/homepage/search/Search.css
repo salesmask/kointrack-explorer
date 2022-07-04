@@ -36,8 +36,8 @@
     right: 0%;
     transform: translate(0%, -50%);
     background-color: var(--clr-primary);
-    height: 54px;
-    width: 95px !important;
+    height: 100%;
+    width: 13% !important;
 }
 
 /* Corresponding screen width according to bootstrap for xxl screens */
@@ -63,6 +63,14 @@
     }
 }
 
+/* Corresponding screen width according to bootstrap md screens */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .search__button {
+        width: 17% !important;
+    }
+}
+
 /* Corresponding screen width according to bootstrap sm screens */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -82,8 +90,7 @@
     }
     .search__button {
         padding: 1rem 1.4rem;
-        height: 41px;
-        width: 68px;
+        width: 20% !important;
     }
 }
 
@@ -105,7 +112,7 @@
         font-size: 1rem;
     }
     .search__button {
-        height: 35px;
-        width: 60px !important;
+        padding: 0.7rem 1.2rem;
+        width: 20% !important;
     }
 }
