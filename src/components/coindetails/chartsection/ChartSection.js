@@ -92,7 +92,7 @@ const ChartSection = () => {
             {/* Chart-outline container */}
             <div className="chart-outline__wrapper ">
                 <div className="chart__main--wrapper container-fluid mb-5 w-100 px-0">
-                    {/* <Chart /> */}
+                    <Chart />
                 </div>
 
                 {/* Coin review section */}
