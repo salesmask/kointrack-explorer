@@ -11,7 +11,7 @@ const ChartSection = () => {
         <div className="chart-section__wrapper border border-primary">
             {/* can remove the div with fragments */}
             <h3 className="chart-section__heading">Bitcoin to USD Chart</h3>
-            <div className="control-tabs__wrapper row justify-content-between mx-0 border border-danger">
+            <div className="control-tabs__wrapper row justify-content-between align-items-center flex-xl-nowrap mx-0 border border-danger">
                 {/* Chart deciding tabs*/}
                 <div className="chart-decide-tabs__wrapper col-12 col-sm-7 col-xl-5 px-0 border border-primary">
                     <ul className="d-flex justify-content-start align-items-center mb-0">

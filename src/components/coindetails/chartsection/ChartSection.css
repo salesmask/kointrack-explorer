@@ -131,6 +131,22 @@
     margin: 2rem 2rem 0;
 } */
 
+/* Corresponding screen width according to bootstrap xl screens */
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .chart-decide-tabs__wrapper li {
+        padding: 0.5rem 1.2rem;
+        margin-right: 0.5rem;
+    }
+    .time-tag__wrapper li {
+        width: 28px;
+        height: 28px;
+        padding: 4px;
+        margin-right: 1px;
+        font-size: 1rem;
+    }
+}
+
 /* Corresponding screen width according to bootstrap sm screens */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
