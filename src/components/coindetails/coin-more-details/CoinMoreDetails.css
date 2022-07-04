@@ -1,26 +1,12 @@
 .more-details__wrapper * {
-    /* outline: 1px solid lightgreen; */
-    /* background-color: rgba(0, 230, 64, 0.07); */
-}
-
-.more-details__wrapper * {
     font-size: 1.4rem;
     font-weight: 500;
     white-space: nowrap;
 }
 
-.more-details__inner--wrapper {
-    /* height: max-content; */
-}
-
-.more-details__wrapper .row > div {
-    /* border: 1px solid; */
-}
-
 /* Supply counts section*/
 
 .supply__wrapper {
-    /* border: 2px solid palevioletred !important; */
     border: 1px solid var(--clr-card-outline);
     border-radius: 10px;
 }
@@ -37,7 +23,6 @@
 
 /* Market capital section*/
 .market-capital__wrapper {
-    /* border: 1px solid greenyellow; */
     border: 1px solid var(--clr-card-outline);
     border-radius: 10px;
 }
@@ -60,7 +45,6 @@
 .tags__wrapper {
     border: 1px solid var(--clr-card-outline);
     border-radius: 10px;
-    /* width: 22%; */
 }
 .tags__wrapper .heading {
     border-bottom: 1px solid var(--clr-card-outline);
@@ -72,7 +56,6 @@
     flex-wrap: wrap;
 }
 .tags__wrapper li {
-    /* border: 1px solid black; */
     width: max-content;
     border-radius: 100px;
     padding: 0.4rem 0.7rem;

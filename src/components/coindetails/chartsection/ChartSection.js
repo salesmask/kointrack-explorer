@@ -8,12 +8,12 @@ import Chart from './chart/Chart';
 
 const ChartSection = () => {
     return (
-        <div className="chart-section__wrapper border border-primary">
+        <div className="chart-section__wrapper">
             {/* can remove the div with fragments */}
             <h3 className="chart-section__heading">Bitcoin to USD Chart</h3>
-            <div className="control-tabs__wrapper row justify-content-between align-items-center flex-xl-nowrap mx-0 border border-danger">
+            <div className="control-tabs__wrapper row justify-content-between align-items-center flex-xl-nowrap mx-0">
                 {/* Chart deciding tabs*/}
-                <div className="chart-decide-tabs__wrapper col-12 col-sm-7 col-xl-5 px-0 border border-primary">
+                <div className="chart-decide-tabs__wrapper col-12 col-sm-7 col-xl-5 px-0 ">
                     <ul className="d-flex justify-content-start align-items-center mb-0">
                         <li className="active rounded-pill">
                             <a href="">Price</a>
@@ -28,7 +28,7 @@ const ChartSection = () => {
                 </div>
                 {/* Checkbox */}
 
-                <div className="col-12 col-sm-3 col-xl-2 border border-primary px-0 mt-3 mt-sm-0 d-flex justify-content-start justify-content-sm-end align-items-center">
+                <div className="col-12 col-sm-3 col-xl-2 px-0 mt-3 mt-sm-0 d-flex justify-content-start justify-content-sm-end align-items-center">
                     <div className="checkbox__wrapper d-flex justify-content-end align-items-center">
                         <div className="d-flex justify-content-center align-items-center">
                             <input
@@ -62,7 +62,7 @@ const ChartSection = () => {
                 </div>
 
                 {/* Time based tabs */}
-                <div className="col-xl-5 w-auto mt-3 mt-xl-0 px-0 border border-primary">
+                <div className="col-xl-5 w-auto mt-3 mt-xl-0 px-0">
                     <div className="time-tag__wrapper rounded-pill">
                         <ul className="d-flex justify-content-center align-items-center mb-0">
                             <li className="active">1D</li>

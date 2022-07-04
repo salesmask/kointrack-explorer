@@ -7,7 +7,7 @@ const Chart = () => {
 
     useEffect(() => {
         const chart = createChart(chartRef.current, {
-            width: 720,
+            width: 700,
             height: 280,
         });
         const areaSeries = chart.addAreaSeries({
@@ -32,7 +32,6 @@ const Chart = () => {
 
     return (
         <>
-            <div>Chart</div>
             <div ref={chartRef} />
         </>
     );

@@ -25,10 +25,10 @@ const CoinDetails = () => {
 
             {/* Chart and gravity outer layout */}
 
-            <section className="tabdetails__outer--container container-fluid px-0 border border-primary">
-                <div className="row mx-0 border border-primary">
+            <section className="tabdetails__outer--container container-fluid px-0">
+                <div className="row mx-0">
                     <div className="tabdetails__inner--container col-11 mx-auto px-0">
-                        <div className="row mx-0 d-flex flex-wrap  border border-danger">
+                        <div className="row mx-0 d-flex flex-wrap">
                             <div className="col-12 col-lg-8 px-0 pe-lg-5">
                                 <div className="chart-side__wrapper">
                                     <ChartSection />
