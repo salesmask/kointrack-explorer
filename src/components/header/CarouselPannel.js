@@ -42,10 +42,10 @@ export default function CarouselPannel() {
                 </div>
                 <div class="carousel-inner ">
                     <div class="carousel-item active">
-                        <div class="carousel-caption col-lg-7 col-6">
+                        <div class="carousel-caption col-lg-7 col-7">
                             <h1 className="font__header">
                                 {' '}
-                                Why bitcoin is so valuable in Reacent Times ?
+                                Why bitcoin is so valuable in Recent Times ?
                             </h1>
                             <p className="font__paragraph ">
                                 lorem Lorem Ipsum is simply dummy text of the
@@ -61,7 +61,7 @@ export default function CarouselPannel() {
                         />
                     </div>
                     <div class="carousel-item">
-                        <div class="carousel-caption col-lg-7 col-6">
+                        <div class="carousel-caption col-lg-7 col-7">
                             <h1 className="font__header">
                                 A Guide to Build Your Crypto Portfolio
                             </h1>
@@ -78,7 +78,7 @@ export default function CarouselPannel() {
                         />
                     </div>
                     <div class="carousel-item">
-                        <div class="carousel-caption col-lg-7 col-6">
+                        <div class="carousel-caption col-lg-7 col-7">
                             <h1 className="font__header">
                                 How Crypto Enable Economical Freedom
                             </h1>

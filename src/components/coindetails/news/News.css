@@ -1,9 +1,3 @@
-.news-details__wrapper {
-    background-color: var(--clr-table-row);
-    padding: 0 6rem;
-    /* margin-bottom: 3rem; */
-}
-
 .news__card {
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 10px !important;
