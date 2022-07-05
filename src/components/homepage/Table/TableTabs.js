@@ -12,7 +12,7 @@ export default function TableTabs() {
                 <div className="col-11 mx-auto px-0">
                     {/* Table filter tabs */}
 
-                    <div className="editables__container d-flex justify-content-flex-start align-items-center mb-5 overflow-scroll border border-primary">
+                    <div className="editables__container d-flex justify-content-flex-start align-items-center mb-5 overflow-scroll">
                         <div className="editables__tab gap-2 gap-sm-3 tab__button me-2 me-sm-4">
                             <svg
                                 width="24"

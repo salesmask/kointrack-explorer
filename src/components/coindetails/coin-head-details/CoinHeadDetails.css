@@ -28,6 +28,11 @@
     padding: 0.2rem;
     border-radius: 4px;
 }
+.coin-head__name--wrapper .watchlist__wrapper:hover path {
+    fill: var(--clr-watchlist-star-fill) !important;
+    stroke: var(--clr-watchlist-star-fill) !important;
+}
+
 .coin-head__name--wrapper .rank,
 .coin-head__name--wrapper .type,
 .coin-head__name--wrapper .watchlist-count {
@@ -80,7 +85,7 @@
     color: var(--clr-text);
 }
 .range-of-time__icon {
-    width: 1ch;
+    width: 1.5ch;
 }
 
 /* Current price details section */
@@ -160,8 +165,8 @@
     .current__price--wrapper .current-price {
         font-size: 2.4rem;
     }
-    .range__lowhigh--values {
-        gap: 30vw;
+    .range__inner--wrapper {
+        width: 100% !important;
     }
 }
 
@@ -175,21 +180,21 @@
     .coin-head__name--wrapper .rank,
     .coin-head__name--wrapper .type,
     .coin-head__name--wrapper .watchlist-count {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .current__price--wrapper .current-price {
         font-size: 1.8rem;
     }
-    .corresponding-current-eth .eth__price {
-        font-size: 1.2rem;
-    }
+    .corresponding-current-eth .eth__price,
     .corresponding-current-eth .eth-change span {
         font-size: 1.2rem;
     }
-    .range__lowhigh--values * {
-        font-size: 1.1rem;
-    }
+
+    .range__lowhigh--values *,
     .range-of__time .time {
         font-size: 1.1rem;
+    }
+    .range__inner--wrapper {
+        width: 100% !important;
     }
 }
