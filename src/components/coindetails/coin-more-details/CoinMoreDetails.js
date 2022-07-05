@@ -82,7 +82,7 @@ const CoinMoreDetails = () => {
                                     <div className="col-12 col-lg-5 col-xl-4  px-0 mb-4">
                                         {/* Market capital section*/}
 
-                                        <div className="market__cap d-flex flox-row flex-md-column justify-content-between align-items-start">
+                                        <div className="market__capital d-flex flox-row flex-md-column justify-content-between align-items-start">
                                             <div className="heading__wrapper d-flex justify-content-center align-items-center mb-2">
                                                 <div className="heading me-3">
                                                     Market Cap

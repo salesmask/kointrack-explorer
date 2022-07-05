@@ -8,16 +8,17 @@
     background-color: var(--clr-primary);
     color: var(--clr-white);
 }
-.editables__tab:hover .watchlist__star path {
-    fill: var(--clr-watchlist-star-fill) !important;
-    stroke: var(--clr-watchlist-star-fill) !important;
-}
 
 .editables__tab:hover .portfolio__filter path {
     fill: var(--clr-white);
 }
-.editables__tab:hover .filter__filter .filter__rect,
 .editables__tab:hover .customize__rect {
+    stroke: var(--clr-white);
+}
+.editables__tab:hover .filter__svg rect {
+    fill: var(--clr-white);
+}
+.editables__tab:hover .filter__svg circle {
     stroke: var(--clr-white);
 }
 

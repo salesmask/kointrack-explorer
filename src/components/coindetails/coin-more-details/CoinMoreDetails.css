@@ -26,7 +26,7 @@
     border: 1px solid var(--clr-card-outline);
     border-radius: 10px;
 }
-.market__cap,
+.market__capital,
 .diluted__cap {
     border-right: 1px solid var(--clr-card-outline);
 }
