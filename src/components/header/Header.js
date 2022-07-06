@@ -2,108 +2,183 @@ import React, { useState, useRef, useEffect } from 'react';
 import './Header.css';
 import header_logo from '../../assets/header/Header_Logo.svg';
 import header_search_icon from '../../assets/header/Header_Search_Icon.svg';
-import {
-    NavbarBrand,
-    Navbar,
-    Nav,
-    NavDropdown,
-    Container,
-    Button,
-    Form,
-} from 'react-bootstrap';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import { FaTimes } from 'react-icons/fa';
+import 'bootstrap/dist/js/bootstrap';
 
 const Header = () => {
+    const [slider, setSlider] = useState(false);
+
     return (
-        <div className="header__wrapper container-fluid">
-            <Navbar
-                fluid
-                className="row "
-                expand="lg"
-            >
-                <div className="col-11 mx-auto d-flex justify-content-between py-4">
-                    <Navbar.Brand
-                        className=""
-                        href="#home"
-                    >
+        <nav className="header__wrapper container-fluid">
+            <div className="row ">
+                <div className="col-11 mx-auto d-flex py-4 align-items-center">
+                    {/* header logo */}
+                    <div className="col-2  header__logo">
                         <img
+                            className="header__logo"
                             src={header_logo}
-                            alt=""
+                            alt="header-logo"
                         ></img>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav " />
-                    <Navbar.Collapse id="basic-navbar-nav ">
-                        <Nav className="gap-lg-4 ms-lg-5 ps-lg-5">
-                            <NavDropdown
-                                className="nav__bar"
-                                title="Coins"
-                                id="basic-nav-dropdown"
-                            >
-                                <NavDropdown.Item href="#action/3.1">
-                                    Exchanges
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
-                                    Portfolio
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">
-                                    Something
-                                </NavDropdown.Item>
+                    </div>
 
-                                <NavDropdown.Item href="#action/3.4">
-                                    Separated link
-                                </NavDropdown.Item>
-                            </NavDropdown>
+                    {/* header links */}
 
-                            <Nav.Link href="#home">Exchanges</Nav.Link>
-                            <Nav.Link href="#link">Portfolio</Nav.Link>
+                    <div className="col-3 col-md-10">
+                        <div
+                            className={
+                                slider
+                                    ? 'header__link--mobile '
+                                    : 'header__link'
+                            }
+                        >
+                            <div className="d-flex flex-column flex-md-row">
+                                <div className="header__tabs col-6  d-flex text-light align-items-start align-items-md-center justify-content-center gap-2 flex-column flex-md-row w-auto">
+                                    <li class="nav-item dropdown">
+                                        <a
+                                            class="nav-link dropdown-toggle"
+                                            href="#"
+                                            id="navbarDropdown"
+                                            role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Coins
+                                        </a>
+                                        <ul
+                                            class="dropdown-menu"
+                                            aria-labelledby="navbarDropdown"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    Action
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    Another action
+                                                </a>
+                                            </li>
 
-                            <NavDropdown
-                                title="Products"
-                                id="basic-nav-dropdown"
-                            >
-                                <NavDropdown.Item href="#action/3.1">
-                                    Products
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.2">
-                                    Another action
-                                </NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">
-                                    Something
-                                </NavDropdown.Item>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    Something else here
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
 
-                                <NavDropdown.Item href="#action/3.4">
-                                    Separated link
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                        </Nav>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="#"
+                                        >
+                                            Features
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a
+                                            class="nav-link"
+                                            href="#"
+                                        >
+                                            Pricing
+                                        </a>
+                                    </li>
 
-                        {/* search box */}
+                                    <li class="nav-item dropdown">
+                                        <a
+                                            class="nav-link dropdown-toggle"
+                                            href="#"
+                                            id="navbarDropdown"
+                                            role="button"
+                                            data-bs-toggle="dropdown"
+                                            aria-expanded="false"
+                                        >
+                                            Products
+                                        </a>
+                                        <ul
+                                            class="dropdown-menu"
+                                            aria-labelledby="navbarDropdown"
+                                        >
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    Action
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    Another action
+                                                </a>
+                                            </li>
 
-                        <div className="d-flex ms-auto gap-4">
-                            <div className="search-box d-none d-md-block">
-                                <input
-                                    className="search-text"
-                                    type="text"
-                                    placeholder="Search Anything"
-                                ></input>
-                                <a
-                                    href="#"
-                                    className="search-btn"
-                                >
-                                    <img
-                                        src={header_search_icon}
-                                        alt=""
-                                    ></img>
-                                </a>
+                                            <li>
+                                                <a
+                                                    class="dropdown-item"
+                                                    href="#"
+                                                >
+                                                    Something else here
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </div>
+
+                                {/* header login section */}
+
+                                <div className="login__content col-6   d-flex text-light align-lg-items-center ms-auto gap-3 flex-column flex-md-row w-auto">
+                                    <div className="ms-auto gap-4 d-none d-lg-block">
+                                        <div className="search-box ">
+                                            <input
+                                                className="search-text"
+                                                type="text"
+                                                placeholder="Search Anything"
+                                            ></input>
+                                            <a
+                                                href="#"
+                                                className="search-btn"
+                                            >
+                                                <img
+                                                    src={header_search_icon}
+                                                    alt=""
+                                                ></img>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <button className="sign__up">
+                                        Sign Up
+                                    </button>
+                                    <button className="log__in">Log In</button>
+                                </div>
                             </div>
-
-                            <button className="sign__up">Sign Up</button>
-                            <button className="log__in">Log In</button>
                         </div>
-                    </Navbar.Collapse>
+                    </div>
+                    <div className="humburger__menu ms-auto ">
+                        <a
+                            href="#"
+                            onClick={() => setSlider(!slider)}
+                        >
+                            {slider ? <FaTimes /> : <GiHamburgerMenu />}
+                        </a>
+                    </div>
                 </div>
-            </Navbar>
-            <div className="box__shadow"></div>
-        </div>
+            </div>
+        </nav>
     );
 };
 
