@@ -1,0 +1,58 @@
+.banner__inner--wrapper {
+    background: url('../../assets/trending/trending-banner.png') center
+        no-repeat;
+    background-size: 100% 100%;
+    border-radius: 2rem;
+}
+
+.banner__inner--wrapper .contents__wrapper {
+    width: 63%;
+}
+.banner__inner--wrapper .heading,
+.banner__inner--wrapper .description {
+    color: var(--clr-white);
+}
+
+.banner__inner--wrapper .description {
+    font-size: 1.8rem;
+}
+
+/* Corresponding screen width according to bootstrap md screens */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .banner__inner--wrapper .contents__wrapper {
+        width: 75%;
+    }
+}
+
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .banner__inner--wrapper .contents__wrapper {
+        width: 75%;
+    }
+    .banner__inner--wrapper .heading {
+        font-size: 2.4rem;
+    }
+    .banner__inner--wrapper .description {
+        font-size: 1.6rem;
+    }
+}
+
+/* Corresponding screens less than width according to bootstrap sm screens */
+
+@media screen and (max-width: 576px) {
+    .banner__inner--wrapper .contents__wrapper {
+        width: 100%;
+        text-align: center;
+    }
+    .banner__inner--wrapper .heading {
+        font-size: 2rem;
+    }
+    .banner__inner--wrapper .description {
+        font-size: 1.4rem;
+    }
+    .banner__inner--wrapper {
+        background-size: cover;
+    }
+}
