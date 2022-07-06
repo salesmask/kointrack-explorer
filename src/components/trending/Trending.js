@@ -3,6 +3,7 @@ import './Trending.css';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
 import TrendingCarousel from './trendingcarousel/TrendingCarousel';
+import TableContainer from './tablecontainer/TableContainer';
 
 const Trending = () => {
     return (
@@ -27,6 +28,7 @@ const Trending = () => {
             </div>
 
             <TrendingCarousel />
+            <TableContainer />
             <Footer />
         </>
     );
