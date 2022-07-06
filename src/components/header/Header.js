@@ -4,15 +4,7 @@ import header_logo from '../../assets/header/Header_Logo.svg';
 import header_search_icon from '../../assets/header/Header_Search_Icon.svg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
-import {
-    NavbarBrand,
-    Navbar,
-    Nav,
-    NavDropdown,
-    Container,
-    Button,
-    Form,
-} from 'react-bootstrap';
+import 'bootstrap/dist/js/bootstrap';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);

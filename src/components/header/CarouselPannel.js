@@ -3,7 +3,7 @@ import './CarouselPannel.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Header_BG_with_vector from '../../assets/header/Header_BG_with_vector.png';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import 'bootstrap/dist/js/bootstrap.js';
+// import 'bootstrap/dist/js/bootstrap.js';
 import { Carousel } from 'react-responsive-carousel';
 
 import vector1 from '../../assets/header/Header_BG_with_vector.png';

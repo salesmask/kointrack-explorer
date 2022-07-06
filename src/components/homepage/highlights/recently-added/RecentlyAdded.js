@@ -22,7 +22,7 @@ const RecentlyAdded = () => {
                         alt="icon"
                         className="highlights__title-icon me-3"
                     />
-                    <span>Recently Added</span>
+                    <span className="text-nowrap lh-lg">Recently Added</span>
                 </div>
                 <div className="highlights__readmore">
                     <ReadMore />

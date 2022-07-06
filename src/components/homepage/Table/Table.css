@@ -2,8 +2,8 @@
     background-color: var(--clr-white);
     border: 1px solid var(--clr-card-outline);
     border-radius: 10px;
-    margin: 30px 60px;
 }
+
 .table__main {
     border-collapse: separate;
     border-spacing: 0rem 1rem;
@@ -117,7 +117,7 @@
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .table__container--wrapper {
         overflow-x: scroll;
-        margin: 1.5rem 4rem;
+        /* margin: 1.5rem 4rem; */
     }
     .star__wrapper {
         width: 2rem;
@@ -129,6 +129,6 @@
 @media screen and (max-width: 576px) {
     .table__container--wrapper {
         overflow-x: scroll;
-        margin: 1rem 2rem;
+        /* margin: 1rem 2rem; */
     }
 }

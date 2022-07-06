@@ -6,8 +6,8 @@ import ThumbsDown from '../../../../assets/coindetails/chart-section/coin-review
 
 const CoinReview = () => {
     return (
-        <div className="d-flex justify-content-between align-items-center">
-            <div className="coin-review__question--wrapper">
+        <div className="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between align-items-center">
+            <div className="coin-review__question--wrapper text-center text-sm-start">
                 <h3 className="question">
                     How do you feel about Bitcoin today?
                 </h3>
