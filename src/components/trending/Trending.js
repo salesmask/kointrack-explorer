@@ -2,6 +2,7 @@ import React from 'react';
 import './Trending.css';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
+import TrendingCarousel from './trendingcarousel/TrendingCarousel';
 
 const Trending = () => {
     return (
@@ -24,6 +25,8 @@ const Trending = () => {
                     </div>
                 </div>
             </div>
+
+            <TrendingCarousel />
             <Footer />
         </>
     );
