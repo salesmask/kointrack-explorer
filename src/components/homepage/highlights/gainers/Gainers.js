@@ -26,9 +26,12 @@ const Gainers = () => {
                     />
                     <span className="text-nowrap lh-lg">Biggest Gainers</span>
                 </div>
-                <div className="highlights__readmore">
-                    <ReadMore />
-                </div>
+
+                <Link to="/gainers&losers">
+                    <div className="highlights__readmore">
+                        <ReadMore />
+                    </div>
+                </Link>
             </div>
 
             {/* Table section */}
