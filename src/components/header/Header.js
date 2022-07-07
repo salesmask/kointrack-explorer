@@ -5,6 +5,7 @@ import header_search_icon from '../../assets/header/Header_Search_Icon.svg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
 import 'bootstrap/dist/js/bootstrap';
+import Logo from '../logo/Logo';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);
@@ -14,13 +15,8 @@ const Header = () => {
             <div className="row ">
                 <div className="col-11 mx-auto d-flex py-4 align-items-center">
                     {/* header logo */}
-                    <div className="col-2  header__logo">
-                        <img
-                            className="header__logo"
-                            src={header_logo}
-                            alt="header-logo"
-                        ></img>
-                    </div>
+
+                    <Logo />
 
                     {/* header links */}
 

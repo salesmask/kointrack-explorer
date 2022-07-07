@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import GainersLosers from '../../components/gainerslosers/GainersLosers';
 import Home from '../../components/homepage/Home';
+import Logo from '../../components/logo/Logo';
 import Trending from '../../components/trending/Trending';
 
 const HomeRoute = () => {
