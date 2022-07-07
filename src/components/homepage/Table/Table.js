@@ -32,7 +32,7 @@ export default function Table() {
                                         <th>7d %</th>
                                         <th>Market Cap</th>
                                         <th>Volume (24h)</th>
-                                        <th className="d-none d-lg-table-cell">
+                                        <th className="d-none d-sm-table-cell">
                                             Circulating Supply
                                         </th>
                                         <th className="d-none d-xl-table-cell">
@@ -126,7 +126,7 @@ export default function Table() {
                                             </div>
                                         </td>
 
-                                        <td className="d-none d-lg-table-cell">
+                                        <td className="d-none d-sm-table-cell">
                                             <div className="circulating__supply">
                                                 <span className="circulating__supply--value">
                                                     31,432,321
@@ -251,7 +251,7 @@ export default function Table() {
                                             </div>
                                         </td>
 
-                                        <td className="d-none d-lg-table-cell">
+                                        <td className="d-none d-sm-table-cell">
                                             <div className="circulating__supply">
                                                 <span className="circulating__supply--value">
                                                     31,432,321
@@ -376,7 +376,7 @@ export default function Table() {
                                             </div>
                                         </td>
 
-                                        <td className="d-none d-lg-table-cell">
+                                        <td className="d-none d-sm-table-cell">
                                             <div className="circulating__supply">
                                                 <span className="circulating__supply--value">
                                                     31,432,321
@@ -501,7 +501,7 @@ export default function Table() {
                                             </div>
                                         </td>
 
-                                        <td className="d-none d-lg-table-cell">
+                                        <td className="d-none d-sm-table-cell">
                                             <div className="circulating__supply">
                                                 <span className="circulating__supply--value">
                                                     31,432,321
@@ -626,7 +626,7 @@ export default function Table() {
                                             </div>
                                         </td>
 
-                                        <td className="d-none d-lg-table-cell">
+                                        <td className="d-none d-sm-table-cell">
                                             <div className="circulating__supply">
                                                 <span className="circulating__supply--value">
                                                     31,432,321
@@ -751,7 +751,7 @@ export default function Table() {
                                             </div>
                                         </td>
 
-                                        <td className="d-none d-lg-table-cell">
+                                        <td className="d-none d-sm-table-cell">
                                             <div className="circulating__supply">
                                                 <span className="circulating__supply--value">
                                                     31,432,321
@@ -876,7 +876,7 @@ export default function Table() {
                                             </div>
                                         </td>
 
-                                        <td className="d-none d-lg-table-cell">
+                                        <td className="d-none d-sm-table-cell">
                                             <div className="circulating__supply">
                                                 <span className="circulating__supply--value">
                                                     31,432,321
@@ -1001,7 +1001,7 @@ export default function Table() {
                                             </div>
                                         </td>
 
-                                        <td className="d-none d-lg-table-cell">
+                                        <td className="d-none d-sm-table-cell">
                                             <div className="circulating__supply">
                                                 <span className="circulating__supply--value">
                                                     31,432,321
@@ -1126,7 +1126,7 @@ export default function Table() {
                                             </div>
                                         </td>
 
-                                        <td className="d-none d-lg-table-cell">
+                                        <td className="d-none d-sm-table-cell">
                                             <div className="circulating__supply">
                                                 <span className="circulating__supply--value">
                                                     31,432,321
@@ -1251,7 +1251,7 @@ export default function Table() {
                                             </div>
                                         </td>
 
-                                        <td className="d-none d-lg-table-cell">
+                                        <td className="d-none d-sm-table-cell">
                                             <div className="circulating__supply">
                                                 <span className="circulating__supply--value">
                                                     31,432,321
@@ -1283,7 +1283,7 @@ export default function Table() {
                                         </td>
 
                                         <td>
-                                            <div>
+                                            <div className="more__icon--wrapper">
                                                 <img
                                                     className="more__icon"
                                                     src={More_Icon}

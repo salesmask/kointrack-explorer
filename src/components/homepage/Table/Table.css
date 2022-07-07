@@ -32,7 +32,8 @@
     content: '';
     width: 7px;
     height: calc(38px + 1rem);
-    background-color: #ffffff;
+    background-color: #ffffff !important;
+    z-index: 999;
     display: block;
 }
 .table__body--row::before,
@@ -40,7 +41,8 @@
     content: '';
     width: 7px;
     height: calc(38px + 1rem);
-    background-color: #ffffff;
+    background-color: #ffffff !important;
+    z-index: 999;
     display: block;
 }
 
@@ -53,10 +55,37 @@
     background-color: var(--clr-table-row);
     color: var(--clr-text);
 }
+
 .table__body--row div,
 .table__body--row span {
     font-size: 1.2rem;
     font-weight: 500;
+}
+.table__head--row th:nth-child(1),
+.table__body--row td:nth-child(1) {
+    background-color: var(--clr-table-row) !important;
+    left: 0%;
+    position: sticky;
+    z-index: 999;
+}
+
+.table__head--row th:nth-child(2),
+.table__body--row td:nth-child(2) {
+    background-color: var(--clr-table-row) !important;
+    left: 5%;
+    position: sticky;
+    z-index: 999;
+}
+.table__head--row th:nth-child(3),
+.table__body--row td:nth-child(3) {
+    background-color: var(--clr-table-row) !important;
+    left: 9%;
+    position: sticky;
+    z-index: 999;
+}
+
+.star__wrapper {
+    width: 2rem;
 }
 
 .watchlist__star {
@@ -73,7 +102,7 @@
 
 .buy__button {
     background-color: rgba(43, 80, 255, 0.1);
-    color: #2b50ff;
+    color: var(--clr-primary);
     font-size: 1.2rem;
     font-weight: 500;
     padding: 0.3rem 1rem !important;
@@ -84,11 +113,13 @@
 }
 
 .one-day__pricechange .value__down,
-.seven-day__pricechange .value__down {
+.seven-day__pricechange .value__down,
+.thirty-day__pricechange .value__down {
     color: var(--clr-down);
 }
 .one-day__pricechange .value__up,
-.seven-day__pricechange .value__up {
+.seven-day__pricechange .value__up,
+.thirty-day__pricechange .value__up {
     color: var(--clr-up);
 }
 
@@ -108,19 +139,18 @@
     width: 10rem;
 }
 
+.more__icon--wrapper {
+    width: 3rem;
+}
 .more__icon {
-    width: 2rem;
+    width: 2rem !important;
 }
 
 /* Corresponding screen width according to bootstrap sm screens */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
     .table__container--wrapper {
-        overflow-x: scroll;
-        /* margin: 1.5rem 4rem; */
-    }
-    .star__wrapper {
-        width: 2rem;
+        overflow-x: auto;
     }
 }
 
@@ -128,7 +158,14 @@
 
 @media screen and (max-width: 576px) {
     .table__container--wrapper {
-        overflow-x: scroll;
-        /* margin: 1rem 2rem; */
+        overflow-x: auto;
+    }
+    .table__head--row th:nth-child(2),
+    .table__body--row td:nth-child(2) {
+        left: 6%;
+    }
+    .table__head--row th:nth-child(3),
+    .table__body--row td:nth-child(3) {
+        left: 11.5%;
     }
 }

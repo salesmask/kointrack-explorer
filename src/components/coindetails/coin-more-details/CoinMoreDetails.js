@@ -15,7 +15,7 @@ const CoinMoreDetails = () => {
                             <div className="col-12 col-md-5 col-lg-4 col-xl-3 px-0">
                                 {/* Supply counts section */}
 
-                                <div class="supply__wrapper p-3">
+                                <div class="supply__wrapper h-100 p-3">
                                     {/* Circulating supply */}
 
                                     <div className="circulating__supply d-flex justify-content-between align-items-center gap-0 gap-sm-5 gap-lg-1 gap-xl-3 gap-xxl-5">
@@ -77,12 +77,12 @@ const CoinMoreDetails = () => {
                                 </div>
                             </div>
 
-                            <div className="market-capital__wrapper col-12 col-md-6 col-lg-5 col-xl-6 p-3">
-                                <div className="row mx-0 justify-content-between">
+                            <div className="market-capital__wrapper mt-3 mt-md-0 col-12 col-md-6 col-lg-5 col-xl-6 p-3">
+                                <div className="row mt-5 mx-0 justify-content-between">
                                     <div className="col-12 col-lg-5 col-xl-4  px-0 mb-4">
                                         {/* Market capital section*/}
 
-                                        <div className="market__cap d-flex flox-row flex-md-column justify-content-between align-items-start">
+                                        <div className="market__capital d-flex flox-row flex-md-column justify-content-between align-items-start">
                                             <div className="heading__wrapper d-flex justify-content-center align-items-center mb-2">
                                                 <div className="heading me-3">
                                                     Market Cap
@@ -94,8 +94,8 @@ const CoinMoreDetails = () => {
                                                 />
                                             </div>
 
-                                            <div className="d-flex flex-row flex-lg-column">
-                                                <div className="value mb-2">
+                                            <div className="d-flex flex-column align-items-end justify-content-center flex-sm-row flex-lg-column align-items-lg-start">
+                                                <div className="value mb-0">
                                                     $564,346,560,569
                                                 </div>
                                                 <div className="percent__change--wrapper">
@@ -125,8 +125,8 @@ const CoinMoreDetails = () => {
                                                 />
                                             </div>
 
-                                            <div className="d-flex flex-row flex-lg-column">
-                                                <div className="value mb-2">
+                                            <div className="d-flex flex-column align-items-end justify-content-center flex-sm-row flex-lg-column align-items-lg-start">
+                                                <div className="value mb-0">
                                                     $621,927,838,327
                                                 </div>
                                                 <div className="percent__change--wrapper">
@@ -142,8 +142,8 @@ const CoinMoreDetails = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-xl-3 px-0 mt-4 mt-xl-0">
-                                        <div className="day__volume d-flex flex-row flex-md-column justify-content-between align-items-start">
+                                    <div className="col-xl-3 px-0 mt-4 mt-lg-5 mt-xl-0">
+                                        <div className="day__volume d-flex flex-row flex-md-column flex-lg-row flex-xl-column justify-content-between align-items-start">
                                             <div className="heading__wrapper d-flex justify-content-center align-items-center mb-2">
                                                 <div className="heading me-3">
                                                     Volume 24h
@@ -155,8 +155,8 @@ const CoinMoreDetails = () => {
                                                 />
                                             </div>
 
-                                            <div className="d-flex flex-row flex-lg-column">
-                                                <div className="value mb-2">
+                                            <div className="d-flex flex-column align-items-end justify-content-center flex-sm-row align-items-lg-start flex-lg-row flex-xl-column me-0 me-lg-5 me-xl-0 ">
+                                                <div className="value mb-0 me-1 me-lg-3">
                                                     $40,086,576,636
                                                 </div>
                                                 <div className="percent__change--wrapper">
@@ -180,7 +180,7 @@ const CoinMoreDetails = () => {
                             <div className="col-12 col-lg-2 px-0">
                                 {/* Tags section*/}
 
-                                <div class="tags__wrapper p-3">
+                                <div class="tags__wrapper mt-3 mt-lg-0 p-3">
                                     <div className="heading py-2 ps-1">
                                         Tags:
                                     </div>

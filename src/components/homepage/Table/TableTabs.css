@@ -5,8 +5,21 @@
     font-weight: 500 !important;
 }
 .editables__tab:hover {
-    background-color: var(--clr-tab-background) !important;
-    color: var(--clr-text) !important;
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+.editables__tab:hover .portfolio__filter path {
+    fill: var(--clr-white);
+}
+.editables__tab:hover .customize__rect {
+    stroke: var(--clr-white);
+}
+.editables__tab:hover .filter__svg rect {
+    fill: var(--clr-white);
+}
+.editables__tab:hover .filter__svg circle {
+    stroke: var(--clr-white);
 }
 
 /* Table tabs */

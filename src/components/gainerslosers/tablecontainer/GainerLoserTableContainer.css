@@ -1,0 +1,15 @@
+.gainersloserstable__outer--wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* Corresponding screen width according to bootstrap smaller than sm screens */
+
+@media screen and (max-width: 992px) {
+    .gainersloserstable__outer--wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
