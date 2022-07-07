@@ -11,7 +11,9 @@ import PriceEstimates from './priceestimates/PriceEstimates';
 import ChartSection from './chartsection/ChartSection';
 import News from './news/News';
 import Gravity from './gravity/Gravity';
-import BitcoinMarkets from '../bitcoinmarkets/BitcoinMarkets';
+import BitcoinMarkets from './bitcoinmarkets/BitcoinMarkets';
+import SignupForm from './Signupform/SignupForm';
+import LoginForm from './loginform/LoginForm';
 
 const CoinDetails = () => {
     return (
@@ -40,6 +42,8 @@ const CoinDetails = () => {
             <BitcoinMarkets />
 
             <News />
+            <LoginForm />
+            <SignupForm />
 
             <Footer />
         </>
