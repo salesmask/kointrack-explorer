@@ -1,5 +1,6 @@
 import React from 'react';
 import './TableContainer.css';
+import TrendingTable from './trendingtable/TrendingTable';
 import TrendingTableTabs from './trendingtabletabs/TrendingTableTabs';
 
 const TableContainer = () => {
@@ -9,6 +10,7 @@ const TableContainer = () => {
                 <div className="row mx-0 border border-danger h-100">
                     <div className="col-11 px-0 mx-auto border border-danger h-100">
                         <TrendingTableTabs />
+                        <TrendingTable />
                     </div>
                 </div>
             </div>
