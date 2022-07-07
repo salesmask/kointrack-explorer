@@ -19,7 +19,7 @@ import black__left from '../../../assets/coindata/black__left.svg';
 
 const Gravity = () => {
     return (
-        <div className="border border-primary">
+        <div className="">
             <div className="container px-0">
                 <div className="d-flex align-items-center">
                     <h4 className="">Gravity</h4>
@@ -139,15 +139,16 @@ const Gravity = () => {
                                 </div>
                             </div>
 
-                            <div className="d-flex p-2 gap-1 ms-auto">
-                                <img
-                                    src={refresh}
-                                    alt=""
-                                    className="refresh__icon "
-                                ></img>
-                                <h3 className="fs-4 fw-bolder  font-primary">
+                            <div className="d-flex align-items-center ms-auto">
+                                <button className="fw-bolder  font-primary rounded-pill py-2 px-3">
+                                    {' '}
+                                    <img
+                                        src={refresh}
+                                        alt=""
+                                        className="refresh__icon "
+                                    ></img>
                                     Refresh
-                                </h3>
+                                </button>
                             </div>
                         </div>
 
@@ -168,7 +169,7 @@ const Gravity = () => {
                                 >
                                     <img
                                         src={white__up}
-                                        className="gravity__arrow "
+                                        className="gravity__arrow"
                                         alt=""
                                     ></img>
                                     Bullish

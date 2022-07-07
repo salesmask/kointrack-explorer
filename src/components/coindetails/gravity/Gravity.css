@@ -11,20 +11,16 @@
 }
 
 .btc__background {
-    background: #f8f8f8;
+    background: var(--clr-tab-background);
 }
 
 .font__style {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     color: #1e202b;
 }
 
 .font__style--right {
-    font-family: 'Poppins';
-    font-style: normal;
     font-weight: 500;
     font-size: 12px;
     color: #1e202b;
@@ -32,20 +28,25 @@
 
 .gravity__button {
     background-color: #ff817c !important;
-    font-family: 'Poppins' !important;
-    font-style: normal !important;
+
     font-weight: 400 !important;
     font-size: 12px !important;
     width: 60px;
 }
 
+.gravity__button:hover {
+    background-color: var(--clr-down) !important;
+}
+
 .showmore__button {
     background-color: #eaebf2 !important;
-    font-family: 'Poppins' !important;
-    font-style: normal !important;
     font-weight: 500 !important;
     font-size: 14px !important;
     width: 100px;
+}
+
+.showmore__button:hover {
+    background-color: #b8b8ba !important;
 }
 
 .gravity__arrow {
@@ -54,23 +55,37 @@
 }
 
 .follow__button {
-    background-color: #ffffff !important;
-    font-family: 'Poppins' !important;
-    font-style: normal !important;
+    background-color: var(--clr-white) !important;
+
     font-weight: 400 !important;
     font-size: 12px !important;
     width: 83px;
+}
+
+.follow__button:hover {
+    background-color: var(--clr-tab-background) !important;
 }
 
 .trend__button {
     background-color: #f7f7f7;
     width: 82px;
 }
+.trend__button:hover {
+    background-color: var(--clr-tab-background);
+}
+
+.trend__button:active {
+    background-color: var(--clr-tab-background);
+}
 
 .Post__button {
-    background-color: #2b50ff;
+    background-color: var(--clr-primary);
     width: 62px;
     height: 29px;
+}
+
+.Post__button:hover {
+    background-color: #0931fa;
 }
 
 .switch__box {
@@ -80,29 +95,39 @@
 }
 
 .switch__button {
-    background-color: #2b50ff;
+    background-color: var(--clr-primary);
     width: 100px;
 }
 
 .readmore__button {
     background-color: #eaebf2 !important;
-    font-family: 'Poppins' !important;
-    font-style: normal !important;
     font-weight: 500 !important;
     font-size: 12px !important;
     width: 101px !important;
     height: 31px !important;
 }
 
+.readmore__button:hover {
+    background-color: #b6b6b6 !important;
+}
+
 .button__chat {
     background-color: #33b868;
+}
+.button__chat:hover {
+    background-color: #00af46;
 }
 
 .refresh__icon {
     height: 20px;
     width: 20px;
+    align-items: center;
+}
+
+.refresh__icon:hover {
+    transform: rotate(60deg);
 }
 
 .gravity__contents {
-    background-color: #2b50ff;
+    background-color: var(--clr-primary);
 }
