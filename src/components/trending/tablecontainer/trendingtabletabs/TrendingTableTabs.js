@@ -6,7 +6,7 @@ const TrendingTableTabs = () => {
     return (
         <>
             <div className="trendingtabletabs__wrapper d-flex justify-content-between align-items-center">
-                <ul className="mb-0 d-flex justify-content-start align-items-center border border-primary">
+                <ul className="mb-0 d-flex justify-content-start align-items-center">
                     <li>
                         <a href="">Watchlist</a>
                     </li>

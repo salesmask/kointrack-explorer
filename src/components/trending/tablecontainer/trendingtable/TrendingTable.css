@@ -1,4 +1,35 @@
 .trendingtable__wrapper {
-    height: 300px;
-    background-color: greenyellow;
+    border: 1px solid var(--clr-card-outline);
+    border-radius: 1rem;
+    overflow-x: scroll;
+}
+
+.trendingtable__wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.trendingtable__wrapper .table__head--row th:nth-child(3),
+.trendingtable__wrapper .table__body--row td:nth-child(3) {
+    background-color: var(--clr-table-row) !important;
+    left: 7%;
+    position: sticky;
+    z-index: 999;
+}
+
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .trendingtable__wrapper .table__head--row th:nth-child(3),
+    .trendingtable__wrapper .table__body--row td:nth-child(3) {
+        left: 10%;
+    }
+}
+
+/* Corresponding screen width according to bootstrap smaller than sm screens */
+
+@media screen and (max-width: 576px) {
+    .trendingtable__wrapper .table__head--row th:nth-child(3),
+    .trendingtable__wrapper .table__body--row td:nth-child(3) {
+        left: 10%;
+    }
 }

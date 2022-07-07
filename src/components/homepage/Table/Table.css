@@ -113,11 +113,13 @@
 }
 
 .one-day__pricechange .value__down,
-.seven-day__pricechange .value__down {
+.seven-day__pricechange .value__down,
+.thirty-day__pricechange .value__down {
     color: var(--clr-down);
 }
 .one-day__pricechange .value__up,
-.seven-day__pricechange .value__up {
+.seven-day__pricechange .value__up,
+.thirty-day__pricechange .value__up {
     color: var(--clr-up);
 }
 
