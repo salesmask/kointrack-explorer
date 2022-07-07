@@ -3,7 +3,6 @@ import Footer from '../footer/Footer';
 import Header from '../header/Header';
 import TrendingBanner from '../trending/trendingbanner/TrendingBanner';
 import TrendingCarousel from '../trending/trendingcarousel/TrendingCarousel';
-import './GainersLosers.css';
 import GainerLoserTableContainer from './tablecontainer/GainerLoserTableContainer';
 
 const GainersLosers = () => {
@@ -19,8 +18,6 @@ const GainersLosers = () => {
             {/* ****** */}
 
             <GainerLoserTableContainer />
-
-            <div className="gainerslosers__wrapper">Gainers & Losers</div>
 
             <Footer />
         </>

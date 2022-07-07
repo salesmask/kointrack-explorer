@@ -1,0 +1,9 @@
+.gainers__table--wrapper {
+    border: 1px solid var(--clr-card-outline);
+    border-radius: 1rem;
+    overflow-x: scroll;
+}
+
+.gainers__table--wrapper::-webkit-scrollbar {
+    display: none;
+}
