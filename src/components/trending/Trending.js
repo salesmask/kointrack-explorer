@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../footer/Footer';
 import Header from '../header/Header';
 import TrendingCarousel from './trendingcarousel/TrendingCarousel';
-import TableContainer from './tablecontainer/TableContainer';
+import TrendingTableContainer from './tablecontainer/TrendingTableContainer';
 import TrendingBanner from './trendingbanner/TrendingBanner';
 
 const Trending = () => {
@@ -11,7 +11,7 @@ const Trending = () => {
             <Header />
             <TrendingBanner />
             <TrendingCarousel />
-            <TableContainer />
+            <TrendingTableContainer />
             <Footer />
         </>
     );

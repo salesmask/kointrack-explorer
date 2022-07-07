@@ -1,5 +1,5 @@
 import React from 'react';
-import './TableContainer.css';
+import './TrendingTableContainer.css';
 import TrendingTable from './trendingtable/TrendingTable';
 import TrendingTableTabs from './trendingtabletabs/TrendingTableTabs';
 
