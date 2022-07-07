@@ -24,9 +24,11 @@ const Trending = () => {
                     />
                     <span className="text-nowrap lh-lg">Trending</span>
                 </div>
-                <div className="highlights__readmore">
-                    <ReadMore />
-                </div>
+                <Link to="trending">
+                    <div className="highlights__readmore">
+                        <ReadMore />
+                    </div>
+                </Link>
             </div>
 
             {/* Table section */}

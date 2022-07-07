@@ -1,0 +1,55 @@
+.gainersloserstabletabs__wrapper {
+    overflow-x: scroll;
+}
+.gainersloserstabletabs__wrapper::-webkit-scrollbar {
+    display: none;
+}
+.gainersloserstabletabs__wrapper li {
+    padding: 0.8rem 1.4rem;
+    background-color: var(--clr-tab-background);
+    border-radius: 100px;
+    margin-right: 1rem;
+    white-space: nowrap;
+    transition: ease-in 150ms;
+}
+.gainersloserstabletabs__wrapper li:hover,
+.gainersloserstabletabs__wrapper li.active {
+    background-color: var(--clr-primary);
+}
+.gainersloserstabletabs__wrapper li:hover a,
+.gainersloserstabletabs__wrapper li.active a {
+    color: var(--clr-white);
+}
+
+.gainersloserstabletabs__wrapper li a {
+    color: var(--clr-text);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.coinfilter__wrapper span,
+.gainersloserstime__wrapper span {
+    font-weight: 500;
+}
+.coinfilter__wrapper--button,
+.gainersloserstime__wrapper--button {
+    padding: 0.4rem 1rem !important;
+    cursor: pointer;
+}
+.coinfilter__wrapper--button:hover,
+.gainersloserstime__wrapper--button:hover {
+    background-color: var(--clr-tab-background) !important;
+}
+.coinfilter__wrapper--button img,
+.gainersloserstime__wrapper--button img {
+    width: 1.5ch;
+}
+
+/* Corresponding screen width less than according to bootstrap lg screens */
+
+@media screen and (max-width: 992px) {
+    .coinfilter__wrapper--button,
+    .gainersloserstime__wrapper--button {
+        width: 6rem;
+    }
+}

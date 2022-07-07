@@ -1,0 +1,50 @@
+.trendingtabletabs__wrapper {
+    overflow-x: scroll;
+}
+.trendingtabletabs__wrapper::-webkit-scrollbar {
+    display: none;
+}
+.trendingtabletabs__wrapper li {
+    padding: 0.8rem 1.4rem;
+    background-color: var(--clr-tab-background);
+    border-radius: 100px;
+    margin-right: 1rem;
+    white-space: nowrap;
+    transition: ease-in 150ms;
+}
+.trendingtabletabs__wrapper li:hover,
+.trendingtabletabs__wrapper li.active {
+    background-color: var(--clr-primary);
+}
+.trendingtabletabs__wrapper li:hover a,
+.trendingtabletabs__wrapper li.active a {
+    color: var(--clr-white);
+}
+
+.trendingtabletabs__wrapper li a {
+    color: var(--clr-text);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.trendingtime__wrapper span {
+    font-weight: 500;
+}
+.trendingtime__wrapper--button {
+    padding: 0.4rem 1rem !important;
+    cursor: pointer;
+}
+.trendingtime__wrapper--button:hover {
+    background-color: var(--clr-tab-background) !important;
+}
+.trendingtime__wrapper--button img {
+    width: 1.5ch;
+}
+
+/* Corresponding screen width less than according to bootstrap lg screens */
+
+@media screen and (max-width: 992px) {
+    .trendingtime__wrapper--button {
+        width: 6rem;
+    }
+}
