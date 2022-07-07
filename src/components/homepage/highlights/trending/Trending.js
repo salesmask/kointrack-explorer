@@ -22,11 +22,13 @@ const Trending = () => {
                         alt="icon"
                         className="highlights__title-icon me-3"
                     />
-                    <span>Trending</span>
+                    <span className="text-nowrap lh-lg">Trending</span>
                 </div>
-                <div className="highlights__readmore">
-                    <ReadMore />
-                </div>
+                <Link to="trending">
+                    <div className="highlights__readmore">
+                        <ReadMore />
+                    </div>
+                </Link>
             </div>
 
             {/* Table section */}

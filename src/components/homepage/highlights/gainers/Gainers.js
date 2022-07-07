@@ -24,11 +24,14 @@ const Gainers = () => {
                         alt="icon"
                         className="highlights__title-icon me-3"
                     />
-                    <span>Biggest Gainers</span>
+                    <span className="text-nowrap lh-lg">Biggest Gainers</span>
                 </div>
-                <div className="highlights__readmore">
-                    <ReadMore />
-                </div>
+
+                <Link to="/gainers&losers">
+                    <div className="highlights__readmore">
+                        <ReadMore />
+                    </div>
+                </Link>
             </div>
 
             {/* Table section */}

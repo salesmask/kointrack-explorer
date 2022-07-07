@@ -19,8 +19,8 @@ import black__left from '../../../assets/coindata/black__left.svg';
 
 const Gravity = () => {
     return (
-        <div>
-            <div className="container">
+        <div className="border border-primary">
+            <div className="container px-0">
                 <div className="d-flex align-items-center">
                     <h4 className="">Gravity</h4>
                     <div

@@ -42,7 +42,7 @@ const Search = () => {
                                                 <img
                                                     src={SearchIcon}
                                                     alt="icon"
-                                                    className="w-25"
+                                                    className="w-50"
                                                 />
                                             </button>
                                         </div>

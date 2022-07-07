@@ -1,0 +1,77 @@
+.corousel__wrapper {
+    margin: 6rem 0;
+}
+
+.carousel__inner--wrapper .slick-slide > div {
+    margin: 0 2% !important;
+}
+
+.carousel__inner--wrapper .slick-prev:before,
+.carousel__inner--wrapper .slick-next:before {
+    color: var(--clr-primary);
+    font-size: 3rem;
+}
+
+.carousel__card--wrapper {
+    border: 1px solid var(--clr-card-outline);
+    border-radius: 1rem;
+}
+
+.carousel__card--wrapper .image__wrapper {
+    width: 13rem;
+    border-radius: 1rem;
+}
+.carousel__card--wrapper .image__wrapper img {
+    border-radius: 1rem;
+}
+
+.carousel__card--wrapper .content__wrapper .heading {
+    font-size: 1.8rem;
+}
+.carousel__card--wrapper .content__wrapper .description {
+    color: var(--clr-light-text);
+    font-weight: 400;
+}
+.carousel__card--wrapper .content__wrapper .view-button {
+    background-color: var(--clr-primary);
+    padding: 0.3rem 1.5rem;
+    font-size: 1.2rem;
+    color: var(--clr-white);
+}
+.carousel__card--wrapper .content__wrapper .view-button:hover {
+    transform: scale(1.01);
+}
+
+/* Corresponding screens less than width according to bootstrap sm screens */
+
+@media screen and (max-width: 576px) {
+    .carousel__inner--wrapper .slick-prev:before,
+    .carousel__inner--wrapper .slick-next:before {
+        color: var(--clr-primary);
+        font-size: 2rem;
+    }
+}
+
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .carousel__inner--wrapper .slick-prev:before,
+    .carousel__inner--wrapper .slick-next:before {
+        color: var(--clr-primary);
+        font-size: 2rem;
+    }
+    .carousel__card--wrapper .content__wrapper .heading {
+        font-size: 1.4rem;
+    }
+    .carousel__card--wrapper .content__wrapper .description {
+        font-size: 1.2rem;
+    }
+}
+
+/* Corresponding screen width according to bootstrap lg screens */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .carousel__card--wrapper .content__wrapper .heading {
+        font-size: 1.6rem;
+    }
+}

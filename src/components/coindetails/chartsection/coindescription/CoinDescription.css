@@ -18,3 +18,11 @@
 .description-read-more__icon {
     width: 1.4rem;
 }
+
+/* Corresponding screen width according to bootstrap less than sm screens */
+
+@media screen and (max-width: 576px) {
+    .coin__description {
+        text-align: justify;
+    }
+}
