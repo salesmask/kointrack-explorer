@@ -23,21 +23,23 @@
 
 .font__header {
     font-weight: 700;
-    font-size: clamp(14px, 3vw, 54px);
+    font-size: clamp(3.5rem, 12vw + 1rem, 5.5rem);
+    /* font-size: 54px; */
 }
 
 .font__paragraph {
     font-weight: 300;
     font-size: 16px;
+    color: #595c6e;
     line-height: 24px;
 
     /* color: #595C6E; */
 }
 
-@media screen and (min-width: 576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 900px) {
     .font__header {
         font-weight: 700;
-        /* font-size: 14px; */
+        font-size: 30px;
     }
 
     .font__paragraph {
@@ -62,7 +64,7 @@
 
     .font__header {
         font-weight: 700;
-        /* font-size: 14px; */
+        font-size: 12px;
     }
 
     .font__paragraph {
@@ -70,5 +72,13 @@
         font-size: 10px;
         line-height: 10px;
         color: #595c6e;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        border-radius: 40px !important;
+        border-top: 40px !important;
+        border-bottom: 40px !important;
+        width: 25px !important;
+        height: 6px !important;
     }
 }
