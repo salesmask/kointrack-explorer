@@ -32,97 +32,119 @@ const TrendingCarousel = () => {
         <div className="corousel__wrapper container-fluid px-0">
             <div className="row mx-0">
                 <div className="col-11 mx-auto carousel__inner--wrapper">
-                    <Slider {...settings}>
-                        {/* Card 1 */}
+                    <div className="container-xxl px-0">
+                        <Slider {...settings}>
+                            {/* Card 1 */}
 
-                        <div className="carousel__card--wrapper p-3 d-flex justify-content-center align-items-center gap-4">
-                            <div className="image__wrapper">
-                                <img
-                                    src={CarouselCardImg}
-                                    alt="img"
-                                />
+                            <div className="carousel__card--wrapper p-3 d-flex justify-content-center align-items-center gap-4">
+                                <div className="image__wrapper">
+                                    <img
+                                        src={CarouselCardImg}
+                                        alt="img"
+                                    />
+                                </div>
+                                <div className="content__wrapper">
+                                    <h3 className="heading">
+                                        Crypto Deep Dive 1
+                                    </h3>
+                                    <p className="description">
+                                        How Can Bitcoin Become Legal Tender
+                                    </p>
+                                    <button className="view-button">
+                                        View
+                                    </button>
+                                </div>
                             </div>
-                            <div className="content__wrapper">
-                                <h3 className="heading">Crypto Deep Dive 1</h3>
-                                <p className="description">
-                                    How Can Bitcoin Become Legal Tender
-                                </p>
-                                <button className="view-button">View</button>
-                            </div>
-                        </div>
 
-                        {/* Card 2 */}
+                            {/* Card 2 */}
 
-                        <div className="carousel__card--wrapper p-3 d-flex justify-content-center align-items-center gap-4">
-                            <div className="image__wrapper">
-                                <img
-                                    src={CarouselCardImg}
-                                    alt="img"
-                                />
+                            <div className="carousel__card--wrapper p-3 d-flex justify-content-center align-items-center gap-4">
+                                <div className="image__wrapper">
+                                    <img
+                                        src={CarouselCardImg}
+                                        alt="img"
+                                    />
+                                </div>
+                                <div className="content__wrapper">
+                                    <h3 className="heading">
+                                        Crypto Deep Dive 2
+                                    </h3>
+                                    <p className="description">
+                                        How Can Bitcoin Become Legal Tender
+                                    </p>
+                                    <button className="view-button">
+                                        View
+                                    </button>
+                                </div>
                             </div>
-                            <div className="content__wrapper">
-                                <h3 className="heading">Crypto Deep Dive 2</h3>
-                                <p className="description">
-                                    How Can Bitcoin Become Legal Tender
-                                </p>
-                                <button className="view-button">View</button>
-                            </div>
-                        </div>
 
-                        {/* Card 3 */}
+                            {/* Card 3 */}
 
-                        <div className="carousel__card--wrapper p-3 d-flex justify-content-center align-items-center gap-4">
-                            <div className="image__wrapper">
-                                <img
-                                    src={CarouselCardImg}
-                                    alt="img"
-                                />
+                            <div className="carousel__card--wrapper p-3 d-flex justify-content-center align-items-center gap-4">
+                                <div className="image__wrapper">
+                                    <img
+                                        src={CarouselCardImg}
+                                        alt="img"
+                                    />
+                                </div>
+                                <div className="content__wrapper">
+                                    <h3 className="heading">
+                                        Crypto Deep Dive 3
+                                    </h3>
+                                    <p className="description">
+                                        How Can Bitcoin Become Legal Tender
+                                    </p>
+                                    <button className="view-button">
+                                        View
+                                    </button>
+                                </div>
                             </div>
-                            <div className="content__wrapper">
-                                <h3 className="heading">Crypto Deep Dive 3</h3>
-                                <p className="description">
-                                    How Can Bitcoin Become Legal Tender
-                                </p>
-                                <button className="view-button">View</button>
-                            </div>
-                        </div>
 
-                        {/* Card 4 */}
+                            {/* Card 4 */}
 
-                        <div className="carousel__card--wrapper p-3 d-flex justify-content-center align-items-center gap-4">
-                            <div className="image__wrapper">
-                                <img
-                                    src={CarouselCardImg}
-                                    alt="img"
-                                />
+                            <div className="carousel__card--wrapper p-3 d-flex justify-content-center align-items-center gap-4">
+                                <div className="image__wrapper">
+                                    <img
+                                        src={CarouselCardImg}
+                                        alt="img"
+                                    />
+                                </div>
+                                <div className="content__wrapper">
+                                    <h3 className="heading">
+                                        Crypto Deep Dive 4
+                                    </h3>
+                                    <p className="description">
+                                        How Can Bitcoin Become Legal Tender
+                                    </p>
+                                    <button className="view-button">
+                                        View
+                                    </button>
+                                </div>
                             </div>
-                            <div className="content__wrapper">
-                                <h3 className="heading">Crypto Deep Dive 4</h3>
-                                <p className="description">
-                                    How Can Bitcoin Become Legal Tender
-                                </p>
-                                <button className="view-button">View</button>
-                            </div>
-                        </div>
 
-                        {/* Card 5 */}
+                            {/* Card 5 */}
 
-                        <div className="carousel__card--wrapper p-3 d-flex justify-content-center align-items-center gap-4">
-                            <div className="image__wrapper">
-                                <img
-                                    src={CarouselCardImg}
-                                    alt="img"
-                                />
+                            <div className="carousel__card--wrapper p-3 d-flex justify-content-center align-items-center gap-4">
+                                <div className="image__wrapper">
+                                    <img
+                                        src={CarouselCardImg}
+                                        alt="img"
+                                    />
+                                </div>
+                                <div className="content__wrapper">
+                                    <h3 className="heading">
+                                        Crypto Deep Dive 5
+                                    </h3>
+                                    <p className="description">
+                                        How Can Bitcoin Become Legal Tender
+                                    </p>
+                                    <button className="view-button">
+                                        View
+                                    </button>
+                                </div>
                             </div>
-                            <div className="content__wrapper">
-                                <h3 className="heading">Crypto Deep Dive 5</h3>
-                                <p className="description">
-                                    How Can Bitcoin Become Legal Tender
-                                </p>
-                                <button className="view-button">View</button>
-                            </div>
-                        </div>
-                    </Slider>
+                        </Slider>
+                    </div>
                 </div>
             </div>
         </div>

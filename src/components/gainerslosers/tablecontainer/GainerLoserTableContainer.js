@@ -10,10 +10,12 @@ const GainerLoserTableContainer = () => {
             <div className="table__container my-5 container-fluid px-0">
                 <div className="row mx-0 ">
                     <div className="col-11 px-0 mx-auto">
-                        <GainersLosersTabs />
-                        <div className="gainersloserstable__outer--wrapper my-5">
-                            <Gainers />
-                            <Losers />
+                        <div className="container-xxl px-0">
+                            <GainersLosersTabs />
+                            <div className="gainersloserstable__outer--wrapper my-5">
+                                <Gainers />
+                                <Losers />
+                            </div>
                         </div>
                     </div>
                 </div>

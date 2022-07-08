@@ -1,5 +1,6 @@
 import React from 'react';
 import './TrendingTableTabs.css';
+import { Link } from 'react-router-dom';
 import ListArrow from '../../../../assets/coindetails/info-sources/list-arrow.svg';
 
 const TrendingTableTabs = () => {
@@ -14,10 +15,10 @@ const TrendingTableTabs = () => {
                         <a href="">Spotlight</a>
                     </li>
                     <li>
-                        <a href="">Gainers & Loser</a>
+                        <Link to="/gainers&losers">Gainers & Loser</Link>
                     </li>
                     <li className="active">
-                        <a href="">Trending</a>
+                        <Link to="/trending">Trending</Link>
                     </li>
                     <li>
                         <a href="">Most Visited</a>
