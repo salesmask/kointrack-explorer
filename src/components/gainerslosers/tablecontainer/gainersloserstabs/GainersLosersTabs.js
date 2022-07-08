@@ -1,5 +1,6 @@
 import React from 'react';
 import './GainersLosersTabs.css';
+import { Link } from 'react-router-dom';
 import ListArrow from '../../../../assets/coindetails/info-sources/list-arrow.svg';
 
 const GainersLosersTabs = () => {
@@ -14,10 +15,10 @@ const GainersLosersTabs = () => {
                         <a href="">Spotlight</a>
                     </li>
                     <li className="active">
-                        <a href="">Gainers & Loser</a>
+                        <Link to="/gainers&losers">Gainers & Loser</Link>
                     </li>
                     <li>
-                        <a href="">Trending</a>
+                        <Link to="/trending">Trending</Link>
                     </li>
                     <li>
                         <a href="">Most Visited</a>
