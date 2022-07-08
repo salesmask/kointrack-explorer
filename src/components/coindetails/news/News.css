@@ -10,11 +10,17 @@
     font-style: normal !important;
     font-weight: 400 !important;
     font-size: 12px !important;
-    /* width: 92px !important;
-height: 30px !important; */
 
     padding: 5px 12px !important;
     gap: 2px !important;
+}
+
+.news__button:hover {
+    background-color: #b4b5bc !important;
+}
+
+.news__button:active {
+    background-color: var(--clr-primary) !important;
 }
 
 /* Corresponding screen width according to bootstrap sm screens */
