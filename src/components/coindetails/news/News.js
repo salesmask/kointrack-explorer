@@ -10,7 +10,7 @@ import './News.css';
 
 const News = () => {
     return (
-        <div className="">
+        <div className="container-xxl">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-11 mx-auto">

@@ -101,7 +101,7 @@ const Gravity = () => {
                             </div>
                         </div>
 
-                        <div className="d-flex mt-2 align-items-center  justify-content-start rounded-pill px-2 py-2 border btc__background">
+                        <div className="d-flex mt-2 align-items-center  justify-content-start rounded-pill px-2 ps-4 py-2 border btc__background">
                             <h3 className="fs-3  text-primary text-center my-0">
                                 BTC
                             </h3>

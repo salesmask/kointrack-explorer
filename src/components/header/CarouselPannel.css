@@ -1,3 +1,7 @@
+.carousel-bg {
+    background: #151a33;
+}
+
 .carousel-caption {
     position: none !important;
     right: none !important;
@@ -29,7 +33,7 @@
 
 .font__paragraph {
     font-weight: 300;
-    font-size: var(--fs-paragraph);
+    font-size: 15px;
     color: #595c6e;
     line-height: 24px;
 
