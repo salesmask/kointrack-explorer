@@ -7,6 +7,7 @@ import Decrease_Arrow from '../../../assets/table/Decrease_Arrow.svg';
 import Increase_Arrow from '../../../assets/table/Increase_Arrow.svg';
 import Grapgh from '../../../assets/table/Grapgh.svg';
 import More_Icon from '../../../assets/table/More_Icon.svg';
+import WatchlistStar from '../../watchliststar/WatchlistStar';
 
 export default function Table() {
     return (
@@ -48,13 +49,7 @@ export default function Table() {
 
                                         <tr className="table__body--row align-middle">
                                             <td>
-                                                <div className="star__wrapper">
-                                                    <img
-                                                        className="watchlist__star"
-                                                        src={Watchlist_Outline}
-                                                        alt="icon"
-                                                    ></img>
-                                                </div>
+                                                <WatchlistStar />
                                             </td>
 
                                             <td>
@@ -173,13 +168,7 @@ export default function Table() {
 
                                         <tr className="table__body--row align-middle">
                                             <td>
-                                                <div className="star__wrapper">
-                                                    <img
-                                                        className="watchlist__star"
-                                                        src={Watchlist_Outline}
-                                                        alt="icon"
-                                                    ></img>
-                                                </div>
+                                                <WatchlistStar />
                                             </td>
 
                                             <td>
@@ -298,13 +287,7 @@ export default function Table() {
 
                                         <tr className="table__body--row align-middle">
                                             <td>
-                                                <div className="star__wrapper">
-                                                    <img
-                                                        className="watchlist__star"
-                                                        src={Watchlist_Outline}
-                                                        alt="icon"
-                                                    ></img>
-                                                </div>
+                                                <WatchlistStar />
                                             </td>
 
                                             <td>
@@ -423,13 +406,7 @@ export default function Table() {
 
                                         <tr className="table__body--row align-middle">
                                             <td>
-                                                <div className="star__wrapper">
-                                                    <img
-                                                        className="watchlist__star"
-                                                        src={Watchlist_Outline}
-                                                        alt="icon"
-                                                    ></img>
-                                                </div>
+                                                <WatchlistStar />
                                             </td>
 
                                             <td>
@@ -548,13 +525,7 @@ export default function Table() {
 
                                         <tr className="table__body--row align-middle">
                                             <td>
-                                                <div className="star__wrapper">
-                                                    <img
-                                                        className="watchlist__star"
-                                                        src={Watchlist_Outline}
-                                                        alt="icon"
-                                                    ></img>
-                                                </div>
+                                                <WatchlistStar />
                                             </td>
 
                                             <td>
@@ -673,13 +644,7 @@ export default function Table() {
 
                                         <tr className="table__body--row align-middle">
                                             <td>
-                                                <div className="star__wrapper">
-                                                    <img
-                                                        className="watchlist__star"
-                                                        src={Watchlist_Outline}
-                                                        alt="icon"
-                                                    ></img>
-                                                </div>
+                                                <WatchlistStar />
                                             </td>
 
                                             <td>
@@ -798,13 +763,7 @@ export default function Table() {
 
                                         <tr className="table__body--row align-middle">
                                             <td>
-                                                <div className="star__wrapper">
-                                                    <img
-                                                        className="watchlist__star"
-                                                        src={Watchlist_Outline}
-                                                        alt="icon"
-                                                    ></img>
-                                                </div>
+                                                <WatchlistStar />
                                             </td>
 
                                             <td>
@@ -923,13 +882,7 @@ export default function Table() {
 
                                         <tr className="table__body--row align-middle">
                                             <td>
-                                                <div className="star__wrapper">
-                                                    <img
-                                                        className="watchlist__star"
-                                                        src={Watchlist_Outline}
-                                                        alt="icon"
-                                                    ></img>
-                                                </div>
+                                                <WatchlistStar />
                                             </td>
 
                                             <td>
@@ -1048,13 +1001,7 @@ export default function Table() {
 
                                         <tr className="table__body--row align-middle">
                                             <td>
-                                                <div className="star__wrapper">
-                                                    <img
-                                                        className="watchlist__star"
-                                                        src={Watchlist_Outline}
-                                                        alt="icon"
-                                                    ></img>
-                                                </div>
+                                                <WatchlistStar />
                                             </td>
 
                                             <td>
@@ -1173,13 +1120,7 @@ export default function Table() {
 
                                         <tr className="table__body--row align-middle">
                                             <td>
-                                                <div className="star__wrapper">
-                                                    <img
-                                                        className="watchlist__star"
-                                                        src={Watchlist_Outline}
-                                                        alt="icon"
-                                                    ></img>
-                                                </div>
+                                                <WatchlistStar />
                                             </td>
 
                                             <td>

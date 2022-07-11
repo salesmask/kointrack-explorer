@@ -84,14 +84,6 @@
     z-index: 999;
 }
 
-.star__wrapper {
-    width: 2rem;
-}
-
-.watchlist__star {
-    width: 18px;
-}
-
 .namecell__wrapper .coin__image {
     width: 30px;
 }
