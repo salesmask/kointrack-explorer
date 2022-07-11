@@ -5,13 +5,18 @@ import header_search_icon from '../../assets/header/Header_Search_Icon.svg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
 import 'bootstrap/dist/js/bootstrap';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../logo/Logo';
-// import SignupForm from '../coindetails/signupform/SignupForm';
+import SignupForm from '../coindetails/signupform/SignupForm';
 import { Link } from 'react-router-dom';
 // import LoginForm from '../coindetails/loginform/LoginForm';
+// import SignupForm from './../signupform/SignupForm';
+import LoginForm from './../coindetails/loginform/LoginForm';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);
+    const [signUp, setSignUp] = useState(false);
+    const [logIn, setLogIn] = useState(false);
 
     // const[openSignup, setopenSignup] = useState(false);
 
@@ -161,17 +166,21 @@ const Header = () => {
                                         </div>
                                     </div>
 
-                                    <Link to="/signupform">
-                                        <button className="sign__up">
-                                            Sign Up
-                                        </button>
-                                    </Link>
+                                    <button
+                                        className="sign__up"
+                                        onClick={() => setSignUp(!signUp)}
+                                    >
+                                        Sign Up
+                                        {signUp ? <SignupForm /> : null}
+                                    </button>
 
-                                    <Link to="/loginform">
-                                        <button className="log__in">
-                                            Log In
-                                        </button>
-                                    </Link>
+                                    <button
+                                        className="log__in"
+                                        onClick={() => setLogIn(!logIn)}
+                                    >
+                                        Log In
+                                        {logIn ? <LoginForm /> : null}
+                                    </button>
                                 </div>
                             </div>
                         </div>

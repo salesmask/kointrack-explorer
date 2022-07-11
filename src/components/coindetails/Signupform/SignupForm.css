@@ -123,3 +123,9 @@
     vertical-align: middle;
     width: 50%;
 }
+
+.sign_up_float_email {
+    color: var(--clr-text);
+    font-size: 1.4rem;
+    font-weight: 400;
+}
