@@ -6,12 +6,14 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
 import 'bootstrap/dist/js/bootstrap';
 import Logo from '../logo/Logo';
-// import SignupForm from '../coindetails/signupform/SignupForm';
 import { Link } from 'react-router-dom';
-// import LoginForm from '../coindetails/loginform/LoginForm';
+import LoginForm from '../coindetails/loginform/LoginForm';
+import SignupForm from '../coindetails/Signupform/SignupForm';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);
+    const [logIn, setLogIn] = useState(false);
+    const [signUp, setSignUp] = useState(false);
 
     // const[openSignup, setopenSignup] = useState(false);
 
@@ -168,11 +170,19 @@ const Header = () => {
                                             </div>
                                         </div>
 
-                                        <button className="sign__up">
+                                        <button
+                                            className="sign__up"
+                                            onClick={() => setSignUp(!signUp)}
+                                        >
                                             Sign Up
+                                            {signUp ? <SignupForm /> : null}
                                         </button>
-                                        <button className="log__in">
+                                        <button
+                                            className="log__in"
+                                            onClick={() => setLogIn(!logIn)}
+                                        >
                                             Log In
+                                            {logIn ? <LoginForm /> : null}
                                         </button>
                                     </div>
                                 </div>
