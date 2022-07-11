@@ -1,10 +1,10 @@
 import React from 'react';
 
-import news_big_image from '../../../assets/coindata/News Big Image.svg';
-import bitcoin_small from '../../../assets/coindata/Bitcoin Small.svg';
-import news_small_1 from '../../../assets/coindata/News Small_1.svg';
-import news_small_2 from '../../../assets/coindata/News Small_2.svg';
-import news_small_3 from '../../../assets/coindata/News Small_3.svg';
+import news_big_image from '../../../assets/coindetails/coindata/News Big Image.svg';
+import bitcoin_small from '../../../assets/coindetails/coindata/Bitcoin Small.svg';
+import news_small_1 from '../../../assets/coindetails/coindata/News Small_1.svg';
+import news_small_2 from '../../../assets/coindetails/coindata/News Small_2.svg';
+import news_small_3 from '../../../assets/coindetails/coindata/News Small_3.svg';
 
 import './News.css';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import './BitcoinMarkets.css';
-import Binance_Logo from './../../../assets/bitcoinmarkets/image 21.svg';
+import Binance_Logo from './../../../assets/coindetails/bitcoinmarkets/image 21.svg';
 // import { Link } from 'react-router-dom';
 
 const BitcoinMarkets = () => {
