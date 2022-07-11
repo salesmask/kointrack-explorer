@@ -13,16 +13,18 @@ function Footer() {
             <footer>
                 <div class="footer__wrapper container-fluid py-5 px-0 ">
                     <div class="row  py-5 mx-0 ">
-                        <div className="col-11 mx-auto d-flex flex-wrap px-0 gap-5">
-                            <FooterLogo />
+                        <div className="col-11 mx-auto">
+                            <div className="container-xxl px-0  d-flex flex-wrap px-0 gap-5">
+                                <FooterLogo />
 
-                            <Product />
+                                <Product />
 
-                            <Resourcess />
+                                <Resourcess />
 
-                            <Company />
+                                <Company />
 
-                            <Contact />
+                                <Contact />
+                            </div>
                         </div>
                     </div>
                 </div>

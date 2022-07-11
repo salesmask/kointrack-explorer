@@ -12,90 +12,94 @@ import vector3 from '../../assets/header/Header_BG_with_vector_.3.png';
 
 export default function CarouselPannel() {
     return (
-        <div className="">
-            <div
-                id="carouselExample"
-                class="carousel slide"
-                data-bs-ride="carousel"
-            >
-                <div class="carousel-indicators py-3">
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExample"
-                        data-bs-slide-to="0"
-                        class="active"
-                        aria-current="true"
-                        aria-label="Slide 1"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExample"
-                        data-bs-slide-to="1"
-                        aria-label="Slide 2"
-                    ></button>
-                    <button
-                        type="button"
-                        data-bs-target="#carouselExample"
-                        data-bs-slide-to="2"
-                        aria-label="Slide 3"
-                    ></button>
-                </div>
-                <div class="carousel-inner ">
-                    <div class="carousel-item active">
-                        <div class="carousel-caption col-lg-7 col-7">
-                            <h1 className="font__header">
-                                {' '}
-                                Why bitcoin is so valuable in Recent Times ?
-                            </h1>
-                            <p className="font__paragraph ">
-                                lorem Lorem Ipsum is simply dummy text of the
-                                printing and typesetting industry. Lorem Ipsum
-                                has been the industry's ever since 1550s
-                            </p>
-                        </div>
+        <div className="carousel-bg">
+            <div className="container-xxl">
+                <div
+                    id="carouselExample"
+                    class="carousel slide "
+                    data-bs-ride="carousel"
+                >
+                    <div class="carousel-indicators py-3">
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide-to="0"
+                            class="active"
+                            aria-current="true"
+                            aria-label="Slide 1"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide-to="1"
+                            aria-label="Slide 2"
+                        ></button>
+                        <button
+                            type="button"
+                            data-bs-target="#carouselExample"
+                            data-bs-slide-to="2"
+                            aria-label="Slide 3"
+                        ></button>
+                    </div>
+                    <div class="carousel-inner ">
+                        <div class="carousel-item active">
+                            <div class="carousel-caption col-lg-7 col-7">
+                                <h1 className="font__header">
+                                    {' '}
+                                    Why bitcoin is so valuable in Recent Times ?
+                                </h1>
+                                <p className="font__paragraph fw-bolder">
+                                    lorem Lorem Ipsum is simply dummy text of
+                                    the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's ever since
+                                    1550s
+                                </p>
+                            </div>
 
-                        <img
-                            src={vector1}
-                            class="d-block w-100"
-                            alt="..."
-                        />
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption col-lg-7 col-7">
-                            <h1 className="font__header">
-                                A Guide to Build Your Crypto Portfolio
-                            </h1>
-                            <p className="font__paragraph ">
-                                lorem Lorem Ipsum is simply dummy text of the
-                                printing and typesetting industry. Lorem Ipsum
-                                has been the industry's ever since 1550s
-                            </p>
+                            <img
+                                src={vector1}
+                                class="d-block w-100"
+                                alt="..."
+                            />
                         </div>
-                        <img
-                            src={vector2}
-                            class="d-block w-100"
-                            alt="..."
-                        />
-                    </div>
-                    <div class="carousel-item">
-                        <div class="carousel-caption col-lg-7 col-7">
-                            <h1 className="font__header">
-                                How Crypto Enable Economical Freedom
-                            </h1>
-                            <p className="font__paragraph ">
-                                lorem Lorem Ipsum is simply dummy text of the
-                                printing and typesetting industry. Lorem Ipsum
-                                has been the industry's ever since 1550s
-                            </p>
+                        <div class="carousel-item">
+                            <div class="carousel-caption col-lg-7 col-7">
+                                <h1 className="font__header">
+                                    A Guide to Build Your Crypto Portfolio
+                                </h1>
+                                <p className="font__paragraph fw-bolder">
+                                    lorem Lorem Ipsum is simply dummy text of
+                                    the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's ever since
+                                    1550s
+                                </p>
+                            </div>
+                            <img
+                                src={vector2}
+                                class="d-block w-100"
+                                alt="..."
+                            />
                         </div>
-                        <img
-                            src={vector3}
-                            class="d-block w-100"
-                            alt="..."
-                        />
+                        <div class="carousel-item">
+                            <div class="carousel-caption col-lg-7 col-7">
+                                <h1 className="font__header">
+                                    How Crypto Enable Economical Freedom
+                                </h1>
+                                <p className="font__paragraph fw-bolder">
+                                    lorem Lorem Ipsum is simply dummy text of
+                                    the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's ever since
+                                    1550s
+                                </p>
+                            </div>
+                            <img
+                                src={vector3}
+                                class="d-block w-100"
+                                alt="..."
+                            />
+                        </div>
                     </div>
-                </div>
-                {/* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    {/* <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
@@ -103,6 +107,7 @@ export default function CarouselPannel() {
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button> */}
+                </div>
             </div>
         </div>
     );
