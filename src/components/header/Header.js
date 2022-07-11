@@ -7,11 +7,11 @@ import { FaTimes } from 'react-icons/fa';
 import 'bootstrap/dist/js/bootstrap';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../logo/Logo';
-import SignupForm from '../coindetails/signupform/SignupForm';
+import SignupForm from '../coindetails/Signupform/SignupForm';
 import { Link } from 'react-router-dom';
 // import LoginForm from '../coindetails/loginform/LoginForm';
 // import SignupForm from './../signupform/SignupForm';
-import LoginForm from './../coindetails/loginform/LoginForm';
+import LoginForm from '../coindetails/loginform/LoginForm';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);
