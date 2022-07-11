@@ -8,7 +8,7 @@ import 'bootstrap/dist/js/bootstrap';
 import Logo from '../logo/Logo';
 import { Link } from 'react-router-dom';
 import LoginForm from '../coindetails/loginform/LoginForm';
-import SignupForm from '../coindetails/signupform/SignupForm';
+import SignupForm from '../coindetails/Signupform/SignupForm';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);
