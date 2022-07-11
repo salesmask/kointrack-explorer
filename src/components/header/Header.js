@@ -24,13 +24,16 @@ const Header = () => {
                     <div className="container-xxl px-0 d-flex">
                         {/* <div className="container-xxl col-xxl-11 px-0 d-flex"> */}
                         {/* header logo */}
-                        <div className="col-2  header__logo">
-                            <img
-                                className="header__logo"
-                                src={header_logo}
-                                alt="header-logo"
-                            ></img>
-                        </div>
+
+                        <Link to="/">
+                            <div className="col-2  header__logo">
+                                <img
+                                    className="header__logo"
+                                    src={header_logo}
+                                    alt="header-logo"
+                                ></img>
+                            </div>
+                        </Link>
 
                         {/* header links */}
 
