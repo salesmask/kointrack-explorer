@@ -1,7 +1,7 @@
 import React from 'react';
 import './PriceEstimates.css';
-import Customer_Logo from './../../../assets/detailspage/cards/Group 9162.svg';
-import Beta_Logo from './../../../assets/detailspage/cards/Group 9126.svg';
+import Beta_Logo from './../../../assets/coindetails/price-estimates/Group 9126.svg';
+import Customer_Logo from './../../../assets/coindetails/price-estimates/Group 9162.svg';
 
 const PriceEstimates = () => {
     return (

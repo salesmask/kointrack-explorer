@@ -1,21 +1,21 @@
 import React from 'react';
 import './Gravity.css';
-import logo_symbol from '../../../assets/coindata/Logo Symbol.svg';
-import user_icon from '../../../assets/coindata/User Icon.svg';
-import up_arrow from '../../../assets/coindata/Up Down Arrow.svg';
-import down_arrow from '../../../assets/coindata/Down Arrow.svg';
-import bitcoin_small from '../../../assets/coindata/Bitcoin Small.svg';
-import refresh from '../../../assets/coindata/Referesh Icon.svg';
-import usa from '../../../assets/coindata/USA-HDR.svg';
-import comment from '../../../assets/coindata/Comments.svg';
-import like from '../../../assets/coindata/Like.svg';
-import next_arrow from '../../../assets/coindata/Next Arrow.svg';
-import fire from '../../../assets/coindata/fire.svg';
-import shoe_coin from '../../../assets/coindata/shoecoin.svg';
-import green__up from '../../../assets/coindata/green__up.svg';
-import red__down from '../../../assets/coindata/red__down.svg';
-import white__up from '../../../assets/coindata/white__up.svg';
-import black__left from '../../../assets/coindata/black__left.svg';
+import logo_symbol from '../../../assets/coindetails/coindata/Logo Symbol.svg';
+import user_icon from '../../../assets/coindetails/coindata/User Icon.svg';
+import up_arrow from '../../../assets/coindetails/coindata/Up Down Arrow.svg';
+import down_arrow from '../../../assets/coindetails/coindata/Down Arrow.svg';
+import bitcoin_small from '../../../assets/coindetails/coindata/Bitcoin Small.svg';
+import refresh from '../../../assets/coindetails/coindata/Referesh Icon.svg';
+import usa from '../../../assets/coindetails/coindata/USA-HDR.svg';
+import comment from '../../../assets/coindetails/coindata/Comments.svg';
+import like from '../../../assets/coindetails/coindata/Like.svg';
+import next_arrow from '../../../assets/coindetails/coindata/Next Arrow.svg';
+import fire from '../../../assets/coindetails/coindata/fire.svg';
+import shoe_coin from '../../../assets/coindetails/coindata/shoecoin.svg';
+import green__up from '../../../assets/coindetails/coindata/green__up.svg';
+import red__down from '../../../assets/coindetails/coindata/red__down.svg';
+import white__up from '../../../assets/coindetails/coindata/white__up.svg';
+import black__left from '../../../assets/coindetails/coindata/black__left.svg';
 
 const Gravity = () => {
     return (
