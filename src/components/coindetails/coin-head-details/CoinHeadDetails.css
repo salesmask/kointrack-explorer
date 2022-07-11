@@ -28,11 +28,6 @@
     padding: 0.2rem;
     border-radius: 4px;
 }
-.coin-head__name--wrapper .watchlist__wrapper:hover path {
-    fill: var(--clr-watchlist-star-fill) !important;
-    stroke: var(--clr-watchlist-star-fill) !important;
-}
-
 .coin-head__name--wrapper .rank,
 .coin-head__name--wrapper .type,
 .coin-head__name--wrapper .watchlist-count {
