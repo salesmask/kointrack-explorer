@@ -1,11 +1,15 @@
 .gravity__rounder {
     border-radius: 10px !important;
+    margin-top: -1px;
+    margin-left: -1px;
+    margin-right: -1px;
 }
 
 .rounded__border {
     border-radius: 10px;
     margin-top: -1px;
     margin-left: -1px;
+    margin-right: -1px;
 }
 
 .bg__tile {
@@ -44,6 +48,7 @@
     background-color: #eaebf2 !important;
     font-weight: 500 !important;
     font-size: 12px !important;
+    width: fit-content;
 }
 
 .showmore__button:hover {
