@@ -20,19 +20,19 @@ const News = () => {
                             </h2>
                             <button
                                 type="button"
-                                className=" btn rounded-pill lead px-5 ms-5 news__button"
+                                className=" btn news__button rounded-pill  px-5 ms-5 news__button"
                             >
                                 All
                             </button>
                             <button
                                 type="button"
-                                className="btn rounded-pill news__button lead px-5"
+                                className="btn news__button rounded-pill news__button  px-5"
                             >
                                 News
                             </button>
                             <button
                                 type="button"
-                                className="btn rounded-pill news__button lead px-5"
+                                className="btn  news__button rounded-pill news__button  px-5"
                             >
                                 Alexanria
                             </button>
@@ -83,7 +83,7 @@ const News = () => {
                                         laborum cillum laborum
                                     </p>
 
-                                    <div className=" d-flex flex-wrap  gap-3 gap-sm-3 gap-md-4  align-items-center">
+                                    <div className=" d-flex flex-wrap  gap-3 gap-sm-3 gap-md-4   align-items-center">
                                         <div className="fs-4 fw-bolder">
                                             News BTC
                                         </div>
