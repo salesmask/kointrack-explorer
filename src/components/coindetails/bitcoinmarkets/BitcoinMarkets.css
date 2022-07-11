@@ -54,7 +54,11 @@
     align-items: center !important;
 }
 .button_high_parent {
-    vertical-align: middle !important;
+    padding-top: 14px !important;
+    /* vertical-align: middle !important; */
+}
+.parent_binance_logo {
+    white-space: nowrap !important  ;
 }
 .button_show_all {
     background-color: #eaebf2 !important;
@@ -70,10 +74,6 @@
 }
 .btc_color {
     color: #2b50ff;
-}
-
-.bitcoin_market_styles {
-    padding: 60px !important;
 }
 
 .table_styles {
@@ -131,6 +131,39 @@
 .table_main::-webkit-scrollbar {
     display: none;
 }
+
+/* Media Quieries */
+
+/* Corresponding screen width according to bootstrap md screens */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .table_main {
+        overflow-x: scroll;
+        margin: 1.5rem 4rem;
+    }
+    .table___volume {
+        white-space: nowrap !important;
+    }
+    .estimate__hour {
+        white-space: nowrap !important;
+    }
+}
+
+/* Corresponding screen width according to bootstrap md screens */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .table_main {
+        overflow-x: scroll;
+        margin: 1.5rem 4rem;
+    }
+    .table___volume {
+        white-space: nowrap !important;
+    }
+    .estimate__hour {
+        white-space: nowrap !important;
+    }
+}
+
 /* Corresponding screen width according to bootstrap sm screens */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
@@ -138,8 +171,11 @@
         overflow-x: scroll;
         margin: 1.5rem 4rem;
     }
-    .star__wrapper {
-        width: 2rem;
+    .table___volume {
+        white-space: nowrap !important;
+    }
+    .estimate__hour {
+        white-space: nowrap !important;
     }
 }
 
@@ -150,4 +186,45 @@
         overflow-x: scroll;
         margin: 1rem 2rem;
     }
+    .table___volume {
+        white-space: nowrap !important;
+    }
+    .estimate__hour {
+        white-space: nowrap !important;
+    }
+}
+
+/* First column sticky and horizontal scroll */
+
+.top_border th:nth-child(1),
+.before_after td:nth-child(1) {
+    left: 0%;
+    position: sticky;
+    /* box-shadow: 5px 0 3px -2px #ccc; */
+    background: inherit;
+    z-index: 1;
+}
+.top_border th:nth-child(2),
+.before_after td:nth-child(2) {
+    left: 3%;
+    position: sticky;
+    /* box-shadow: 5px 0 3px -2px #ccc; */
+    background: inherit;
+    box-sizing: border-box;
+    z-index: 1;
+}
+/* .top_border th:nth-child(3),
+.before_after td:nth-child(3){
+     
+     left: 7%;
+     position: sticky;
+     box-shadow: 5px 0 3px -2px #ccc;
+     background: inherit;
+     z-index: 1;
+} */
+.logo_max_content {
+    width: max-content;
+}
+.table_main_layout {
+    border-radius: 10px !important;
 }
