@@ -299,7 +299,7 @@ const Gravity = () => {
 
                     <div
                         type="button"
-                        className=" rounded-pill px-3 py-3 mx-auto my-4 showmore__button"
+                        className="rounded-pill px-3 py-3 mx-auto my-4 showmore__button"
                     >
                         Show More
                     </div>
