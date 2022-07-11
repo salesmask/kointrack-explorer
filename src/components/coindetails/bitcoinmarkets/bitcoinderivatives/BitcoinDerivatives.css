@@ -1,0 +1,48 @@
+.border {
+    border: 1px solid #e4e4e4 !important;
+}
+
+.bitcoin_market {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    color: #1e202b;
+    padding: 0px 40px 40px 0px;
+}
+.button_spot {
+    background-color: #2b50ff !important;
+    color: #ffffff !important;
+    width: 64px;
+    height: 30px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 6px 18px;
+    gap: 10px;
+}
+.button_perpetual {
+    background-color: #eaebf2 !important;
+    color: #1e202b !important;
+    width: 80px;
+    height: 30px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 6px 18px;
+    gap: 10px;
+}
+.button_features {
+    background-color: #eaebf2 !important;
+    color: #1e202b !important;
+    width: 80px;
+    height: 30px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 6px 18px;
+    gap: 10px;
+}
+.derivatives_wrapper_table {
+    padding: 60px 0px 0px 60px 0px !important;
+}

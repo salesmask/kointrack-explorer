@@ -5,22 +5,23 @@ import header_search_icon from '../../assets/header/Header_Search_Icon.svg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
 import 'bootstrap/dist/js/bootstrap';
+import Logo from '../logo/Logo';
+// import SignupForm from '../coindetails/signupform/SignupForm';
+import { Link } from 'react-router-dom';
+// import LoginForm from '../coindetails/loginform/LoginForm';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);
+
+    // const[openSignup, setopenSignup] = useState(false);
 
     return (
         <nav className="header__wrapper container-fluid">
             <div className="row ">
                 <div className="col-11 mx-auto d-flex py-4 align-items-center">
                     {/* header logo */}
-                    <div className="col-2  header__logo">
-                        <img
-                            className="header__logo"
-                            src={header_logo}
-                            alt="header-logo"
-                        ></img>
-                    </div>
+
+                    <Logo />
 
                     {/* header links */}
 
@@ -160,10 +161,17 @@ const Header = () => {
                                         </div>
                                     </div>
 
-                                    <button className="sign__up">
-                                        Sign Up
-                                    </button>
-                                    <button className="log__in">Log In</button>
+                                    <Link to="/signupform">
+                                        <button className="sign__up">
+                                            Sign Up
+                                        </button>
+                                    </Link>
+
+                                    <Link to="/loginform">
+                                        <button className="log__in">
+                                            Log In
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
