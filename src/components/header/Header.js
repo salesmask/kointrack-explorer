@@ -6,9 +6,14 @@ import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
 import 'bootstrap/dist/js/bootstrap';
 import Logo from '../logo/Logo';
+// import SignupForm from '../coindetails/signupform/SignupForm';
+import { Link } from 'react-router-dom';
+// import LoginForm from '../coindetails/loginform/LoginForm';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);
+
+    // const[openSignup, setopenSignup] = useState(false);
 
     return (
         <nav className="header__wrapper container-fluid">
@@ -156,10 +161,17 @@ const Header = () => {
                                         </div>
                                     </div>
 
-                                    <button className="sign__up">
-                                        Sign Up
-                                    </button>
-                                    <button className="log__in">Log In</button>
+                                    <Link to="/signupform">
+                                        <button className="sign__up">
+                                            Sign Up
+                                        </button>
+                                    </Link>
+
+                                    <Link to="/loginform">
+                                        <button className="log__in">
+                                            Log In
+                                        </button>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,28 +1,46 @@
-.sign_up {
-    border: 1px solid black;
-    /* background-color: blueviolet; */
+.Login-blur-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+    background-color: rgba(0, 0, 0, 0.244);
+    filter: blur(80px);
+    /* display: none; */
 }
-.wrapper {
+
+.Login_wrapper {
     padding: 0 0 100px;
     background-position: bottom center !important;
     background-repeat: no-repeat !important;
     background-size: contain !important;
     background-attachment: fixed !important;
     min-height: 100% !important;
+    /* display: none; */
+    /* border: 3px solid pink; */
+    z-index: 99;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
-.wrapper input {
+.Login_wrapper input {
     background-color: #f8f8f8 !important;
     border-color: 1px solid #e4e4e4 !important;
     color: #000 !important;
 }
-.wrapper input:focus {
+.Login_wrapper input:focus {
     box-shadow: none !important ;
 }
-.wrapper .submit____btn {
+.Login_wrapper .submit____btn {
     padding: 15px !important;
     font-weight: 500 !important;
 }
-.wrapper .login-with {
+.Login_wrapper .login-with {
     padding: 15px;
     font-size: 15px;
     font-weight: 500;
@@ -44,16 +62,16 @@
     font-size: 17px;
 }
 
-.sign_up_place_holder::-webkit-input-placeholder {
+.Login_place_holder::-webkit-input-placeholder {
     color: #c0c0c0 !important;
     font-weight: 400;
     font-size: 14px;
 }
 
-.sign-up-font-color-form {
+.Login-font-color-form {
     color: #787980 !important;
 }
-.main_parent_sign_up_icon {
+.main_parent_Login_icon {
     justify-content: start;
     width: 100%;
 }
@@ -62,10 +80,10 @@
     justify-content: flex-end !important;
     width: 100%;
 }
-.sign_up_place_holder {
+.Login_place_holder {
     width: 100% !important;
 }
-.sign_up_image_position {
+.Login_image_position {
     position: absolute !important;
 }
 .closing_icon_wrapper {
@@ -79,22 +97,22 @@
     padding: 0px 0px 15px 0px;
 }
 
-.sign__up__with:before {
+.Login__with:before {
     right: 0.5em;
     margin-left: -50%;
 }
 
-.sign__up__with:after {
+.Login__with:after {
     left: 0.5em;
     margin-right: -50%;
 }
-.sign__up__with {
+.Login__with {
     overflow: hidden;
     text-align: center;
 }
 
-.sign__up__with:before,
-.sign__up__with:after {
+.Login__with:before,
+.Login__with:after {
     background-color: #e4e4e4 !important;
     content: '';
     display: inline-block;

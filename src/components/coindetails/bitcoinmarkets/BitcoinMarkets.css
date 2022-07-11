@@ -76,10 +76,6 @@
     color: #2b50ff;
 }
 
-.bitcoin_market_styles {
-    padding: 60px !important;
-}
-
 .table_styles {
     line-height: 5rem !important;
     border-collapse: separate !important;
@@ -204,7 +200,7 @@
 .before_after td:nth-child(1) {
     left: 0%;
     position: sticky;
-    box-shadow: 5px 0 3px -2px #ccc;
+    /* box-shadow: 5px 0 3px -2px #ccc; */
     background: inherit;
     z-index: 1;
 }
@@ -212,7 +208,7 @@
 .before_after td:nth-child(2) {
     left: 3%;
     position: sticky;
-    box-shadow: 5px 0 3px -2px #ccc;
+    /* box-shadow: 5px 0 3px -2px #ccc; */
     background: inherit;
     box-sizing: border-box;
     z-index: 1;
@@ -228,4 +224,7 @@
 } */
 .logo_max_content {
     width: max-content;
+}
+.table_main_layout {
+    border-radius: 10px !important;
 }

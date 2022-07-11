@@ -79,3 +79,6 @@
     font-weight: 500 !important;
     font-size: 12px !important;
 }
+.first_card_price_estimate {
+    border-radius: 10px !important;
+}
