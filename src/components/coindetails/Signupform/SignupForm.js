@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import{usestate} from 'react';
 import './SignupForm.css';
 import Sign_UP from './../../../assets/signup/google 1.svg';
