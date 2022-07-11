@@ -1,6 +1,6 @@
-.main_container {
+/* .main_container {
     padding: 60px 60px 60px 60px !important;
-}
+} */
 
 .price_estimates_wrapper {
     display: flex;
@@ -56,9 +56,7 @@
     vertical-align: middle !important;
     padding-top: 8px !important;
 }
-.estimate {
-    padding: 60px;
-}
+
 .customer_vote {
     padding-left: 5px;
 }
@@ -81,49 +79,6 @@
     font-weight: 500 !important;
     font-size: 12px !important;
 }
-
-/* Corresponding screen width according to bootstrap xl screens  */
-
-@media screen and (min-width: 1200px) and (max-width: 1400px) {
-    .card-title {
-        font-size: 16px;
-    }
-    .card-text {
-        font-size: 12px;
-    }
-}
-
-/* Corresponding screen width according to bootstrap lg screens  */
-
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .media_style {
-        display: none;
-    }
-}
-
-/* Corresponding screen width according to bootstrap md screens  */
-
-@media screen and (min-width: 768px) and (max-width: 992px) {
-    .media_style {
-        display: none;
-    }
-
-    .media_style_wrap {
-        display: none !important;
-    }
-}
-
-/* Corresponding screen width according to bootstrap sm screens  */
-
-@media screen and (min-width: 576px) and (max-width: 768px) {
-    /* .media_style{
-            display: none;
-      } */
-
-    .media_style_wrap {
-        display: none !important;
-    }
-    .media_style_wrapper {
-        display: none !important;
-    }
+.first_card_price_estimate {
+    border-radius: 10px !important;
 }

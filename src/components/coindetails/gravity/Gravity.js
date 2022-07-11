@@ -31,7 +31,7 @@ const Gravity = () => {
                     </div>
                     <div
                         type="button"
-                        className="showmore__button rounded-pill text-center ms-auto py-2 "
+                        className="showmore__button rounded-pill text-center ms-auto py-2 px-3"
                     >
                         Show More
                     </div>
@@ -55,7 +55,7 @@ const Gravity = () => {
                         </div>
                         <div
                             type="button"
-                            className="follow__button rounded-pill text-center py-2 ms-auto"
+                            className="follow__button rounded-pill text-center py-2 px-3 ms-auto"
                         >
                             + Follow
                         </div>
@@ -101,15 +101,15 @@ const Gravity = () => {
                             </div>
                         </div>
 
-                        <div className="d-flex mt-2 align-items-center  justify-content-start rounded-pill px-2 ps-4 py-2 border btc__background">
+                        <div className="d-flex mt-2  align-items-center  justify-content-between rounded-pill px-3 py-2 border btc__background">
                             <h3 className="fs-3  text-primary text-center my-0">
                                 BTC
                             </h3>
-                            <div className="ms-auto me-2">
+                            <div className="chatbox__icon">
                                 <img
                                     src={bitcoin_small}
                                     className="ms-auto"
-                                    alt=""
+                                    alt="icon"
                                 ></img>
                             </div>
                         </div>

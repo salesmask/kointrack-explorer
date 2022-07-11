@@ -11,7 +11,10 @@ import PriceEstimates from './priceestimates/PriceEstimates';
 import ChartSection from './chartsection/ChartSection';
 import News from './news/News';
 import Gravity from './gravity/Gravity';
-import BitcoinMarkets from '../bitcoinmarkets/BitcoinMarkets';
+import BitcoinMarkets from './bitcoinmarkets/BitcoinMarkets';
+import BitcoinDerivatives from './bitcoinmarkets/bitcoinderivatives/BitcoinDerivatives';
+// import SignupForm from './Signupform/SignupForm';
+// import LoginForm from './loginform/LoginForm';
 
 const CoinDetails = () => {
     return (
@@ -28,15 +31,17 @@ const CoinDetails = () => {
             <section className="tabdetails__outer--container container-fluid px-0">
                 <div className="row mx-0">
                     <div className="tabdetails__inner--container col-11 mx-auto px-0">
-                        <div className="row mx-0 d-flex flex-wrap">
-                            <div className="col-12 col-lg-8 px-0 pe-lg-5">
-                                <div className="chart-side__wrapper">
-                                    <ChartSection />
+                        <div className="container-xxl px-0">
+                            <div className="row mx-0 d-flex flex-wrap">
+                                <div className="col-12 col-lg-8 px-0 pe-lg-5">
+                                    <div className="chart-side__wrapper">
+                                        <ChartSection />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="col-12 col-lg-4 px-0">
-                                <div className="gravity-side__wrapper">
-                                    <Gravity />
+                                <div className="col-12 col-lg-4 px-0">
+                                    <div className="gravity-side__wrapper">
+                                        <Gravity />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -45,9 +50,12 @@ const CoinDetails = () => {
             </section>
 
             <PriceEstimates />
+            <BitcoinDerivatives />
             <BitcoinMarkets />
 
             <News />
+            {/* <LoginForm /> */}
+            {/* <SignupForm /> */}
 
             <Footer />
         </>
