@@ -7,6 +7,7 @@ import RangeofTimeIcon from '../../../assets/coindetails/coin-head-details/range
 import CurrentPriceArrowDown from '../../../assets/coindetails/coin-head-details/current-price-arrow-down.svg';
 import ETHArrowUp from '../../../assets/coindetails/coin-head-details/Increase_Arrow.svg';
 import WatchlistStar from '../../watchliststar/WatchlistStar';
+import CoinHeadProgressbar from './progressbar/CoinHeadProgressbar';
 
 const CoinHeadDetails = () => {
     return (
@@ -75,15 +76,11 @@ const CoinHeadDetails = () => {
                                                         </div>
                                                     </div>
 
-                                                    <div class="progress w-100 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
-                                                    </div>
+                                                    {/* Progress bar */}
+
+                                                    <CoinHeadProgressbar />
+
+                                                    {/* ******* */}
                                                 </div>
                                                 <div
                                                     className="range-of__time rounded-pill d-flex justify-content-between align-items-center ms-4 px-3 py-1"

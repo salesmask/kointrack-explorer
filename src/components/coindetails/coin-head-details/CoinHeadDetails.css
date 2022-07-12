@@ -48,9 +48,6 @@
     width: auto;
 }
 
-.coin-head__range--wrapper .progress {
-    height: 1rem !important;
-}
 .range-of__time {
     border: 1px solid var(--clr-card-outline);
 }
