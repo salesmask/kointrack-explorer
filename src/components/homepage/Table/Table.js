@@ -8,6 +8,7 @@ import Increase_Arrow from '../../../assets/table/Increase_Arrow.svg';
 import Grapgh from '../../../assets/table/Grapgh.svg';
 import More_Icon from '../../../assets/table/More_Icon.svg';
 import WatchlistStar from '../../watchliststar/WatchlistStar';
+import TableProgressBar from '../../tableprogressbar/TableProgressBar';
 
 export default function Table() {
     return (
@@ -124,22 +125,16 @@ export default function Table() {
 
                                             <td className="d-none d-sm-table-cell">
                                                 <div className="circulating__supply">
-                                                    <span className="circulating__supply--value">
-                                                        31,432,321
-                                                    </span>
-                                                    <span className="circulating__supply--symbol ms-2">
-                                                        BTC
-                                                    </span>
-
-                                                    <div class="progress w-75 mt-2 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
+                                                    <div>
+                                                        <span className="circulating__supply--value">
+                                                            31,432,321
+                                                        </span>
+                                                        <span className="circulating__supply--symbol ms-2">
+                                                            BTC
+                                                        </span>
                                                     </div>
+
+                                                    <TableProgressBar />
                                                 </div>
                                             </td>
 
@@ -243,22 +238,16 @@ export default function Table() {
 
                                             <td className="d-none d-sm-table-cell">
                                                 <div className="circulating__supply">
-                                                    <span className="circulating__supply--value">
-                                                        31,432,321
-                                                    </span>
-                                                    <span className="circulating__supply--symbol ms-2">
-                                                        BTC
-                                                    </span>
-
-                                                    <div class="progress w-75 mt-2 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
+                                                    <div>
+                                                        <span className="circulating__supply--value">
+                                                            31,432,321
+                                                        </span>
+                                                        <span className="circulating__supply--symbol ms-2">
+                                                            BTC
+                                                        </span>
                                                     </div>
+
+                                                    <TableProgressBar />
                                                 </div>
                                             </td>
 
@@ -362,22 +351,16 @@ export default function Table() {
 
                                             <td className="d-none d-sm-table-cell">
                                                 <div className="circulating__supply">
-                                                    <span className="circulating__supply--value">
-                                                        31,432,321
-                                                    </span>
-                                                    <span className="circulating__supply--symbol ms-2">
-                                                        BTC
-                                                    </span>
-
-                                                    <div class="progress w-75 mt-2 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
+                                                    <div>
+                                                        <span className="circulating__supply--value">
+                                                            31,432,321
+                                                        </span>
+                                                        <span className="circulating__supply--symbol ms-2">
+                                                            BTC
+                                                        </span>
                                                     </div>
+
+                                                    <TableProgressBar />
                                                 </div>
                                             </td>
 
@@ -481,22 +464,16 @@ export default function Table() {
 
                                             <td className="d-none d-sm-table-cell">
                                                 <div className="circulating__supply">
-                                                    <span className="circulating__supply--value">
-                                                        31,432,321
-                                                    </span>
-                                                    <span className="circulating__supply--symbol ms-2">
-                                                        BTC
-                                                    </span>
-
-                                                    <div class="progress w-75 mt-2 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
+                                                    <div>
+                                                        <span className="circulating__supply--value">
+                                                            31,432,321
+                                                        </span>
+                                                        <span className="circulating__supply--symbol ms-2">
+                                                            BTC
+                                                        </span>
                                                     </div>
+
+                                                    <TableProgressBar />
                                                 </div>
                                             </td>
 
@@ -600,22 +577,16 @@ export default function Table() {
 
                                             <td className="d-none d-sm-table-cell">
                                                 <div className="circulating__supply">
-                                                    <span className="circulating__supply--value">
-                                                        31,432,321
-                                                    </span>
-                                                    <span className="circulating__supply--symbol ms-2">
-                                                        BTC
-                                                    </span>
-
-                                                    <div class="progress w-75 mt-2 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
+                                                    <div>
+                                                        <span className="circulating__supply--value">
+                                                            31,432,321
+                                                        </span>
+                                                        <span className="circulating__supply--symbol ms-2">
+                                                            BTC
+                                                        </span>
                                                     </div>
+
+                                                    <TableProgressBar />
                                                 </div>
                                             </td>
 
@@ -719,22 +690,16 @@ export default function Table() {
 
                                             <td className="d-none d-sm-table-cell">
                                                 <div className="circulating__supply">
-                                                    <span className="circulating__supply--value">
-                                                        31,432,321
-                                                    </span>
-                                                    <span className="circulating__supply--symbol ms-2">
-                                                        BTC
-                                                    </span>
-
-                                                    <div class="progress w-75 mt-2 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
+                                                    <div>
+                                                        <span className="circulating__supply--value">
+                                                            31,432,321
+                                                        </span>
+                                                        <span className="circulating__supply--symbol ms-2">
+                                                            BTC
+                                                        </span>
                                                     </div>
+
+                                                    <TableProgressBar />
                                                 </div>
                                             </td>
 
@@ -838,22 +803,16 @@ export default function Table() {
 
                                             <td className="d-none d-sm-table-cell">
                                                 <div className="circulating__supply">
-                                                    <span className="circulating__supply--value">
-                                                        31,432,321
-                                                    </span>
-                                                    <span className="circulating__supply--symbol ms-2">
-                                                        BTC
-                                                    </span>
-
-                                                    <div class="progress w-75 mt-2 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
+                                                    <div>
+                                                        <span className="circulating__supply--value">
+                                                            31,432,321
+                                                        </span>
+                                                        <span className="circulating__supply--symbol ms-2">
+                                                            BTC
+                                                        </span>
                                                     </div>
+
+                                                    <TableProgressBar />
                                                 </div>
                                             </td>
 
@@ -957,22 +916,16 @@ export default function Table() {
 
                                             <td className="d-none d-sm-table-cell">
                                                 <div className="circulating__supply">
-                                                    <span className="circulating__supply--value">
-                                                        31,432,321
-                                                    </span>
-                                                    <span className="circulating__supply--symbol ms-2">
-                                                        BTC
-                                                    </span>
-
-                                                    <div class="progress w-75 mt-2 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
+                                                    <div>
+                                                        <span className="circulating__supply--value">
+                                                            31,432,321
+                                                        </span>
+                                                        <span className="circulating__supply--symbol ms-2">
+                                                            BTC
+                                                        </span>
                                                     </div>
+
+                                                    <TableProgressBar />
                                                 </div>
                                             </td>
 
@@ -1076,22 +1029,16 @@ export default function Table() {
 
                                             <td className="d-none d-sm-table-cell">
                                                 <div className="circulating__supply">
-                                                    <span className="circulating__supply--value">
-                                                        31,432,321
-                                                    </span>
-                                                    <span className="circulating__supply--symbol ms-2">
-                                                        BTC
-                                                    </span>
-
-                                                    <div class="progress w-75 mt-2 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
+                                                    <div>
+                                                        <span className="circulating__supply--value">
+                                                            31,432,321
+                                                        </span>
+                                                        <span className="circulating__supply--symbol ms-2">
+                                                            BTC
+                                                        </span>
                                                     </div>
+
+                                                    <TableProgressBar />
                                                 </div>
                                             </td>
 
@@ -1195,22 +1142,16 @@ export default function Table() {
 
                                             <td className="d-none d-sm-table-cell">
                                                 <div className="circulating__supply">
-                                                    <span className="circulating__supply--value">
-                                                        31,432,321
-                                                    </span>
-                                                    <span className="circulating__supply--symbol ms-2">
-                                                        BTC
-                                                    </span>
-
-                                                    <div class="progress w-75 mt-2 rounded-pill">
-                                                        <div
-                                                            class="progress-bar w-50 rounded-pill"
-                                                            role="progressbar"
-                                                            aria-valuenow="25"
-                                                            aria-valuemin="0"
-                                                            aria-valuemax="100"
-                                                        ></div>
+                                                    <div>
+                                                        <span className="circulating__supply--value">
+                                                            31,432,321
+                                                        </span>
+                                                        <span className="circulating__supply--symbol ms-2">
+                                                            BTC
+                                                        </span>
                                                     </div>
+
+                                                    <TableProgressBar />
                                                 </div>
                                             </td>
 
