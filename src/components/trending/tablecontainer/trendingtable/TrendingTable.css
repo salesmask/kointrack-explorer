@@ -23,6 +23,9 @@
     .trendingtable__wrapper .table__body--row td:nth-child(3) {
         left: 10%;
     }
+    .more__icon--wrapper {
+        width: 2rem;
+    }
 }
 
 /* Corresponding screen width according to bootstrap smaller than sm screens */
