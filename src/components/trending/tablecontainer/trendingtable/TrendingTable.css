@@ -10,7 +10,6 @@
 
 .trendingtable__wrapper .table__head--row th:nth-child(3),
 .trendingtable__wrapper .table__body--row td:nth-child(3) {
-    background-color: var(--clr-table-row) !important;
     left: calc(2rem + 5px + 1.2rem + 5px);
     position: sticky;
     z-index: 999;
