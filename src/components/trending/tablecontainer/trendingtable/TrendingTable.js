@@ -123,7 +123,7 @@ const TrendingTable = () => {
                             </td>
 
                             <td>
-                                <div>
+                                <div className="more__icon--wrapper">
                                     <img
                                         className="more__icon"
                                         src={More_Icon}
