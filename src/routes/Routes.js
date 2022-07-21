@@ -5,6 +5,7 @@ import CoinDetails from '../components/coindetails/CoinDetails';
 import Trending from '../components/trending/Trending';
 import GainersLosers from '../components/gainerslosers/GainersLosers';
 import MostVisited from '../components/mostvisited/MostVisited';
+import RecentlyAdded from '../components/recentlyadded/RecentlyAdded';
 // import SignupForm from '../../components/coindetails/Signupform/SignupForm';
 // import LoginForm from '../../components/coindetails/loginform/LoginForm';
 
@@ -19,7 +20,9 @@ const MainRoutes = () => {
 
             <Route path="/gainers&losers" element={<GainersLosers />} />
 
-            <Route path="/mostvisited" element={<MostVisited />} />
+            <Route path="/most-visited" element={<MostVisited />} />
+
+            <Route path="/recently-added" element={<RecentlyAdded />} />
 
             {/* <Route path="/signupform" element={<SignupForm />} />
             <Route path="/loginform" element={<LoginForm />} /> */}

@@ -20,10 +20,10 @@ function MostVisitedTableTabs() {
                         <Link to="/trending">Trending</Link>
                     </li>
                     <li className="active">
-                        <Link to="/mostvisited">Most Visited</Link>
+                        <Link to="/most-visited">Most Visited</Link>
                     </li>
                     <li>
-                        <a href="">Recently Added</a>
+                        <Link to="/recently-added">Recently Added</Link>
                     </li>
                 </ul>
                 <div className="trendingtime__wrapper d-flex justify-content-center align-items-center text-nowrap">
