@@ -1,9 +1,8 @@
 import React from 'react';
-import './TrendingTableTabs.css';
 import { Link } from 'react-router-dom';
 import ListArrow from '../../../../assets/coindetails/info-sources/list-arrow.svg';
 
-const TrendingTableTabs = () => {
+function MostVisitedTableTabs() {
     return (
         <>
             <div className="trendingtabletabs__wrapper d-flex justify-content-between align-items-center">
@@ -17,10 +16,10 @@ const TrendingTableTabs = () => {
                     <li>
                         <Link to="/gainers&losers">Gainers & Loser</Link>
                     </li>
-                    <li className="active">
+                    <li>
                         <Link to="/trending">Trending</Link>
                     </li>
-                    <li>
+                    <li className="active">
                         <Link to="/mostvisited">Most Visited</Link>
                     </li>
                     <li>
@@ -40,6 +39,6 @@ const TrendingTableTabs = () => {
             </div>
         </>
     );
-};
+}
 
-export default TrendingTableTabs;
+export default MostVisitedTableTabs;
