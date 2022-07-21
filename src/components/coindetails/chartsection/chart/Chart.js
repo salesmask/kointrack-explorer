@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { createChart, LineStyle, LineType } from 'lightweight-charts';
+import './Chart.css';
 
 const Chart = () => {
     //     const [chartData, setChartData] = useState([]);
@@ -12,7 +13,7 @@ const Chart = () => {
             width: chartContainerRef.current.clientWidth,
             height: 300,
             priceScale: {
-                borderColor: 'grey',
+                borderColor: '#e4e4e4',
             },
             rightPriceScale: {
                 visible: false,
@@ -20,31 +21,45 @@ const Chart = () => {
             leftPriceScale: {
                 visible: true,
             },
+            grid: {
+                vertLines: {
+                    visible: false,
+                },
+                horzLines: {
+                    color: '#e4e4e4',
+                },
+            },
+            timeScale: {
+                borderVisible: false,
+            },
         });
 
-        const areaSeries = chart.current.addBaselineSeries({
+        const baselineSeries = chart.current.addBaselineSeries({
             baseValue: {
                 type: 'price',
                 price: 57,
             },
             topLineColor: '#33b868',
-            topFillColor1: '#33b868',
-            topFillColor2: '#ffffff',
+            topColor1: '#33b868',
+            topColor2: '#ffffff',
             bottomLineColor: '#ff2929',
-            bottomFillColor1: '#ffffff',
-            bottomFillColor2: '#ff2929',
+            bottomColor1: '#ffffff',
+            bottomColor2: '#ff2929',
             lineWidth: 2,
             lineStyle: LineStyle.Solid,
             priceLineVisible: false,
             lastValueVisible: false,
         });
-        areaSeries.applyOptions({
-            baseLineVisible: true,
-            baseLineColor: 'violet',
-            baseLineStyle: LineStyle.Solid,
+
+        baselineSeries.createPriceLine({
+            price: 57,
+            color: '#1e202b',
+            lineWidth: 1,
+            lineStyle: 2,
+            axisLabelVisible: true,
         });
 
-        areaSeries.setData([
+        baselineSeries.setData([
             { time: '2018-10-19', value: 54.9 },
             { time: '2018-10-22', value: 54.98 },
             { time: '2018-10-23', value: 57.21 },
@@ -980,9 +995,14 @@ const Chart = () => {
         return () => resizeObserver.current.disconnect();
     }, []);
 
+    //     Resize ends
+
     return (
         <>
-            <div ref={chartContainerRef} />
+            <div
+                ref={chartContainerRef}
+                className="chart__main"
+            />
         </>
     );
 };
