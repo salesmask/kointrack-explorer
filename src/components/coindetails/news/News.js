@@ -7,7 +7,6 @@ import news_small_2 from '../../../assets/coindetails/coindata/News Small_2.svg'
 import news_small_3 from '../../../assets/coindetails/coindata/News Small_3.svg';
 
 import './News.css';
-
 const News = () => {
     return (
         <div className="">
@@ -69,7 +68,7 @@ const News = () => {
                 <div className="col-11 mx-auto d-flex gap-3">
                     <div className="container-xxl px-0">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 px-0">
                                 <div className="d-flex pb-5 mx-0 ">
                                     <div className="card p-3 news__card">
                                         <img
@@ -139,7 +138,7 @@ const News = () => {
                                 <div class="row d-block">
                                     <div class="">
                                         <div className="news__card">
-                                            <div className="row">
+                                            <div className="row ">
                                                 <div className="col-4 col-lg-3 col-md-2 ">
                                                     <div className="card-body pt-md-4">
                                                         <div className=" rounded-5 ">

@@ -48,8 +48,7 @@
 
     .font__paragraph {
         font-weight: 300;
-        font-size: 12px;
-
+        font-size: 14px;
         color: #595c6e;
     }
 }
@@ -68,12 +67,12 @@
 
     .font__header {
         font-weight: 700;
-        font-size: 12px;
+        font-size: 15px;
     }
 
     .font__paragraph {
         font-weight: 300;
-        font-size: 10px;
+        font-size: 12px;
         line-height: 10px;
         color: #595c6e;
     }
