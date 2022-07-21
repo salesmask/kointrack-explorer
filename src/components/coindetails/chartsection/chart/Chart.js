@@ -1,16 +1,19 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { createChart, LineStyle, LineType } from 'lightweight-charts';
+import './Chart.css';
 
 const Chart = () => {
     //     const [chartData, setChartData] = useState([]);
-    const chartRef = useRef();
+    const chartContainerRef = useRef();
+    const resizeObserver = useRef();
+    const chart = useRef();
 
     useEffect(() => {
-        const chart = createChart(chartRef.current, {
-            width: document.getElementById('chartwrapper').clientWidth,
-            height: 280,
+        chart.current = createChart(chartContainerRef.current, {
+            width: chartContainerRef.current.clientWidth,
+            height: 300,
             priceScale: {
-                borderColor: 'grey',
+                borderColor: '#e4e4e4',
             },
             rightPriceScale: {
                 visible: false,
@@ -18,31 +21,45 @@ const Chart = () => {
             leftPriceScale: {
                 visible: true,
             },
+            grid: {
+                vertLines: {
+                    visible: false,
+                },
+                horzLines: {
+                    color: '#e4e4e4',
+                },
+            },
+            timeScale: {
+                borderVisible: false,
+            },
         });
 
-        const areaSeries = chart.addBaselineSeries({
+        const baselineSeries = chart.current.addBaselineSeries({
             baseValue: {
                 type: 'price',
                 price: 57,
             },
             topLineColor: '#33b868',
-            topFillColor1: '#33b868',
-            topFillColor2: '#ffffff',
+            topColor1: '#33b868',
+            topColor2: '#ffffff',
             bottomLineColor: '#ff2929',
-            bottomFillColor1: '#ffffff',
-            bottomFillColor2: '#ff2929',
+            bottomColor1: '#ffffff',
+            bottomColor2: '#ff2929',
             lineWidth: 2,
             lineStyle: LineStyle.Solid,
             priceLineVisible: false,
             lastValueVisible: false,
         });
-        areaSeries.applyOptions({
-            baseLineVisible: true,
-            baseLineColor: 'violet',
-            baseLineStyle: LineStyle.Solid,
+
+        baselineSeries.createPriceLine({
+            price: 57,
+            color: '#1e202b',
+            lineWidth: 1,
+            lineStyle: 2,
+            axisLabelVisible: true,
         });
 
-        areaSeries.setData([
+        baselineSeries.setData([
             { time: '2018-10-19', value: 54.9 },
             { time: '2018-10-22', value: 54.98 },
             { time: '2018-10-23', value: 57.21 },
@@ -194,7 +211,7 @@ const Chart = () => {
             { time: '2019-05-24', value: 59.32 },
             { time: '2019-05-28', value: 59.57 },
         ]);
-        var histogramSeries = chart.addHistogramSeries({
+        var histogramSeries = chart.current.addHistogramSeries({
             color: '#26a69a',
             priceFormat: {
                 type: 'volume',
@@ -961,12 +978,31 @@ const Chart = () => {
                 color: 'rgba(0, 150, 136, 0.8)',
             },
         ]);
-        chart.timeScale().fitContent();
     }, []);
+
+    //     Resize chart container using resizeObserver
+
+    useEffect(() => {
+        resizeObserver.current = new ResizeObserver((entries) => {
+            const { width } = entries[0].contentRect;
+            chart.current.applyOptions({ width });
+            setTimeout(() => {
+                chart.current.timeScale().fitContent();
+            }, 0);
+        });
+        resizeObserver.current.observe(chartContainerRef.current);
+
+        return () => resizeObserver.current.disconnect();
+    }, []);
+
+    //     Resize ends
 
     return (
         <>
-            <div ref={chartRef} />
+            <div
+                ref={chartContainerRef}
+                className="chart__main"
+            />
         </>
     );
 };

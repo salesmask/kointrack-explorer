@@ -1,1 +1,3 @@
-/* Any additional chart styles */
+.chart__main .tv-lightweight-charts {
+    border-radius: 1rem;
+}
