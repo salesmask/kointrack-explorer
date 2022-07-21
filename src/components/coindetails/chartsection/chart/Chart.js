@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { createChart } from 'lightweight-charts';
+import { createChart, LineStyle, LineType } from 'lightweight-charts';
 
 const Chart = () => {
-    const [chartData, setChartData] = useState([]);
+    //     const [chartData, setChartData] = useState([]);
     const chartRef = useRef();
 
     useEffect(() => {
@@ -10,7 +10,7 @@ const Chart = () => {
             width: document.getElementById('chartwrapper').clientWidth,
             height: 280,
             priceScale: {
-                borderColor: 'gold',
+                borderColor: 'grey',
             },
             rightPriceScale: {
                 visible: false,
@@ -20,10 +20,26 @@ const Chart = () => {
             },
         });
 
-        const areaSeries = chart.addAreaSeries({
-            lineColor: '#33b868',
-            topColor: '#33b868',
-            bottomColor: '#c1f5d6',
+        const areaSeries = chart.addBaselineSeries({
+            baseValue: {
+                type: 'price',
+                price: 57,
+            },
+            topLineColor: '#33b868',
+            topFillColor1: '#33b868',
+            topFillColor2: '#ffffff',
+            bottomLineColor: '#ff2929',
+            bottomFillColor1: '#ffffff',
+            bottomFillColor2: '#ff2929',
+            lineWidth: 2,
+            lineStyle: LineStyle.Solid,
+            priceLineVisible: false,
+            lastValueVisible: false,
+        });
+        areaSeries.applyOptions({
+            baseLineVisible: true,
+            baseLineColor: 'violet',
+            baseLineStyle: LineStyle.Solid,
         });
 
         areaSeries.setData([
