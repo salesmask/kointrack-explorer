@@ -23,7 +23,7 @@ const Chart = () => {
         const areaSeries = chart.addBaselineSeries({
             baseValue: {
                 type: 'price',
-                price: 58,
+                price: 57,
             },
             topLineColor: '#33b868',
             topFillColor1: '#33b868',
@@ -33,11 +33,8 @@ const Chart = () => {
             bottomFillColor2: '#ff2929',
             lineWidth: 2,
             lineStyle: LineStyle.Solid,
-
             priceLineVisible: false,
             lastValueVisible: false,
-            // crosshairMarkerVisible: true,
-            // crosshairMarkerRadius: 4,
         });
         areaSeries.applyOptions({
             baseLineVisible: true,
