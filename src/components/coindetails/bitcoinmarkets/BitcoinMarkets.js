@@ -234,7 +234,7 @@ const BitcoinMarkets = () => {
                                     </tbody>
                                 </table>
                             </div>
-                            <div className="button_down_market">
+                            <div className="button_down_market mb-4">
                                 <a
                                     href="#"
                                     class="btn  rounded-pill button_show_all"
