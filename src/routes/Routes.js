@@ -4,6 +4,7 @@ import Home from '../components/homepage/Home';
 import CoinDetails from '../components/coindetails/CoinDetails';
 import Trending from '../components/trending/Trending';
 import GainersLosers from '../components/gainerslosers/GainersLosers';
+import MostVisited from '../components/mostvisited/MostVisited';
 // import SignupForm from '../../components/coindetails/Signupform/SignupForm';
 // import LoginForm from '../../components/coindetails/loginform/LoginForm';
 
@@ -17,6 +18,8 @@ const MainRoutes = () => {
             <Route path="/trending" element={<Trending />} />
 
             <Route path="/gainers&losers" element={<GainersLosers />} />
+
+            <Route path="/mostvisited" element={<MostVisited />} />
 
             {/* <Route path="/signupform" element={<SignupForm />} />
             <Route path="/loginform" element={<LoginForm />} /> */}
