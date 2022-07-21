@@ -21,7 +21,7 @@ const GainersLosersTabs = () => {
                         <Link to="/trending">Trending</Link>
                     </li>
                     <li>
-                        <a href="">Most Visited</a>
+                        <Link to="/mostvisited">Most Visited</Link>
                     </li>
                     <li>
                         <a href="">Recently Added</a>
