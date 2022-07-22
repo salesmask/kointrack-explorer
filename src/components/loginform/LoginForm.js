@@ -1,10 +1,10 @@
 import React from 'react';
 import './LoginForm.css';
-import Sign_UP from './../../../assets/signup/google 1.svg';
-import Icon_Eye from './../../../assets/signup/icon-eye-white.svg';
-import Icon_Close from './../../../assets/signup/Group 8125.svg';
+import Sign_UP from '../../assets/signup/google 1.svg';
+import Icon_Eye from '../../assets/signup/icon-eye-white.svg';
+import Icon_Close from '../../assets/signup/Group 8125.svg';
 
-const LoginForm = () => {
+const LoginForm = ({ close }) => {
     return (
         <>
             <div className="Login-blur-background"></div>
@@ -18,7 +18,9 @@ const LoginForm = () => {
                                     {' '}
                                     Login{' '}
                                 </h3>
+
                                 <img
+                                    onClick={() => close(false)}
                                     src={Icon_Close}
                                     className="img-icon-close me-3  "
                                     width="22px"

@@ -1,11 +1,47 @@
-import React, { useState } from 'react';
-// import{usestate} from 'react';
+import React, { useState, useEffect } from 'react';
+import { useFormik } from 'formik';
 import './SignupForm.css';
-import Sign_UP from './../../../assets/signup/google 1.svg';
-import Icon_Eye from './../../../assets/signup/icon-eye-white.svg';
-import Icon_Close from './../../../assets/signup/Group 8125.svg';
+import Sign_UP from '../../assets/signup/google 1.svg';
+import Icon_Eye from '../../assets/signup/icon-eye-white.svg';
+import Icon_Close from '../../assets/signup/Group 8125.svg';
+// import * as Yup from 'yup';
 
-const SignupForm = () => {
+const SignupForm = ({ close }) => {
+    const formik = useFormik({
+        initialValues: {
+            name: '',
+            email: '',
+            password: '',
+            confirmpassword: '',
+        },
+        onSubmit: (values) => {
+            console.log('form submit', values);
+        },
+        validate: (values) => {
+            let errors = {};
+            if (!values.email) {
+                errors.email = 'Email is Required';
+            }
+            // yup.min*(values.email)
+            else if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
+            ) {
+                errors.email = 'Invalid email address';
+            } else if (values.email.length < 12) {
+                errors.email = 'Error email';
+            }
+            if (!values.password) {
+                errors.password = 'Password is Required';
+            }
+            if (!values.confirmpassword) {
+                errors.confirmpassword = 'Confirm password';
+            }
+            return errors;
+        },
+    });
+
+    // console.log('form values', formik.values)
+
     return (
         <>
             <div className="Signup-blur-background"></div>
@@ -13,7 +49,12 @@ const SignupForm = () => {
                 <div className="container">
                     <div className="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-4 offset-xl-4 text-center">
                         <div className="logo"></div>
-                        <form className="rounded bg-white shadow p-5">
+
+                        <form
+                            autoComplete="off"
+                            onSubmit={formik.handleSubmit}
+                            className="rounded bg-white shadow p-5"
+                        >
                             <div className="closing_icon_wrapper ">
                                 <h3 className="text-dark  mb-4 text-start cre_an_account ">
                                     {' '}
@@ -21,6 +62,7 @@ const SignupForm = () => {
                                 </h3>
 
                                 <img
+                                    onClick={() => close(false)}
                                     src={Icon_Close}
                                     className="img-icon-close me-3  "
                                     width="22px"
@@ -52,10 +94,18 @@ const SignupForm = () => {
                                 </label>
                                 <input
                                     type="email"
+                                    name="email"
                                     class="form-control sign_up_place_holder"
-                                    id="floatingemail"
+                                    id="email"
                                     placeholder="Enter your Email address"
+                                    value={formik.values.email}
+                                    onChange={formik.handleChange}
                                 />
+                                {formik.errors.email ? (
+                                    <p className="errors">
+                                        {formik.errors.email}
+                                    </p>
+                                ) : null}
                             </div>
 
                             <div class="form-floating mb-5 main_parent_sign_up_icon">
@@ -68,10 +118,13 @@ const SignupForm = () => {
 
                                 <div className=" form-floating parent_icon_and_password_align  d-flex ">
                                     <input
-                                        type="email"
+                                        type="password"
+                                        name="password"
                                         class="form-control sign_up_place_holder   "
-                                        id="floatingpassword"
+                                        id="password"
                                         placeholder="Enter your Password"
+                                        value={formik.values.password}
+                                        onChange={formik.handleChange}
                                     />
                                     <img
                                         src={Icon_Eye}
@@ -80,6 +133,11 @@ const SignupForm = () => {
                                         height="22px"
                                     />
                                 </div>
+                                {formik.errors.password ? (
+                                    <p className="errors">
+                                        {formik.errors.password}
+                                    </p>
+                                ) : null}
                             </div>
 
                             <div class="form-floating mb-5 main_parent_sign_up_icon">
@@ -92,10 +150,13 @@ const SignupForm = () => {
 
                                 <div className=" form-floating parent_icon_and_password_align  d-flex ">
                                     <input
-                                        type="password"
+                                        type="confirmpassword"
+                                        name="confirmpassword"
                                         class="form-control sign_up_place_holder "
-                                        id="floatingconfirmpassword"
+                                        id="confirmpassword"
                                         placeholder=" Confirm your Password"
+                                        value={formik.values.confirmpassword}
+                                        onChange={formik.handleChange}
                                     />
                                     <img
                                         src={Icon_Eye}
@@ -104,6 +165,11 @@ const SignupForm = () => {
                                         height="22px"
                                     />
                                 </div>
+                                {formik.errors.confirmpassword ? (
+                                    <p className="errors">
+                                        {formik.errors.confirmpassword}
+                                    </p>
+                                ) : null}
 
                                 <p className="fw-normal  sign-up-font-color-form p-2">
                                     {' '}

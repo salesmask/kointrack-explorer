@@ -83,6 +83,7 @@
 }
 .sign_up_place_holder {
     width: 100% !important;
+    font-size: 14px !important;
 }
 .sign_up_image_position {
     position: absolute !important;
@@ -128,4 +129,8 @@
     color: var(--clr-text);
     font-size: 1.4rem;
     font-weight: 400;
+}
+.errors {
+    color: red !important;
+    display: flex;
 }
