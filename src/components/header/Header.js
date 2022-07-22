@@ -5,17 +5,15 @@ import header_search_icon from '../../assets/header/Header_Search_Icon.svg';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
 import 'bootstrap/dist/js/bootstrap';
-import Logo from '../logo/Logo';
+// import Logo from '../logo/Logo';
 import { Link } from 'react-router-dom';
-import LoginForm from '../coindetails/loginform/LoginForm';
-import SignupForm from '../coindetails/Signupform/SignupForm';
+import LoginForm from '../loginform/LoginForm';
+import SignupForm from '../signupform/SignupForm';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);
     const [logIn, setLogIn] = useState(false);
     const [signUp, setSignUp] = useState(false);
-
-    // const[openSignup, setopenSignup] = useState(false);
 
     return (
         <nav className="header__wrapper container-fluid">
@@ -177,18 +175,25 @@ const Header = () => {
 
                                         <button
                                             className="sign__up"
-                                            onClick={() => setSignUp(!signUp)}
+                                            onClick={() => setSignUp(true)}
                                         >
                                             Sign Up
-                                            {signUp ? <SignupForm /> : null}
                                         </button>
+
+                                        {signUp && (
+                                            <SignupForm close={setSignUp} />
+                                        )}
+
                                         <button
                                             className="log__in"
-                                            onClick={() => setLogIn(!logIn)}
+                                            onClick={() => setLogIn(true)}
                                         >
                                             Log In
-                                            {logIn ? <LoginForm /> : null}
                                         </button>
+
+                                        {logIn && (
+                                            <LoginForm close={setLogIn} />
+                                        )}
                                     </div>
                                 </div>
                             </div>
