@@ -18,7 +18,7 @@ const Header = () => {
     // const[openSignup, setopenSignup] = useState(false);
 
     return (
-        <nav className="header__wrapper container-fluid fixed-top">
+        <nav className="header__wrapper container-fluid">
             <div className="row mx-0">
                 <div className="col-11 px-0  mx-auto d-flex py-4 align-items-center">
                     <div className="container-xxl px-0 d-flex align-items-center">
@@ -95,7 +95,9 @@ const Header = () => {
                                                 class="nav-link fw-bolder header__tabs--text"
                                                 href="#"
                                             >
-                                                Features
+                                                <Link to="/exchange">
+                                                    Exchange
+                                                </Link>
                                             </a>
                                         </li>
                                         <li class="nav-item drop__borders">
