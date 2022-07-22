@@ -3,7 +3,7 @@ import './ExchangeTable.css';
 import Decrease_Arrow from '../../../../assets/table/Decrease_Arrow.svg';
 import Increase_Arrow from '../../../../assets/table/Increase_Arrow.svg';
 import Grapgh from '../../../../assets/table/Grapgh.svg';
-import WatchlistStar from '../../../watchliststar/WatchlistStar';
+import WatchlistStar from '../../../../components/WatchList/WatchList';
 import binance from '../../../../assets/Exchange/binance.svg';
 import bitmex from '../../../../assets/Exchange/bitmex.svg';
 import bittrex from '../../../../assets/Exchange/bittrex.svg';

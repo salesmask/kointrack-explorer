@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import star from '../../../../assets/Exchange/Star.svg';
-import WatchList from '../../../WatchList/WatchList';
+import WatchList from '../../../../components/WatchList/WatchList';
 
-import WatchlistStar from '../../../watchliststar/WatchlistStar';
+// import WatchlistStar from '../../../watchliststar/WatchlistStar';
 
 function DerivativesTabs() {
     return (

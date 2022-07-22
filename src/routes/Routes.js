@@ -7,9 +7,9 @@ import GainersLosers from '../components/gainerslosers/GainersLosers';
 import MostVisited from '../components/mostvisited/MostVisited';
 
 
-import Exchange from '../components/ExchangePage/Exchange/Exchange';
-import Derivatives from '../components/ExchangePage/Derivatives/Derivatives';
-import Dex from '../components/ExchangePage/Dex/Dex';
+import Exchange from '../pages/ExchangePage/Exchange/Exchange';
+import Derivatives from '../pages/ExchangePage/Derivatives/Derivatives';
+import Dex from '../pages/ExchangePage/Dex/Dex';
 import RecentlyAdded from '../components/recentlyadded/RecentlyAdded';
 import SpotLight from '../components/spotlight/SpotLight';
 // import SignupForm from '../../components/coindetails/Signupform/SignupForm';
