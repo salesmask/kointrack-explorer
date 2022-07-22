@@ -6,6 +6,7 @@ import Trending from '../components/trending/Trending';
 import GainersLosers from '../components/gainerslosers/GainersLosers';
 import MostVisited from '../components/mostvisited/MostVisited';
 import RecentlyAdded from '../components/recentlyadded/RecentlyAdded';
+import SpotLight from '../components/spotlight/SpotLight';
 // import SignupForm from '../../components/coindetails/Signupform/SignupForm';
 // import LoginForm from '../../components/coindetails/loginform/LoginForm';
 
@@ -23,6 +24,8 @@ const MainRoutes = () => {
             <Route path="/most-visited" element={<MostVisited />} />
 
             <Route path="/recently-added" element={<RecentlyAdded />} />
+
+            <Route path="/spotlight" element={<SpotLight />} />
 
             {/* <Route path="/signupform" element={<SignupForm />} />
             <Route path="/loginform" element={<LoginForm />} /> */}

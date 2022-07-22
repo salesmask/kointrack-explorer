@@ -11,7 +11,7 @@ const RecentlyAddedTableTabs = () => {
                         <a href="">Watchlist</a>
                     </li>
                     <li>
-                        <a href="">Spotlight</a>
+                        <Link to="/spotlight">Spotlight</Link>
                     </li>
                     <li>
                         <Link to="/gainers&losers">Gainers & Loser</Link>

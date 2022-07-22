@@ -12,7 +12,7 @@ const GainersLosersTabs = () => {
                         <a href="">Watchlist</a>
                     </li>
                     <li>
-                        <a href="">Spotlight</a>
+                        <Link to="/spotlight">Spotlight</Link>
                     </li>
                     <li className="active">
                         <Link to="/gainers&losers">Gainers & Loser</Link>
