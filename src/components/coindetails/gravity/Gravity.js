@@ -1,26 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Gravity.css';
-import logo_symbol from '../../../assets/coindata/Logo Symbol.svg';
-import user_icon from '../../../assets/coindata/User Icon.svg';
-import up_arrow from '../../../assets/coindata/Up Down Arrow.svg';
-import down_arrow from '../../../assets/coindata/Down Arrow.svg';
-import bitcoin_small from '../../../assets/coindata/Bitcoin Small.svg';
-import refresh from '../../../assets/coindata/Referesh Icon.svg';
-import usa from '../../../assets/coindata/USA-HDR.svg';
-import comment from '../../../assets/coindata/Comments.svg';
-import like from '../../../assets/coindata/Like.svg';
-import next_arrow from '../../../assets/coindata/Next Arrow.svg';
-import fire from '../../../assets/coindata/fire.svg';
-import shoe_coin from '../../../assets/coindata/shoecoin.svg';
-import green__up from '../../../assets/coindata/green__up.svg';
-import red__down from '../../../assets/coindata/red__down.svg';
-import white__up from '../../../assets/coindata/white__up.svg';
-import black__left from '../../../assets/coindata/black__left.svg';
+import logo_symbol from '../../../assets/coindetails/coindata/Logo Symbol.svg';
+import user_icon from '../../../assets/coindetails/coindata/User Icon.svg';
+import up_arrow from '../../../assets/coindetails/coindata/Up Down Arrow.svg';
+import down_arrow from '../../../assets/coindetails/coindata/Down Arrow.svg';
+import bitcoin_small from '../../../assets/coindetails/coindata/Bitcoin Small.svg';
+import refresh from '../../../assets/coindetails/coindata/Referesh Icon.svg';
+import usa from '../../../assets/coindetails/coindata/USA-HDR.svg';
+import comment from '../../../assets/coindetails/coindata/Comments.svg';
+import like from '../../../assets/coindetails/coindata/Like.svg';
+import next_arrow from '../../../assets/coindetails/coindata/Next Arrow.svg';
+import fire from '../../../assets/coindetails/coindata/fire.svg';
+import shoe_coin from '../../../assets/coindetails/coindata/shoecoin.svg';
+import green__up from '../../../assets/coindetails/coindata/green__up.svg';
+import red__down from '../../../assets/coindetails/coindata/red__down.svg';
+import white__up from '../../../assets/coindetails/coindata/white__up.svg';
+import black__left from '../../../assets/coindetails/coindata/black__left.svg';
 
 const Gravity = () => {
+    // const [leftClick , setLeftClick] = useState(false)
+
+    function leftClick() {
+        btn.style.left = '0';
+    }
+
+    function rightClick() {
+        btn.style.left = '110px';
+    }
+
     return (
         <div className="">
-            <div className="container px-0">
+            <div className="px-0">
                 <div className="d-flex align-items-center">
                     <h4 className="">Gravity</h4>
                     <div
@@ -81,7 +91,7 @@ const Gravity = () => {
                                 >
                                     <img
                                         src={green__up}
-                                        className="gravity__arrow "
+                                        className="gravity__arrow"
                                         alt=""
                                     ></img>
                                     Bullish
@@ -93,7 +103,7 @@ const Gravity = () => {
                                 >
                                     <img
                                         src={red__down}
-                                        className="gravity__arrow  "
+                                        className="gravity__arrow "
                                         alt=""
                                     ></img>
                                     Bearish
@@ -138,6 +148,13 @@ const Gravity = () => {
                                     Latest
                                 </div>
                             </div>
+                            {/* <div class="form-box">
+                            <div class="button-box d-flex">
+                                <div id="btn"></div>
+                                <button type="button" class="toggle-btn" onclick={leftClick}>Top</button>
+                                <button type="button" class="toggle-btn" onclick={rightClick}>Latest</button>
+                            </div>
+                            </div> */}
 
                             <div className="d-flex align-items-center ms-auto">
                                 <button className="fw-bolder  font-primary rounded-pill py-2 px-3">
@@ -145,7 +162,7 @@ const Gravity = () => {
                                     <img
                                         src={refresh}
                                         alt=""
-                                        className="refresh__icon "
+                                        className="refresh__icon mx-1"
                                     ></img>
                                     Refresh
                                 </button>
@@ -190,17 +207,17 @@ const Gravity = () => {
                         <hr></hr>
 
                         <div className="d-flex flex-wrap  gap-3 justify-content-start align-items-center">
-                            <div className="d-flex gap-2">
+                            <div className="d-flex align-items-center gap-2">
                                 <img
                                     src={comment}
-                                    className="refresh_icon"
+                                    className="refresh_icon mb-1"
                                 ></img>
                                 <h3 className="fs-3">225</h3>
                             </div>
-                            <div className="d-flex gap-2">
+                            <div className="d-flex align-items-center  gap-2">
                                 <img
                                     src={like}
-                                    className="refresh_icon"
+                                    className="refresh_icon mb-2"
                                 ></img>
                                 <h3 className="fs-3">1k</h3>
                             </div>
@@ -223,11 +240,13 @@ const Gravity = () => {
                 {/* BTC Price Statics */}
 
                 <div className="justify-content-start align-item-center border rounded__border mt-4">
-                    <h3 className="fs-3 fw-bold py-4 rounded__border ps-2 border">
-                        BTC Price Statics
+                    <h3 className="py-4 rounded__border ps-2 border">
+                        <h3 className="ms-2 fs-3 fw-bold ">
+                            BTC Price Statics
+                        </h3>
                     </h3>
 
-                    <p className="fw-bolder my-3 ms-2">Bitcoin Price Today </p>
+                    <p className="fw-bolder my-3 ms-3">Bitcoin Price Today </p>
 
                     {/* tiles Section */}
 
@@ -299,7 +318,7 @@ const Gravity = () => {
 
                     <div
                         type="button"
-                        className=" rounded-pill px-3 py-3 mx-auto my-4 showmore__button"
+                        className="rounded-pill px-3 py-3 mx-auto my-4 showmore__button"
                     >
                         Show More
                     </div>
@@ -307,11 +326,11 @@ const Gravity = () => {
 
                 {/* Trending Coins And Statics*/}
 
-                <div className="justify-content-start my-4 align-items-center border rounded__border ">
-                    <h3 className="fs-3 fw-bold py-3 rounded__border ps-2 border">
+                <div className="justify-content-start my-4 align-items-center border rounded__border">
+                    <h3 className="fs-3 fw-bold py-3  rounded__border ps-2 border">
                         <img
                             src={fire}
-                            className="mb-2 me-2"
+                            className="mb-2 me-2 ms-2"
                             alt=""
                             style={{ width: '23px', height: '23px' }}
                         ></img>

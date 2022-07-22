@@ -73,11 +73,49 @@ const ChartSection = () => {
                             <li>YTD</li>
                             <li>All</li>
                             <li className="calendar__icon--wrapper">
-                                <img
+                                {/* <img
                                     src={CalendarIcon}
                                     alt="calendar-icon"
                                     className="calender__icon"
-                                />
+                                /> */}
+                                <svg
+                                    width="16"
+                                    height="17"
+                                    viewBox="0 0 16 17"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <rect
+                                        x="1"
+                                        y="4"
+                                        width="14"
+                                        height="12"
+                                        rx="2"
+                                        stroke="#1E202B"
+                                        stroke-width="2"
+                                    />
+                                    <rect
+                                        x="4"
+                                        width="2"
+                                        height="5"
+                                        rx="1"
+                                        fill="#1E202B"
+                                    />
+                                    <rect
+                                        y="7"
+                                        width="16"
+                                        height="2"
+                                        rx="1"
+                                        fill="#1E202B"
+                                    />
+                                    <rect
+                                        x="10"
+                                        width="2"
+                                        height="5"
+                                        rx="1"
+                                        fill="#1E202B"
+                                    />
+                                </svg>
                             </li>
 
                             {/* Need to remove this li for vertical line with css ::before */}
@@ -91,7 +129,10 @@ const ChartSection = () => {
 
             {/* Chart-outline container */}
             <div className="chart-outline__wrapper ">
-                <div className="chart__main--wrapper container-fluid mb-5 w-100 px-0">
+                <div
+                    className="chart__main--wrapper container-fluid mb-5 w-100 px-0"
+                    id="chartwrapper"
+                >
                     <Chart />
                 </div>
 

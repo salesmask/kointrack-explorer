@@ -11,11 +11,9 @@
     border-radius: 10px;
 }
 
-.circulating__supply .range__wrapper {
-    border: 5px solid var(--clr-up);
-    padding: 3rem;
-    border-radius: 50%;
-}
+/* Circular progress bar */
+
+/* ****************** */
 
 .help__tooltip {
     width: 1.4rem;

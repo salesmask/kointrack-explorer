@@ -12,7 +12,7 @@ const TrendingTableTabs = () => {
                         <a href="">Watchlist</a>
                     </li>
                     <li>
-                        <a href="">Spotlight</a>
+                        <Link to="/spotlight">Spotlight</Link>
                     </li>
                     <li>
                         <Link to="/gainers&losers">Gainers & Loser</Link>
@@ -21,10 +21,10 @@ const TrendingTableTabs = () => {
                         <Link to="/trending">Trending</Link>
                     </li>
                     <li>
-                        <a href="">Most Visited</a>
+                        <Link to="/most-visited">Most Visited</Link>
                     </li>
                     <li>
-                        <a href="">Recently Added</a>
+                        <Link to="/recently-added">Recently Added</Link>
                     </li>
                 </ul>
                 <div className="trendingtime__wrapper d-flex justify-content-center align-items-center text-nowrap">

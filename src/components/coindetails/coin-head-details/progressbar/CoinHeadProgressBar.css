@@ -1,0 +1,20 @@
+.coinhead__progressbar {
+    border: 1px solid #cecece;
+    background-color: #dadada;
+    height: 12px;
+    border-radius: 50px;
+}
+
+.coinhead__progressbar .progress__scale {
+    background-color: var(--clr-up);
+    height: 100%;
+    border-radius: 50px;
+    position: relative;
+}
+
+.coinhead__progressbar .progress__scale svg {
+    position: absolute;
+    top: 50%;
+    left: 95%;
+    transform: translate(-50%, 20%);
+}

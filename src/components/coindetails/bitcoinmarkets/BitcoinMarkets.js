@@ -1,6 +1,6 @@
 import React from 'react';
 import './BitcoinMarkets.css';
-import Binance_Logo from './../../../assets/bitcoinmarkets/image 21.svg';
+import Binance_Logo from './../../../assets/coindetails/bitcoinmarkets/image 21.svg';
 // import { Link } from 'react-router-dom';
 
 const BitcoinMarkets = () => {
@@ -234,7 +234,7 @@ const BitcoinMarkets = () => {
                                     </tbody>
                                 </table>
                             </div>
-                            <div className="button_down_market">
+                            <div className="button_down_market mb-4">
                                 <a
                                     href="#"
                                     class="btn  rounded-pill button_show_all"

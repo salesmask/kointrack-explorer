@@ -1,12 +1,11 @@
 import React from 'react';
 import './TrendingTable.css';
-
-import Watchlist_Outline from '../../../../assets/table/Watchlist_Outline.svg';
 import Bitcoin from '../../../../assets/table/Bitcoin.svg';
 import Decrease_Arrow from '../../../../assets/table/Decrease_Arrow.svg';
 import Increase_Arrow from '../../../../assets/table/Increase_Arrow.svg';
 import Grapgh from '../../../../assets/table/Grapgh.svg';
 import More_Icon from '../../../../assets/table/More_Icon.svg';
+import WatchlistStar from '../../../watchliststar/WatchlistStar';
 
 const TrendingTable = () => {
     return (
@@ -38,13 +37,7 @@ const TrendingTable = () => {
 
                         <tr className="table__body--row align-middle">
                             <td>
-                                <div className="star__wrapper">
-                                    <img
-                                        className="watchlist__star"
-                                        src={Watchlist_Outline}
-                                        alt="icon"
-                                    ></img>
-                                </div>
+                                <WatchlistStar />
                             </td>
 
                             <td>
@@ -130,7 +123,7 @@ const TrendingTable = () => {
                             </td>
 
                             <td>
-                                <div>
+                                <div className="more__icon--wrapper">
                                     <img
                                         className="more__icon"
                                         src={More_Icon}
@@ -144,13 +137,7 @@ const TrendingTable = () => {
 
                         <tr className="table__body--row align-middle">
                             <td>
-                                <div className="star__wrapper">
-                                    <img
-                                        className="watchlist__star"
-                                        src={Watchlist_Outline}
-                                        alt="icon"
-                                    ></img>
-                                </div>
+                                <WatchlistStar />
                             </td>
 
                             <td>
@@ -250,13 +237,7 @@ const TrendingTable = () => {
 
                         <tr className="table__body--row align-middle">
                             <td>
-                                <div className="star__wrapper">
-                                    <img
-                                        className="watchlist__star"
-                                        src={Watchlist_Outline}
-                                        alt="icon"
-                                    ></img>
-                                </div>
+                                <WatchlistStar />
                             </td>
 
                             <td>
@@ -356,13 +337,7 @@ const TrendingTable = () => {
 
                         <tr className="table__body--row align-middle">
                             <td>
-                                <div className="star__wrapper">
-                                    <img
-                                        className="watchlist__star"
-                                        src={Watchlist_Outline}
-                                        alt="icon"
-                                    ></img>
-                                </div>
+                                <WatchlistStar />
                             </td>
 
                             <td>
@@ -462,13 +437,7 @@ const TrendingTable = () => {
 
                         <tr className="table__body--row align-middle">
                             <td>
-                                <div className="star__wrapper">
-                                    <img
-                                        className="watchlist__star"
-                                        src={Watchlist_Outline}
-                                        alt="icon"
-                                    ></img>
-                                </div>
+                                <WatchlistStar />
                             </td>
 
                             <td>
@@ -568,13 +537,7 @@ const TrendingTable = () => {
 
                         <tr className="table__body--row align-middle">
                             <td>
-                                <div className="star__wrapper">
-                                    <img
-                                        className="watchlist__star"
-                                        src={Watchlist_Outline}
-                                        alt="icon"
-                                    ></img>
-                                </div>
+                                <WatchlistStar />
                             </td>
 
                             <td>
@@ -674,13 +637,7 @@ const TrendingTable = () => {
 
                         <tr className="table__body--row align-middle">
                             <td>
-                                <div className="star__wrapper">
-                                    <img
-                                        className="watchlist__star"
-                                        src={Watchlist_Outline}
-                                        alt="icon"
-                                    ></img>
-                                </div>
+                                <WatchlistStar />
                             </td>
 
                             <td>
@@ -780,13 +737,7 @@ const TrendingTable = () => {
 
                         <tr className="table__body--row align-middle">
                             <td>
-                                <div className="star__wrapper">
-                                    <img
-                                        className="watchlist__star"
-                                        src={Watchlist_Outline}
-                                        alt="icon"
-                                    ></img>
-                                </div>
+                                <WatchlistStar />
                             </td>
 
                             <td>
@@ -886,13 +837,7 @@ const TrendingTable = () => {
 
                         <tr className="table__body--row align-middle">
                             <td>
-                                <div className="star__wrapper">
-                                    <img
-                                        className="watchlist__star"
-                                        src={Watchlist_Outline}
-                                        alt="icon"
-                                    ></img>
-                                </div>
+                                <WatchlistStar />
                             </td>
 
                             <td>
@@ -992,13 +937,7 @@ const TrendingTable = () => {
 
                         <tr className="table__body--row align-middle">
                             <td>
-                                <div className="star__wrapper">
-                                    <img
-                                        className="watchlist__star"
-                                        src={Watchlist_Outline}
-                                        alt="icon"
-                                    ></img>
-                                </div>
+                                <WatchlistStar />
                             </td>
 
                             <td>

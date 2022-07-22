@@ -1,0 +1,32 @@
+.circular__progress--wrapper {
+    display: flex;
+    position: relative;
+}
+.circular__progress--value {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr-up);
+}
+
+.circular__progress--wrapper svg {
+    width: 103px;
+    height: 103px;
+}
+
+.circular__progress--wrapper svg circle:first-child {
+    fill: none;
+    stroke-width: 8px;
+    stroke: #d6f1e1;
+}
+
+.circular__progress--wrapper svg circle:last-child {
+    fill: none;
+    stroke-width: 8px;
+    stroke-linecap: round;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    stroke-dashoffset: 100;
+    stroke: var(--clr-up);
+}

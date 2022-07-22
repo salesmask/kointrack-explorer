@@ -5,12 +5,17 @@
     display: none;
 }
 .trendingtabletabs__wrapper li {
-    padding: 0.8rem 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--clr-tab-background);
     border-radius: 100px;
     margin-right: 1rem;
     white-space: nowrap;
     transition: ease-in 150ms;
+}
+.trendingtabletabs__wrapper li a {
+    padding: 0.8rem 1.4rem;
 }
 .trendingtabletabs__wrapper li:hover,
 .trendingtabletabs__wrapper li.active {

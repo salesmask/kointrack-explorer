@@ -70,7 +70,7 @@
     color: var(--clr-light-text);
 }
 .time-tag__wrapper li:last-child {
-    margin-right: 0.5rem;
+    margin-right: 0;
     color: var(--clr-text);
 }
 
@@ -85,6 +85,12 @@
 
 .calender__icon {
     width: 1.6rem;
+}
+.calendar__icon--wrapper:hover .calender__icon rect {
+    stroke: var(--clr-white);
+}
+.calendar__icon--wrapper:hover .calender__icon rect:not(:first-child) {
+    fill: var(--clr-white);
 }
 
 /* vertical line */

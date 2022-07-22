@@ -16,10 +16,10 @@ const Header = () => {
     const [signUp, setSignUp] = useState(false);
 
     return (
-        <nav className="header__wrapper container-fluid ">
+        <nav className="header__wrapper container-fluid">
             <div className="row mx-0">
                 <div className="col-11 px-0  mx-auto d-flex py-4 align-items-center">
-                    <div className="container-xxl px-0 d-flex">
+                    <div className="container-xxl px-0 d-flex align-items-center">
                         {/* <div className="container-xxl col-xxl-11 px-0 d-flex"> */}
                         {/* header logo */}
 
@@ -39,15 +39,15 @@ const Header = () => {
                             <div
                                 className={
                                     slider
-                                        ? 'header__link--mobile '
+                                        ? 'header__link--mobile'
                                         : 'header__link'
                                 }
                             >
-                                <div className="d-flex flex-column flex-md-row">
-                                    <div className="header__tabs col-6  d-flex text-light align-items-start align-items-md-center justify-content-center gap-2 flex-column flex-md-row w-auto">
-                                        <li class="nav-item dropdown">
+                                <div className="mobile__screen--tab col-12 d-flex flex-column flex-md-row">
+                                    <div className="header__tabs  col-md-6  d-flex text-light align-items-start align-items-md-center justify-content-center gap-2 flex-column flex-md-row w-auto">
+                                        <li class="nav-item  dropdown drop__borders ">
                                             <a
-                                                class="nav-link dropdown-toggle fw-bolder"
+                                                class="nav-link dropdown-toggle fw-bolder header__tabs--text"
                                                 href="#"
                                                 id="navbarDropdown"
                                                 role="button"
@@ -88,26 +88,28 @@ const Header = () => {
                                             </ul>
                                         </li>
 
-                                        <li class="nav-item">
+                                        <li class="nav-item drop__borders">
                                             <a
-                                                class="nav-link fw-bolder"
+                                                class="nav-link fw-bolder header__tabs--text"
                                                 href="#"
                                             >
-                                                Features
+                                                <Link to="/exchange">
+                                                    Exchange
+                                                </Link>
                                             </a>
                                         </li>
-                                        <li class="nav-item">
+                                        <li class="nav-item drop__borders">
                                             <a
-                                                class="nav-link fw-bolder"
+                                                class="nav-link fw-bolder header__tabs--text"
                                                 href="#"
                                             >
                                                 Pricing
                                             </a>
                                         </li>
 
-                                        <li class="nav-item dropdown">
+                                        <li class="nav-item dropdown drop__borders">
                                             <a
-                                                class="nav-link dropdown-toggle fw-bolder"
+                                                class="nav-link dropdown-toggle fw-bolder header__tabs--text"
                                                 href="#"
                                                 id="navbarDropdown"
                                                 role="button"
@@ -151,7 +153,7 @@ const Header = () => {
 
                                     {/* header login section */}
 
-                                    <div className="login__content col-6   d-flex text-light align-lg-items-center ms-auto gap-3 flex-column flex-md-row w-auto">
+                                    <div className="login__content col-12 col-md-6   d-flex text-light align-lg-items-center ms-auto gap-3 flex-column flex-md-row ">
                                         <div className="ms-auto gap-4 d-none d-lg-block">
                                             <div className="search-box ">
                                                 <input

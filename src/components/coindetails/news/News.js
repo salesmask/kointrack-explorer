@@ -1,13 +1,13 @@
 import React from 'react';
 
-import news_big_image from '../../../assets/coindata/News Big Image.svg';
-import bitcoin_small from '../../../assets/coindata/Bitcoin Small.svg';
-import news_small_1 from '../../../assets/coindata/News Small_1.svg';
-import news_small_2 from '../../../assets/coindata/News Small_2.svg';
-import news_small_3 from '../../../assets/coindata/News Small_3.svg';
+import news_big_image from '../../../assets/coindetails/coindata/News Big Image.svg';
+import bitcoin_small from '../../../assets/coindetails/coindata/Bitcoin Small.svg';
+import news_small_1 from '../../../assets/coindetails/coindata/News Small_1.svg';
+import news_small_2 from '../../../assets/coindetails/coindata/News Small_2.svg';
+import news_small_3 from '../../../assets/coindetails/coindata/News Small_3.svg';
+import readmore__arrow from '../../../assets/coindetails/coindata/readmore_arrow.svg';
 
 import './News.css';
-
 const News = () => {
     return (
         <div className="">
@@ -21,32 +21,32 @@ const News = () => {
                                 </h2>
                                 <button
                                     type="button"
-                                    className=" btn news__button rounded-pill  px-5 ms-5 news__button"
+                                    className="btn tab__button px-4 ms-5"
                                 >
                                     All
                                 </button>
                                 <button
                                     type="button"
-                                    className="btn news__button rounded-pill news__button  px-5"
+                                    className="btn tab__button  px-5"
                                 >
                                     News
                                 </button>
                                 <button
                                     type="button"
-                                    className="btn  news__button rounded-pill news__button  px-5"
+                                    className="btn tab__button  px-5"
                                 >
                                     Alexanria
                                 </button>
 
                                 <button
                                     type="button"
-                                    className="btn news__button  rounded-pill px-4  ms-lg-auto  px-8"
+                                    className="btn tab__button   ms-lg-auto"
                                 >
                                     Read More
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
+                                        width="12"
+                                        height="10"
                                         fill="currentColor"
                                         class="bi bi-chevron-right"
                                         viewBox="0 0 16 16"
@@ -68,10 +68,10 @@ const News = () => {
             <div className="container-fluid">
                 <div className="col-11 mx-auto d-flex gap-3">
                     <div className="container-xxl px-0">
-                        <div className="row">
-                            <div className="col-lg-6">
+                        <div className="row gap-2">
+                            <div className="col-lg-6 px-0">
                                 <div className="d-flex pb-5 mx-0 ">
-                                    <div className="card p-3 news__card">
+                                    <div className="card p-2 news__card">
                                         <img
                                             src={news_big_image}
                                             alt=""
@@ -100,7 +100,7 @@ const News = () => {
 
                                             <div
                                                 href="#"
-                                                className=" btn news__button rounded-pill d-flex gap-2 py-2 fw-bold align-items-center px-3 "
+                                                className="btn news__button  fw-bold"
                                             >
                                                 <img
                                                     src={bitcoin_small}
@@ -111,16 +111,16 @@ const News = () => {
 
                                             <div
                                                 type="button"
-                                                className=" btn news__button rounded-pill d-flex gap-2 fw-bold align-items-center px-3 py-2 ms-lg-auto ms-md-auto"
+                                                className="btn news__button   fw-bold ms-lg-auto ms-md-auto"
                                             >
                                                 Read More
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
-                                                    width="16"
-                                                    height="16"
+                                                    width="12"
+                                                    height="10"
                                                     fill="currentColor"
                                                     class="bi bi-chevron-right"
-                                                    viewBox="0 0 16 16"
+                                                    viewBox="0 0 16 15"
                                                 >
                                                     <path
                                                         fill-rule="evenodd"
@@ -135,7 +135,7 @@ const News = () => {
 
                             {/* News small cards */}
 
-                            <div className="col">
+                            <div className="col ">
                                 <div class="row d-block">
                                     <div class="">
                                         <div className="news__card">
@@ -179,7 +179,7 @@ const News = () => {
 
                                                         <div
                                                             href="#"
-                                                            className="btn news__button rounded-pill d-flex align-items-center fw-bold"
+                                                            className="btn news__button  d-flex align-items-center fw-bold"
                                                         >
                                                             <img
                                                                 src={
@@ -192,16 +192,16 @@ const News = () => {
 
                                                         <div
                                                             type="button"
-                                                            className=" btn news__button rounded-pill d-flex gap-0  fw-bold align-items-center py-2 px-2 me-ms-auto me-lg-auto ms-xl-auto me-xl-0 ms-md-auto"
+                                                            className=" btn news__button   fw-bold me-ms-auto me-lg-auto ms-xl-auto me-xl-0 ms-md-auto"
                                                         >
                                                             Read More
                                                             <svg
                                                                 xmlns="http://www.w3.org/2000/svg"
-                                                                width="16"
-                                                                height="16"
+                                                                width="12"
+                                                                height="10"
                                                                 fill="currentColor"
                                                                 class="bi bi-chevron-right"
-                                                                viewBox="0 0 16 16"
+                                                                viewBox="0 0 16 15"
                                                             >
                                                                 <path
                                                                     fill-rule="evenodd"
@@ -259,7 +259,7 @@ const News = () => {
 
                                                             <div
                                                                 href="#"
-                                                                className="btn news__button rounded-pill d-flex align-items-center fw-bold"
+                                                                className="btn news__button  fw-bold"
                                                             >
                                                                 <img
                                                                     src={
@@ -272,16 +272,16 @@ const News = () => {
 
                                                             <div
                                                                 type="button"
-                                                                className=" btn news__button rounded-pill d-flex gap-0  fw-bold align-items-center py-2 px-2 me-ms-auto me-lg-auto ms-xl-auto me-xl-0 ms-md-auto"
+                                                                className=" btn news__button  fw-bold me-ms-auto me-lg-auto ms-xl-auto me-xl-0 ms-md-auto"
                                                             >
                                                                 Read More
                                                                 <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
-                                                                    width="16"
-                                                                    height="16"
+                                                                    width="12"
+                                                                    height="10"
                                                                     fill="currentColor"
                                                                     class="bi bi-chevron-right"
-                                                                    viewBox="0 0 16 16"
+                                                                    viewBox="0 0 16 15"
                                                                 >
                                                                     <path
                                                                         fill-rule="evenodd"
@@ -340,7 +340,7 @@ const News = () => {
 
                                                             <div
                                                                 href="#"
-                                                                className="btn news__button rounded-pill d-flex align-items-center fw-bold"
+                                                                className="btn news__button  d-flex align-items-center fw-bold"
                                                             >
                                                                 <img
                                                                     src={
@@ -353,16 +353,16 @@ const News = () => {
 
                                                             <div
                                                                 type="button"
-                                                                className=" btn news__button rounded-pill d-flex gap-0  fw-bold align-items-center py-2 px-2 me-ms-auto me-lg-auto ms-xl-auto me-xl-0 ms-md-auto"
+                                                                className=" btn news__button  fw-bold  me-ms-auto me-lg-auto ms-xl-auto me-xl-0 ms-md-auto"
                                                             >
                                                                 Read More
                                                                 <svg
                                                                     xmlns="http://www.w3.org/2000/svg"
-                                                                    width="16"
-                                                                    height="16"
+                                                                    width="12"
+                                                                    height="10"
                                                                     fill="currentColor"
                                                                     class="bi bi-chevron-right"
-                                                                    viewBox="0 0 16 16"
+                                                                    viewBox="0 0 16 15"
                                                                 >
                                                                     <path
                                                                         fill-rule="evenodd"

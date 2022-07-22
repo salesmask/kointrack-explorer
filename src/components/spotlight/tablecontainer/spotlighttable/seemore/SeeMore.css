@@ -1,0 +1,8 @@
+.highlights__seemore-button {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    font-size: var(--fs-tab-small);
+}
+.seemore__angle {
+    font-size: 2rem;
+}

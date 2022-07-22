@@ -4,6 +4,7 @@ import './CoinMoreDetails.css';
 import ToolTip from '../../../assets/coindetails/coin-more-details/tooltip-icon.svg';
 import DownArrow from '../../../assets/coindetails/coin-more-details/Decrease_Arrow.svg';
 import UpArrow from '../../../assets/coindetails/coin-more-details/Increase_Arrow.svg';
+import CircularProgressBar from './circularprogressbar/CircularProgressBar';
 
 const CoinMoreDetails = () => {
     return (
@@ -19,10 +20,13 @@ const CoinMoreDetails = () => {
                                     <div class="supply__wrapper h-100 p-3">
                                         {/* Circulating supply */}
 
-                                        <div className="circulating__supply d-flex justify-content-between align-items-center gap-0 gap-sm-5 gap-lg-1 gap-xl-3 gap-xxl-5">
-                                            <div className="range__wrapper me-4 mb-4">
-                                                75%
-                                            </div>
+                                        <div className="circulating__supply d-flex justify-content-between align-items-center mb-4 gap-0 gap-sm-5 gap-lg-1 gap-xl-3 gap-xxl-5">
+                                            {/* Circular progress bar */}
+
+                                            <CircularProgressBar />
+
+                                            {/* ********************** */}
+
                                             <div className="value__wrapper">
                                                 <div className="d-flex justify-content-center align-items-center">
                                                     <div className="heading me-3">
