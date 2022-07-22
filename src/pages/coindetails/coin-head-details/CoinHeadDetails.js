@@ -6,7 +6,7 @@ import WatchListStar from '../../../assets/coindetails/coin-head-details/Watchli
 import RangeofTimeIcon from '../../../assets/coindetails/coin-head-details/rangeoftime-down_arrow.svg';
 import CurrentPriceArrowDown from '../../../assets/coindetails/coin-head-details/current-price-arrow-down.svg';
 import ETHArrowUp from '../../../assets/coindetails/coin-head-details/Increase_Arrow.svg';
-import WatchlistStar from '../../watchliststar/WatchlistStar';
+import WatchlistStar from '../../../components/watchliststar/WatchlistStar';
 import CoinHeadProgressbar from './progressbar/CoinHeadProgressbar';
 
 const CoinHeadDetails = () => {

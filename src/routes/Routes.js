@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from '../components/homepage/Home';
-import CoinDetails from '../components/coindetails/CoinDetails';
+import Home from '../pages/home/Home';
+import CoinDetails from '../pages/coindetails/CoinDetails';
 import Trending from '../components/trending/Trending';
 import GainersLosers from '../components/gainerslosers/GainersLosers';
 import MostVisited from '../components/mostvisited/MostVisited';

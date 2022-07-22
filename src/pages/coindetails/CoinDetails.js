@@ -1,7 +1,7 @@
 import React from 'react';
 import './CoinDetails.css';
-import Header from '../header/Header';
-import Footer from '../footer/Footer';
+import Header from '../../components/header/Header';
+import Footer from '../../components/footer/Footer';
 import CoinHeadDetails from './coin-head-details/CoinHeadDetails';
 import Breadcrumbs from './breadcrumbs/Breadcrumbs';
 import InfoSources from './info-sources/InfoSources';

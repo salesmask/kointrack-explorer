@@ -7,8 +7,8 @@ import Decrease_Arrow from '../../../assets/table/Decrease_Arrow.svg';
 import Increase_Arrow from '../../../assets/table/Increase_Arrow.svg';
 import Grapgh from '../../../assets/table/Grapgh.svg';
 import More_Icon from '../../../assets/table/More_Icon.svg';
-import WatchlistStar from '../../watchliststar/WatchlistStar';
-import TableProgressBar from '../../tableprogressbar/TableProgressBar';
+import WatchlistStar from '../../../components/watchliststar/WatchlistStar';
+import TableProgressBar from '../../../components/tableprogressbar/TableProgressBar';
 
 export default function Table() {
     return (
