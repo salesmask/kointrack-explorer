@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import ListArrow from '../../../../assets/coindetails/info-sources/list-arrow.svg';
 
-function MostVisitedTableTabs() {
+function SpotLightTableTabs() {
     return (
         <>
             <div className="trendingtabletabs__wrapper d-flex justify-content-between align-items-center">
@@ -10,7 +10,7 @@ function MostVisitedTableTabs() {
                     <li>
                         <a href="">Watchlist</a>
                     </li>
-                    <li>
+                    <li className="active">
                         <Link to="/spotlight">Spotlight</Link>
                     </li>
                     <li>
@@ -19,7 +19,7 @@ function MostVisitedTableTabs() {
                     <li>
                         <Link to="/trending">Trending</Link>
                     </li>
-                    <li className="active">
+                    <li>
                         <Link to="/most-visited">Most Visited</Link>
                     </li>
                     <li>
@@ -41,4 +41,4 @@ function MostVisitedTableTabs() {
     );
 }
 
-export default MostVisitedTableTabs;
+export default SpotLightTableTabs;
