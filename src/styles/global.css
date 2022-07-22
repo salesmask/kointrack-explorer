@@ -191,7 +191,7 @@ img {
     font-weight: 400;
     font-style: normal;
     color: var(--clr-text);
-    padding: 12px 20px;
+    padding: 8px 20px;
     display: flex;
     justify-content: center;
     align-items: center;

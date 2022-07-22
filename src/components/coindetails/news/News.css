@@ -5,33 +5,38 @@
 }
 
 .news__button {
-    background-color: #eaebf2 !important;
-    font-family: 'Poppins' !important;
-    font-style: normal !important;
+    width: max-content !important;
+    border: none !important;
+    border-radius: 100px !important;
+    background-color: var(--clr-tab-background) !important;
+    font-size: var(--fs-tab-normal) !important;
     font-weight: 400 !important;
-    font-size: 12px !important;
-
-    padding: 5px 12px !important;
-    gap: 2px !important;
+    font-style: normal !important;
+    color: var(--clr-text) !important;
+    padding: 5px 10px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+    cursor: pointer !important;
+    gap: 1px !important;
+    transition: 150ms ease-in !important;
 }
 
 .news__button:hover {
-    background-color: #b4b5bc !important;
-}
-
-.news__button:active {
     background-color: var(--clr-primary) !important;
+    color: var(--clr-white) !important;
 }
 
 /* Corresponding screen width according to bootstrap sm screens */
-@media screen and (min-width: 576px) and (max-width: 768px) {
+/* @media screen and (min-width: 576px) and (max-width: 768px) {
     .news-details__wrapper {
         padding: 0 4rem;
     }
-}
+} */
 /* Corresponding screen width according to bootstrap less than sm screens */
-@media screen and (max-width: 576px) {
+/* @media screen and (max-width: 576px) {
     .news-details__wrapper {
         padding: 0 2rem;
     }
-}
+} */

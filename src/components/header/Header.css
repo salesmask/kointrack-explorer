@@ -2,6 +2,32 @@
     background: #151a33;
 }
 
+/* aa */
+
+/* .header__tabs--text:hover + .dropdown-menu {
+    position: fixed !important;
+    display: inline-block !important;
+} */
+
+/* .dropdown-menu {
+    display: none !important;
+    position: absolute !important;
+    background-color: #f1f1f1 !important;
+    min-width: 160px !important;
+    overflow: auto !important;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2) !important;
+    z-index: 1 !important;
+} */
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* aa */
+
 /* .header__logo {
     min-height: 50px;
 } */

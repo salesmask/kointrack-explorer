@@ -5,6 +5,11 @@ import CoinDetails from '../components/coindetails/CoinDetails';
 import Trending from '../components/trending/Trending';
 import GainersLosers from '../components/gainerslosers/GainersLosers';
 import MostVisited from '../components/mostvisited/MostVisited';
+
+
+import Exchange from '../components/ExchangePage/Exchange/Exchange';
+import Derivatives from '../components/ExchangePage/Derivatives/Derivatives';
+import Dex from '../components/ExchangePage/Dex/Dex';
 import RecentlyAdded from '../components/recentlyadded/RecentlyAdded';
 import SpotLight from '../components/spotlight/SpotLight';
 // import SignupForm from '../../components/coindetails/Signupform/SignupForm';
@@ -21,6 +26,13 @@ const MainRoutes = () => {
 
             <Route path="/gainers&losers" element={<GainersLosers />} />
 
+            <Route path="/mostvisited" element={<MostVisited />} />
+            
+            <Route path="/exchange" element={<Exchange/>} />
+            <Route path="/derivatives" element={<Derivatives/>} />
+            <Route path="/Dex" element={<Dex/>} />
+            <Route path="/spot" element={<Exchange/>} />
+         
             <Route path="/most-visited" element={<MostVisited />} />
 
             <Route path="/recently-added" element={<RecentlyAdded />} />

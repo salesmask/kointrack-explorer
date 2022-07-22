@@ -1,0 +1,17 @@
+.watchlist__button {
+    width: max-content;
+    border: none;
+    border-radius: 100px;
+
+    color: var(--clr-text);
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    padding: 8px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 150ms ease-in;
+}
