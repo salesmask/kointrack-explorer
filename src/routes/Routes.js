@@ -20,6 +20,8 @@ const MainRoutes = () => {
         <Routes>
             <Route path="/" element={<Home />} />
 
+            <Route path="/home" element={<Home />} />
+
             <Route path="/coindetails" element={<CoinDetails />} />
 
             <Route path="/trending" element={<Trending />} />

@@ -5,6 +5,7 @@ import Highlights from './layouts/highlights/Highlights';
 import Search from './layouts/search/Search';
 import Footer from '../../components/footer/Footer';
 import CarouselPannel from '../../components/header/CarouselPannel';
+import CTA from './layouts/cta/CTA';
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <Search />
             <Highlights />
             <Table />
+            <CTA />
             <Footer />
         </div>
     );
