@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './SpotLightCards.css';
-import ReadMore from '../../../../homepage/highlights/read-more/ReadMore';
+import ReadMore from '../../../../../pages/home/layouts/highlights/read-more/ReadMore';
 import TrendingIcon from '../../../../../assets/homepage/highlights/trending/Tranding_Icon.png';
 import UpIcon from '../../../../../assets/homepage/highlights/trending/Increase_Arrow.svg';
 import DownIcon from '../../../../../assets/homepage/highlights/trending/Decrease_Arrow.svg';
