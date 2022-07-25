@@ -11,12 +11,9 @@ import AddBanner from './layouts/addbanner/AddBanner';
 
 const Home = () => {
     return (
-        <div>
-            <div>
-                <Header />
-                <CarouselPannel />
-            </div>
-
+        <>
+            <Header />
+            <CarouselPannel />
             <Search />
             <Highlights />
             <Table />
@@ -24,7 +21,7 @@ const Home = () => {
             <Videos />
             <AddBanner />
             <Footer />
-        </div>
+        </>
     );
 };
 
