@@ -1,7 +1,20 @@
 {
   "files": {
-    "main.css": "/kointrack-explorer/static/css/main.80ca5441.css",
-    "main.js": "/kointrack-explorer/static/js/main.1e39a389.js",
+    "main.css": "/kointrack-explorer/static/css/main.05d9ae2b.css",
+    "main.js": "/kointrack-explorer/static/js/main.dc03e47b.js",
+    "reactPlayerYouTube.js": "/kointrack-explorer/static/js/reactPlayerYouTube.74aa786f.chunk.js",
+    "reactPlayerSoundCloud.js": "/kointrack-explorer/static/js/reactPlayerSoundCloud.d5745742.chunk.js",
+    "reactPlayerVimeo.js": "/kointrack-explorer/static/js/reactPlayerVimeo.7957ee16.chunk.js",
+    "reactPlayerFacebook.js": "/kointrack-explorer/static/js/reactPlayerFacebook.3d50ba4a.chunk.js",
+    "reactPlayerStreamable.js": "/kointrack-explorer/static/js/reactPlayerStreamable.7989fb74.chunk.js",
+    "reactPlayerWistia.js": "/kointrack-explorer/static/js/reactPlayerWistia.41498ebe.chunk.js",
+    "reactPlayerTwitch.js": "/kointrack-explorer/static/js/reactPlayerTwitch.f6813e39.chunk.js",
+    "reactPlayerDailyMotion.js": "/kointrack-explorer/static/js/reactPlayerDailyMotion.0a285824.chunk.js",
+    "reactPlayerMixcloud.js": "/kointrack-explorer/static/js/reactPlayerMixcloud.8c50c91d.chunk.js",
+    "reactPlayerVidyard.js": "/kointrack-explorer/static/js/reactPlayerVidyard.a4626494.chunk.js",
+    "reactPlayerKaltura.js": "/kointrack-explorer/static/js/reactPlayerKaltura.7b8ae62c.chunk.js",
+    "reactPlayerFilePlayer.js": "/kointrack-explorer/static/js/reactPlayerFilePlayer.aa024ddb.chunk.js",
+    "reactPlayerPreview.js": "/kointrack-explorer/static/js/reactPlayerPreview.3bef4005.chunk.js",
     "static/media/Banner_Exchange.svg": "/kointrack-explorer/static/media/Banner_Exchange.6cc26ca6f4b63da82af8.svg",
     "static/media/cta-backgorund.png": "/kointrack-explorer/static/media/cta-backgorund.5fef2c6921f9caf6e09f.png",
     "static/media/trending-banner.png": "/kointrack-explorer/static/media/trending-banner.76a0926b6bb60a2e6fac.png",
@@ -100,11 +113,24 @@
     "static/media/Recently_Added_Icon.svg": "/kointrack-explorer/static/media/Recently_Added_Icon.68828104a8d72857cc9a4464ee979230.svg",
     "static/media/tooltip-icon.svg": "/kointrack-explorer/static/media/tooltip-icon.2bc04176e1ddecd951aaffe9fd30a8a1.svg",
     "static/media/More_Icon.svg": "/kointrack-explorer/static/media/More_Icon.0ad5e686bae947eb141b7d01a663f944.svg",
-    "main.80ca5441.css.map": "/kointrack-explorer/static/css/main.80ca5441.css.map",
-    "main.1e39a389.js.map": "/kointrack-explorer/static/js/main.1e39a389.js.map"
+    "main.05d9ae2b.css.map": "/kointrack-explorer/static/css/main.05d9ae2b.css.map",
+    "main.dc03e47b.js.map": "/kointrack-explorer/static/js/main.dc03e47b.js.map",
+    "reactPlayerYouTube.74aa786f.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerYouTube.74aa786f.chunk.js.map",
+    "reactPlayerSoundCloud.d5745742.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerSoundCloud.d5745742.chunk.js.map",
+    "reactPlayerVimeo.7957ee16.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerVimeo.7957ee16.chunk.js.map",
+    "reactPlayerFacebook.3d50ba4a.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerFacebook.3d50ba4a.chunk.js.map",
+    "reactPlayerStreamable.7989fb74.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerStreamable.7989fb74.chunk.js.map",
+    "reactPlayerWistia.41498ebe.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerWistia.41498ebe.chunk.js.map",
+    "reactPlayerTwitch.f6813e39.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerTwitch.f6813e39.chunk.js.map",
+    "reactPlayerDailyMotion.0a285824.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerDailyMotion.0a285824.chunk.js.map",
+    "reactPlayerMixcloud.8c50c91d.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerMixcloud.8c50c91d.chunk.js.map",
+    "reactPlayerVidyard.a4626494.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerVidyard.a4626494.chunk.js.map",
+    "reactPlayerKaltura.7b8ae62c.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerKaltura.7b8ae62c.chunk.js.map",
+    "reactPlayerFilePlayer.aa024ddb.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerFilePlayer.aa024ddb.chunk.js.map",
+    "reactPlayerPreview.3bef4005.chunk.js.map": "/kointrack-explorer/static/js/reactPlayerPreview.3bef4005.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80ca5441.css",
-    "static/js/main.1e39a389.js"
+    "static/css/main.05d9ae2b.css",
+    "static/js/main.dc03e47b.js"
   ]
 }
