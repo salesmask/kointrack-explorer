@@ -9,6 +9,7 @@ import 'bootstrap/dist/js/bootstrap';
 import { Link } from 'react-router-dom';
 import LoginForm from '../loginform/LoginForm';
 import SignupForm from '../signupform/SignupForm';
+import Logo from '../logo/Logo';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);
@@ -24,13 +25,7 @@ const Header = () => {
                         {/* header logo */}
 
                         <Link to="/">
-                            <div className="col-2  header__logo">
-                                <img
-                                    className="header__logo"
-                                    src={header_logo}
-                                    alt="header-logo"
-                                ></img>
-                            </div>
+                            <Logo />
                         </Link>
 
                         {/* header links */}
