@@ -40,7 +40,7 @@ const Header = () => {
                             >
                                 <div className="mobile__screen--tab col-12 d-flex flex-column flex-md-row">
                                     <div className="header__tabs  col-md-6  d-flex text-light align-items-start align-items-md-center justify-content-center gap-2 flex-column flex-md-row w-auto">
-                                        <li class="nav-item  dropdown drop__borders ">
+                                        <li class="nav-item  dropdown drop__borders header__dropdown--item">
                                             <a
                                                 class="nav-link dropdown-toggle header__tabs--text"
                                                 href="#"
@@ -52,9 +52,28 @@ const Header = () => {
                                                 Coins
                                             </a>
                                             <ul
-                                                class="dropdown-menu"
+                                                class="dropdown-menu header__dropdown--list"
                                                 aria-labelledby="navbarDropdown"
                                             >
+                                                <li>
+                                                    <Link
+                                                        to="/spotlight"
+                                                        class="dropdown-item fw-bolder"
+                                                        href="#"
+                                                    >
+                                                        Spotlight
+                                                    </Link>
+                                                </li>
+                                                <li>
+                                                    <Link
+                                                        to="/gainers&losers"
+                                                        class="dropdown-item fw-bolder"
+                                                        href="#"
+                                                    >
+                                                        Gainers & Loser
+                                                    </Link>
+                                                </li>
+
                                                 <li>
                                                     <Link
                                                         to="/trending"
@@ -64,22 +83,25 @@ const Header = () => {
                                                         Trending
                                                     </Link>
                                                 </li>
+
                                                 <li>
-                                                    <a
+                                                    <Link
+                                                        to="/most-visited"
                                                         class="dropdown-item fw-bolder"
                                                         href="#"
                                                     >
-                                                        Another action
-                                                    </a>
+                                                        Most Visited
+                                                    </Link>
                                                 </li>
 
                                                 <li>
-                                                    <a
+                                                    <Link
+                                                        to="/recently-added"
                                                         class="dropdown-item fw-bolder"
                                                         href="#"
                                                     >
-                                                        Something else here
-                                                    </a>
+                                                        Recently Added
+                                                    </Link>
                                                 </li>
                                             </ul>
                                         </li>

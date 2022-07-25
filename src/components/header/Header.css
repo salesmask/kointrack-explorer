@@ -26,6 +26,31 @@
     display: block;
 }
 
+/* dropdown list hover effect style */
+
+.header__dropdown--list {
+    border-radius: 5px;
+}
+.header__dropdown--item:hover .header__dropdown--list {
+    display: block;
+}
+.header__dropdown--list::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 35%;
+    margin-left: -28px;
+    margin-top: -8px;
+    width: 0;
+    z-index: 1;
+    height: 0;
+    border-bottom: solid 15px #fff;
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+}
+
+/* ends dropdown list hover effect style */
+
 /* aa */
 
 /* .header__logo {
