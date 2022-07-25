@@ -12,8 +12,8 @@ import Derivatives from '../components/ExchangePage/Derivatives/Derivatives';
 import Dex from '../components/ExchangePage/Dex/Dex';
 import RecentlyAdded from '../components/recentlyadded/RecentlyAdded';
 import SpotLight from '../components/spotlight/SpotLight';
-// import SignupForm from '../../components/coindetails/Signupform/SignupForm';
-// import LoginForm from '../../components/coindetails/loginform/LoginForm';
+import SignupForm from '../components/signupform/SignupForm'
+import LoginForm from '../components/loginform/LoginForm';
 
 const MainRoutes = () => {
     return (
@@ -39,8 +39,8 @@ const MainRoutes = () => {
 
             <Route path="/spotlight" element={<SpotLight />} />
 
-            {/* <Route path="/signupform" element={<SignupForm />} />
-            <Route path="/loginform" element={<LoginForm />} /> */}
+            <Route path="/signupform" element={<SignupForm />} />
+            <Route path="/loginform" element={<LoginForm />} />
 
         </Routes>
     );

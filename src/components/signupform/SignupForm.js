@@ -1,12 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import { useFormik } from 'formik';
 import './SignupForm.css';
-import Sign_UP from '../../assets/signup/google 1.svg';
-import Icon_Eye from '../../assets/signup/icon-eye-white.svg';
-import Icon_Close from '../../assets/signup/Group 8125.svg';
-// import * as Yup from 'yup';
+import Sign_UP from './../../assets/signup/google 1.svg';
+import Icon_Eye from './../../assets/signup/icon-eye-white.svg';
+import Icon_Close from './../../assets/signup/Group 8125.svg';
+import * as Yup from 'yup';
+import { Link } from 'react-router-dom';
 
-const SignupForm = ({ close }) => {
+export default function SignupForm({ close }) {
+    const validations = Yup.object({
+        email: Yup.string().required('Email is Required'),
+        //   .matches(
+        //     /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/,
+        //     "Must Contain 8 Characters, One Uppercase, One Lowercase, One Number and One Special Case Character"
+        //   )
+        password: Yup.string()
+            .required('Password is required')
+            .min('6', 'Password should be min 6 characters')
+            .max('10', 'Password should be max 10 characters'),
+        confirmpassword: Yup.string()
+            .required('Password do not match')
+            .min('6', 'Password should be min 6 characters')
+            .max('10', 'Password should be max 10 characters'),
+    });
+
     const formik = useFormik({
         initialValues: {
             name: '',
@@ -17,27 +34,7 @@ const SignupForm = ({ close }) => {
         onSubmit: (values) => {
             console.log('form submit', values);
         },
-        validate: (values) => {
-            let errors = {};
-            if (!values.email) {
-                errors.email = 'Email is Required';
-            }
-            // yup.min*(values.email)
-            else if (
-                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)
-            ) {
-                errors.email = 'Invalid email address';
-            } else if (values.email.length < 12) {
-                errors.email = 'Error email';
-            }
-            if (!values.password) {
-                errors.password = 'Password is Required';
-            }
-            if (!values.confirmpassword) {
-                errors.confirmpassword = 'Confirm password';
-            }
-            return errors;
-        },
+        validationSchema: validations,
     });
 
     // console.log('form values', formik.values)
@@ -61,13 +58,15 @@ const SignupForm = ({ close }) => {
                                     Create an Account{' '}
                                 </h3>
 
-                                <img
-                                    onClick={() => close(false)}
-                                    src={Icon_Close}
-                                    className="img-icon-close me-3  "
-                                    width="22px"
-                                    height="22px"
-                                />
+                                <Link to="/">
+                                    <img
+                                        onClick={() => close(false)}
+                                        src={Icon_Close}
+                                        className="img-icon-close me-3  "
+                                        width="22px"
+                                        height="22px"
+                                    />
+                                </Link>
                             </div>
 
                             <p className="text-start d fw-normal sign-up-font-color-form">
@@ -81,7 +80,7 @@ const SignupForm = ({ close }) => {
                                     href="#"
                                     className="text-primary fw-bold text-decoration-none"
                                 >
-                                    Login
+                                    <Link to="/loginform">Login</Link>
                                 </a>
                             </div>
 
@@ -180,11 +179,12 @@ const SignupForm = ({ close }) => {
 
                             <div class="form-check text-dark mb-5">
                                 <input
-                                    class="form-check-input"
+                                    class="form-check-input "
                                     type="checkbox"
                                     value=""
                                     id="invalidCheck"
                                 />
+
                                 <label
                                     class="form-check-label text-start sign-up-font-color-form fw-normal"
                                     for="invalidCheck"
@@ -253,6 +253,6 @@ const SignupForm = ({ close }) => {
             </div>
         </>
     );
-};
+}
 
-export default SignupForm;
+// export default SignupForm;
