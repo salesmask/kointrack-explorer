@@ -4,19 +4,16 @@ import Table from './layouts/Table/Table';
 import Highlights from './layouts/highlights/Highlights';
 import Search from './layouts/search/Search';
 import Footer from '../../components/footer/Footer';
-import CarouselPannel from '../../components/header/CarouselPannel';
+import CarouselPannel from './layouts/carousel/CarouselPannel';
 import CTA from './layouts/cta/CTA';
 import Videos from '../../components/Videos/Videos';
 import AddBanner from './layouts/addbanner/AddBanner';
 
 const Home = () => {
     return (
-        <div>
-            <div>
-                <Header />
-                <CarouselPannel />
-            </div>
-
+        <>
+            <Header />
+            <CarouselPannel />
             <Search />
             <Highlights />
             <Table />
@@ -24,7 +21,7 @@ const Home = () => {
             <Videos />
             <AddBanner />
             <Footer />
-        </div>
+        </>
     );
 };
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import './CarouselPannel.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import Header_BG_with_vector from '../../assets/header/Header_BG_with_vector.png';
+import Header_BG_with_vector from '../../../../assets/header/Header_BG_with_vector.png';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 // import 'bootstrap/dist/js/bootstrap.js';
 import { Carousel } from 'react-responsive-carousel';
 
-import vector1 from '../../assets/header/Header_BG_with_vector.png';
-import vector2 from '../../assets/header/Header_BG_with_vector_2.png';
-import vector3 from '../../assets/header/Header_BG_with_vector_.3.png';
+import vector1 from '../../../../assets/header/Header_BG_with_vector.png';
+import vector2 from '../../../../assets/header/Header_BG_with_vector_2.png';
+import vector3 from '../../../../assets/header/Header_BG_with_vector_.3.png';
 
 export default function CarouselPannel() {
     return (
