@@ -14,12 +14,12 @@ const CoinHeadDetails = () => {
         <div className="container-fluid px-0">
             <div className="row mx-0">
                 <div className="col-11 mx-auto px-0 d-flex ">
-                    <div className="coin-head__wrapper w-100 p-0 p-md-4 ">
+                    <div className="coin-head__wrapper w-100 ">
                         <div className="container-xxl px-0">
-                            {/* Name and details section */}
-
-                            <div className="row mx-0 d-flex justify-content-between align-items-center">
+                            <div className="coin-head__subwrapper row mx-0 d-flex justify-content-between align-items-center p-4">
                                 <div className="col-12 col-md-5 col-lg-4 col-xl-3 px-0">
+                                    {/* Name and details section */}
+
                                     <div className="coin-head__name--wrapper d-flex justify-content-between align-items-start align-items-sm-center flex-column flex-sm-row flex-md-column align-items-md-start">
                                         <div className="d-flex justify-content-start align-items-center mb-3">
                                             <div className="image__wrapper pe-4">

@@ -7,6 +7,7 @@ import Footer from '../../components/footer/Footer';
 import CarouselPannel from '../../components/header/CarouselPannel';
 import CTA from './layouts/cta/CTA';
 import Videos from '../../components/Videos/Videos';
+import AddBanner from './layouts/addbanner/AddBanner';
 
 const Home = () => {
     return (
@@ -21,6 +22,7 @@ const Home = () => {
             <Table />
             <CTA />
             <Videos />
+            <AddBanner />
             <Footer />
         </div>
     );

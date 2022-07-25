@@ -47,6 +47,15 @@
     font-weight: 500;
     transition: 0.3s ease-in-out;
 }
+
+/* checkbox */
+
+.Signup_wrapper .form-check input:checked {
+    background-color: var(--clr-primary) !important;
+}
+
+/* checkbox ends */
+
 .img-sign-up {
     width: 8% !important;
 }
@@ -95,7 +104,7 @@
     align-items: center !important;
 }
 .img-icon-close {
-    width: 10% !important;
+    width: 70% !important;
     padding: 0px 0px 15px 0px;
     cursor: pointer;
 }
@@ -114,8 +123,8 @@
     text-align: center;
 }
 
-.sign__up__with:before,
-.sign__up__with:after {
+.sign__up__with::before,
+.sign__up__with::after {
     background-color: #e4e4e4 !important;
     content: '';
     display: inline-block;

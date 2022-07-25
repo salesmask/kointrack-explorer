@@ -1,8 +1,7 @@
-.coin-head__wrapper {
+.coin-head__subwrapper {
     background-color: var(--clr-table-row);
     border-radius: 1rem;
 }
-
 /* Name and details section */
 
 .coin-head__name--wrapper .image__wrapper {
