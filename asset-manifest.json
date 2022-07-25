@@ -1,12 +1,16 @@
 {
   "files": {
-    "main.css": "/kointrack-explorer/static/css/main.df6e2b21.css",
-    "main.js": "/kointrack-explorer/static/js/main.b3bfa38e.js",
+    "main.css": "/kointrack-explorer/static/css/main.80ca5441.css",
+    "main.js": "/kointrack-explorer/static/js/main.1e39a389.js",
     "static/media/Banner_Exchange.svg": "/kointrack-explorer/static/media/Banner_Exchange.6cc26ca6f4b63da82af8.svg",
+    "static/media/cta-backgorund.png": "/kointrack-explorer/static/media/cta-backgorund.5fef2c6921f9caf6e09f.png",
     "static/media/trending-banner.png": "/kointrack-explorer/static/media/trending-banner.76a0926b6bb60a2e6fac.png",
+    "static/media/androidapp.svg": "/kointrack-explorer/static/media/androidapp.314aea2626a078b6900f.svg",
+    "static/media/iosapp.svg": "/kointrack-explorer/static/media/iosapp.66a34ed2b1435b51b3f5.svg",
     "static/media/News Small_3.svg": "/kointrack-explorer/static/media/News Small_3.91244c04b0765732748578bede79600e.svg",
     "static/media/News Big Image.svg": "/kointrack-explorer/static/media/News Big Image.b09debd5861bc89bedacd1d06f26d4eb.svg",
     "static/media/News Small_2.svg": "/kointrack-explorer/static/media/News Small_2.a62d8abbc2fc300a594b7676f550d597.svg",
+    "static/media/appdownloadimage.svg": "/kointrack-explorer/static/media/appdownloadimage.8c3bca626d61b0119888.svg",
     "static/media/shoecoin.svg": "/kointrack-explorer/static/media/shoecoin.1af3f702fb18111c48e533e8069105cd.svg",
     "static/media/Satoshi Token_Icon.svg": "/kointrack-explorer/static/media/Satoshi Token_Icon.3fd55706a0a1e09fc522660555930922.svg",
     "static/media/News Small_1.svg": "/kointrack-explorer/static/media/News Small_1.fa22f2c16f163b059d9bbfb492b611d6.svg",
@@ -17,6 +21,7 @@
     "static/media/image 21.svg": "/kointrack-explorer/static/media/image 21.38ea92292493173e0aa489aaaab1ce9f.svg",
     "static/media/Bitcoin.svg": "/kointrack-explorer/static/media/Bitcoin.993ac598e02e488c7c0de9db234726c5.svg",
     "static/media/Bitcoin Small.svg": "/kointrack-explorer/static/media/Bitcoin Small.c935267cabadaf3d018782438d70e0cd.svg",
+    "static/media/cta-foreground.png": "/kointrack-explorer/static/media/cta-foreground.e57a8b536f751a17fca0.png",
     "static/media/Star Chain_Icon.svg": "/kointrack-explorer/static/media/Star Chain_Icon.f80c3bef61c67745c89ca762139eaec4.svg",
     "static/media/carousel-card-image.png": "/kointrack-explorer/static/media/carousel-card-image.35e46b1e1357e616f2a1.png",
     "static/media/Grapgh.svg": "/kointrack-explorer/static/media/Grapgh.974ef4948fac1332530722fc8bfa7550.svg",
@@ -51,9 +56,11 @@
     "static/media/bad.svg": "/kointrack-explorer/static/media/bad.1c37f4e7a0f66a9b9affd6fd9e99f250.svg",
     "static/media/good.svg": "/kointrack-explorer/static/media/good.001ff1b4021be097432d00f4f5d5f9b1.svg",
     "static/media/Like.svg": "/kointrack-explorer/static/media/Like.a1902e28d889f1d119f2a03c0e25dd33.svg",
+    "static/media/like.svg": "/kointrack-explorer/static/media/like.0c863845c6487788f022276817de223b.svg",
     "static/media/Logo Symbol.svg": "/kointrack-explorer/static/media/Logo Symbol.716d9140da4e2b50636851b1670c9e23.svg",
     "static/media/Comments.svg": "/kointrack-explorer/static/media/Comments.069d9a7a5ba92728842d16032e792011.svg",
     "static/media/Watchlist_Outline.svg": "/kointrack-explorer/static/media/Watchlist_Outline.cdbbb8ab89cc98f530f8ab6995e585ac.svg",
+    "static/media/comment.svg": "/kointrack-explorer/static/media/comment.28a5f2da0bbfece8aea9e4d415ead47a.svg",
     "static/media/ftx.svg": "/kointrack-explorer/static/media/ftx.31e9365d720b4c1b5e85cd6acf7ccb41.svg",
     "static/media/slick.woff": "/kointrack-explorer/static/media/slick.295183786cd8a1389865.woff",
     "static/media/coinbase.svg": "/kointrack-explorer/static/media/coinbase.ce9c60c1d73ec0991838a46cfe947c49.svg",
@@ -93,11 +100,11 @@
     "static/media/Recently_Added_Icon.svg": "/kointrack-explorer/static/media/Recently_Added_Icon.68828104a8d72857cc9a4464ee979230.svg",
     "static/media/tooltip-icon.svg": "/kointrack-explorer/static/media/tooltip-icon.2bc04176e1ddecd951aaffe9fd30a8a1.svg",
     "static/media/More_Icon.svg": "/kointrack-explorer/static/media/More_Icon.0ad5e686bae947eb141b7d01a663f944.svg",
-    "main.df6e2b21.css.map": "/kointrack-explorer/static/css/main.df6e2b21.css.map",
-    "main.b3bfa38e.js.map": "/kointrack-explorer/static/js/main.b3bfa38e.js.map"
+    "main.80ca5441.css.map": "/kointrack-explorer/static/css/main.80ca5441.css.map",
+    "main.1e39a389.js.map": "/kointrack-explorer/static/js/main.1e39a389.js.map"
   },
   "entrypoints": [
-    "static/css/main.df6e2b21.css",
-    "static/js/main.b3bfa38e.js"
+    "static/css/main.80ca5441.css",
+    "static/js/main.1e39a389.js"
   ]
 }
