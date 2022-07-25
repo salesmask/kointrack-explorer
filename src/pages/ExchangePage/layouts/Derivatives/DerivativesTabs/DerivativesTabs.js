@@ -23,7 +23,7 @@ function DerivativesTabs() {
                         <Link to="/dex">Dex</Link>
                     </li>
                     <li>
-                        <Link to="/leading">Leading</Link>
+                        <Link to="/leading">Lending</Link>
                     </li>
                 </ul>
             </div>
