@@ -1,0 +1,68 @@
+.appdownload__outer--wrapper {
+    background: linear-gradient(261.35deg, #172ad0 0.79%, #7318e8 100%);
+}
+
+.appdownload__inner--wrapper {
+    padding: 13% 0;
+    background: url('../../../../assets//homepage/addbanner/appdownloadimage.svg')
+        no-repeat;
+    background-position: left;
+    background-size: 40%;
+    color: var(--clr-white);
+}
+
+.appdownload__content--wrapper {
+    width: 50% !important;
+}
+.download__button--wrapper .android__app {
+    background: url('../../../../assets/homepage/addbanner/androidapp.svg')
+        no-repeat center;
+    background-size: cover;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+    padding: 0 !important;
+}
+.download__button--wrapper .ios__app {
+    background: url('../../../../assets/homepage/addbanner/iosapp.svg')
+        no-repeat center;
+    background-size: cover;
+    width: 15rem;
+    height: 4rem;
+    border-radius: 1rem;
+    padding: 0 !important;
+}
+
+/* Corresponding screen width corresponding to bootstrap md screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .appdownload__content--wrapper {
+        width: 50% !important;
+    }
+    .appdownload__content--wrapper .heading {
+        font-size: 1.8rem;
+    }
+    .appdownload__content--wrapper .download__caption {
+        font-size: 2.4rem;
+    }
+    .download__button--wrapper .android__app,
+    .download__button--wrapper .ios__app {
+        width: 13rem;
+        height: 3rem;
+        border-radius: 1rem;
+        padding: 0 !important;
+    }
+}
+
+/* Corresponding screen width according to bootstrap smaller than sm screens */
+
+@media screen and (max-width: 576px) {
+    .appdownload__inner--wrapper {
+        padding: 0;
+        background: none;
+    }
+    .appdownload__content--wrapper {
+        width: 100% !important;
+        text-align: center;
+    }
+}
