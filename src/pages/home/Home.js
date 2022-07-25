@@ -6,6 +6,7 @@ import Search from './layouts/search/Search';
 import Footer from '../../components/footer/Footer';
 import CarouselPannel from '../../components/header/CarouselPannel';
 import CTA from './layouts/cta/CTA';
+import Videos from '../../components/Videos/Videos';
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Highlights />
             <Table />
             <CTA />
+            <Videos />
             <Footer />
         </div>
     );
