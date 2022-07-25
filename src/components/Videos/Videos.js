@@ -2,6 +2,7 @@ import React from 'react';
 import './Videos.css';
 import like from '../../assets/video/like.svg';
 import comments from '../../assets/video/comment.svg';
+import ReactPlayer from 'react-player/lazy';
 
 const Videos = () => {
     return (
@@ -22,16 +23,26 @@ const Videos = () => {
                                     {/* fist card */}
                                     <div className="col-sm-12 col-lg box__shadow">
                                         <div className="px-0">
-                                            <iframe
+                                            <ReactPlayer
+                                                className="px-0 video__space"
+                                                url="https://www.youtube.com/embed/hoLGKwUD2D8"
+                                                controls
+                                                loop
+                                                muted
+                                                pip
+                                                onError
+                                            />
+                                            {/* <iframe
                                                 width="853"
                                                 height="480"
                                                 className="px-0 video__space"
                                                 src="https://www.youtube.com/embed/hoLGKwUD2D8"
                                                 title="Ponzi and Pyramid Scheme Explained | Kointrack"
                                                 frameborder="0"
-                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                              
+                                                allow="accelerometer; autoplay={1}; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                 allowfullscreen
-                                            ></iframe>
+                                            ></iframe> */}
                                         </div>
                                         <div className="container px-0">
                                             <div className="card__title">
@@ -77,7 +88,16 @@ const Videos = () => {
                                     {/* second card */}
                                     <div className="col-sm-12 col-lg box__shadow">
                                         <div className="px-0">
-                                            <iframe
+                                            <ReactPlayer
+                                                className="px-0 video__space"
+                                                url="https://www.youtube.com/embed/yv5gzPyASo4"
+                                                controls
+                                                loop
+                                                muted
+                                                pip
+                                                onError
+                                            />
+                                            {/* <iframe
                                                 className="px-0 video__space"
                                                 width="853"
                                                 height="480"
@@ -86,7 +106,7 @@ const Videos = () => {
                                                 frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                 allowfullscreen
-                                            ></iframe>
+                                            ></iframe> */}
                                         </div>
                                         <div className="container px-0">
                                             <div className="card__title">
@@ -132,7 +152,17 @@ const Videos = () => {
                                     {/* third card */}
                                     <div className="col-sm-12 col-lg  box__shadow">
                                         <div className="px-0">
-                                            <iframe
+                                            <ReactPlayer
+                                                className="px-0 video__space"
+                                                url="https://www.youtube.com/embed/u8CereucnhY"
+                                                controls
+                                                loop
+                                                muted
+                                                pip
+                                                onError
+                                            />
+
+                                            {/* <iframe
                                                 className="px-0 video__space "
                                                 width="853"
                                                 height="480"
@@ -141,7 +171,7 @@ const Videos = () => {
                                                 frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                 allowfullscreen
-                                            ></iframe>
+                                            ></iframe> */}
                                         </div>
                                         <div className="container px-0">
                                             <div className="card__title">

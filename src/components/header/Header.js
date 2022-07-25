@@ -9,7 +9,7 @@ import 'bootstrap/dist/js/bootstrap';
 import { Link } from 'react-router-dom';
 import LoginForm from '../loginform/LoginForm';
 import SignupForm from '../signupform/SignupForm';
-import Logo from '../logo/Logo';
+import HeaderLogo from '../logo/HeaderLogo';
 
 const Header = () => {
     const [slider, setSlider] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
                         {/* header logo */}
 
                         <Link to="/">
-                            <Logo />
+                            <HeaderLogo />
                         </Link>
 
                         {/* header links */}
@@ -42,7 +42,7 @@ const Header = () => {
                                     <div className="header__tabs  col-md-6  d-flex text-light align-items-start align-items-md-center justify-content-center gap-2 flex-column flex-md-row w-auto">
                                         <li class="nav-item  dropdown drop__borders ">
                                             <a
-                                                class="nav-link dropdown-toggle fw-bolder header__tabs--text"
+                                                class="nav-link dropdown-toggle header__tabs--text"
                                                 href="#"
                                                 id="navbarDropdown"
                                                 role="button"
@@ -86,17 +86,20 @@ const Header = () => {
 
                                         <li class="nav-item drop__borders">
                                             <a
-                                                class="nav-link fw-bolder header__tabs--text"
+                                                class="nav-link header__tabs--text"
                                                 href="#"
                                             >
-                                                <Link to="/exchange">
+                                                <Link
+                                                    className="header__tabs--text"
+                                                    to="/exchange"
+                                                >
                                                     Exchange
                                                 </Link>
                                             </a>
                                         </li>
                                         <li class="nav-item drop__borders">
                                             <a
-                                                class="nav-link fw-bolder header__tabs--text"
+                                                class="nav-link header__tabs--text"
                                                 href="#"
                                             >
                                                 Pricing
@@ -105,7 +108,7 @@ const Header = () => {
 
                                         <li class="nav-item dropdown drop__borders">
                                             <a
-                                                class="nav-link dropdown-toggle fw-bolder header__tabs--text"
+                                                class="nav-link dropdown-toggle  header__tabs--text"
                                                 href="#"
                                                 id="navbarDropdown"
                                                 role="button"

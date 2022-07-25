@@ -36,6 +36,11 @@
     margin-left: 60px;
 }
 
+.header__tabs--text {
+    font-weight: 300 !important;
+    font-size: 16px !important;
+}
+
 .sign__up {
     background: #e96e5d;
     color: #ffffff;
@@ -155,7 +160,7 @@
     }
 
     .header__link--mobile {
-        z-index: 999;
+        z-index: 9999;
 
         /* position: fixed;
         position: sticky; */
