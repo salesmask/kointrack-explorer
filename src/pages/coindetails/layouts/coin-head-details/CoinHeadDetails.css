@@ -1,0 +1,191 @@
+.coin-head__subwrapper {
+    background-color: var(--clr-table-row);
+    border-radius: 1rem;
+}
+/* Name and details section */
+
+.coin-head__name--wrapper .image__wrapper {
+    width: 64px;
+    height: 64px;
+}
+.coin-head__name--wrapper .name {
+    font-size: 2.4rem;
+    color: var(--clr-text);
+}
+.coin-head__name--wrapper .symbol {
+    font-size: 1.8rem;
+    color: var(--clr-light-text);
+}
+
+.coin-head__name--wrapper .name,
+.coin-head__name--wrapper .symbol {
+    font-weight: 700;
+}
+.coin-head__name--wrapper .watchlist__wrapper {
+    width: 2.4rem;
+    background-color: #efefef;
+    padding: 0.2rem;
+    border-radius: 4px;
+}
+.coin-head__name--wrapper .rank,
+.coin-head__name--wrapper .type,
+.coin-head__name--wrapper .watchlist-count {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.coin-head__name--wrapper .rank {
+    font-weight: 700;
+}
+.coin-head__name--wrapper span {
+    padding: 0 0.5rem;
+    font-weight: 400;
+}
+
+/* Range bar section*/
+
+.coin-head__range--wrapper {
+    width: auto;
+}
+
+.range-of__time {
+    border: 1px solid var(--clr-card-outline);
+}
+.range__lowhigh--values {
+    gap: 10vw;
+}
+
+.range__lowhigh--values * {
+    font-size: 1.4rem;
+}
+.range__lowhigh--values > div {
+    font-weight: 500;
+}
+.range__lowhigh--values > div > span {
+    font-weight: 700;
+}
+
+.range__lowhigh--values .low__value {
+    color: var(--clr-down);
+}
+.range__lowhigh--values .high__value {
+    color: var(--clr-up);
+}
+.range-of__time .time {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--clr-text);
+}
+.range-of-time__icon {
+    width: 1.5ch;
+}
+
+/* Current price details section */
+
+.coin-head__price--wrapper .name-symbol {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: var(--clr-light-text);
+}
+.current__price--wrapper .current-price {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--clr-text);
+}
+.current__price--wrapper .percent-change {
+    background-color: var(--clr-down);
+}
+.current__price--wrapper .change-icon {
+    width: 1.5ch;
+}
+.current__price--wrapper .percent-change span {
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.corresponding-current-eth .eth__price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--clr-light-text);
+}
+.corresponding-current-eth .eth-change img {
+    width: 1.5ch;
+}
+.corresponding-current-eth .eth-change span {
+    color: var(--clr-up);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* Corresponding screen width according to bootstrap lg screens */
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .range__lowhigh--values {
+        gap: 8vw !important;
+    }
+}
+
+/* Corresponding screen width according to bootstrap md screens */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .range__lowhigh--values {
+        gap: 4vw !important;
+    }
+}
+
+/* Corresponding screen width according to bootstrap sm screens */
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .coin-head__name--wrapper .image__wrapper {
+        width: 48px;
+        height: 48px;
+    }
+    .coin-head__name--wrapper .name {
+        font-size: 2rem;
+    }
+    .coin-head__name--wrapper .symbol {
+        font-size: 1.4rem;
+    }
+    .coin-head__name--wrapper .watchlist__wrapper {
+        width: 2rem;
+    }
+    .coin-head__name--wrapper .rank,
+    .coin-head__name--wrapper .type,
+    .coin-head__name--wrapper .watchlist-count {
+        font-size: 1.2rem;
+    }
+    .current__price--wrapper .current-price {
+        font-size: 2.4rem;
+    }
+    .range__inner--wrapper {
+        width: 100% !important;
+    }
+}
+
+/* Corresponding screen width according to bootstrap less than sm screens */
+
+@media screen and (max-width: 576px) {
+    .coin-head__name--wrapper .image__wrapper {
+        width: 40px;
+        height: 40px;
+    }
+    .coin-head__name--wrapper .rank,
+    .coin-head__name--wrapper .type,
+    .coin-head__name--wrapper .watchlist-count {
+        font-size: 1.2rem;
+    }
+    .current__price--wrapper .current-price {
+        font-size: 1.8rem;
+    }
+    .corresponding-current-eth .eth__price,
+    .corresponding-current-eth .eth-change span {
+        font-size: 1.2rem;
+    }
+
+    .range__lowhigh--values *,
+    .range-of__time .time {
+        font-size: 1.1rem;
+    }
+    .range__inner--wrapper {
+        width: 100% !important;
+    }
+}

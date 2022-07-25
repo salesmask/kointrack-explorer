@@ -1,15 +1,15 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import Home from '../components/homepage/Home';
-import CoinDetails from '../components/coindetails/CoinDetails';
+import Home from '../pages/home/Home';
+import CoinDetails from '../pages/coindetails/CoinDetails';
 import Trending from '../components/trending/Trending';
 import GainersLosers from '../components/gainerslosers/GainersLosers';
 import MostVisited from '../components/mostvisited/MostVisited';
 
 
-import Exchange from '../components/ExchangePage/Exchange/Exchange';
-import Derivatives from '../components/ExchangePage/Derivatives/Derivatives';
-import Dex from '../components/ExchangePage/Dex/Dex';
+import Exchange from '../pages/ExchangePage/layouts/Exchange/Exchange';
+import Derivatives from '../pages/ExchangePage/layouts/Derivatives/Derivatives';
+import Dex from '../pages/ExchangePage/layouts/Dex/Dex';
 import RecentlyAdded from '../components/recentlyadded/RecentlyAdded';
 import SpotLight from '../components/spotlight/SpotLight';
 import SignupForm from '../components/signupform/SignupForm'
@@ -19,6 +19,8 @@ const MainRoutes = () => {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
+
+            <Route path="/home" element={<Home />} />
 
             <Route path="/coindetails" element={<CoinDetails />} />
 

@@ -61,12 +61,13 @@ const Header = () => {
                                                 aria-labelledby="navbarDropdown"
                                             >
                                                 <li>
-                                                    <a
+                                                    <Link
+                                                        to="/trending"
                                                         class="dropdown-item fw-bolder"
                                                         href="#"
                                                     >
-                                                        Action
-                                                    </a>
+                                                        Trending
+                                                    </Link>
                                                 </li>
                                                 <li>
                                                     <a
